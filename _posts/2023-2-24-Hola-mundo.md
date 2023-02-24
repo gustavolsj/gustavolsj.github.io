@@ -14,12 +14,12 @@ Ahora mismo escribo dentro de VS code en lenguaje markdown, es algo relativament
 - [Datalogger para conservación](https://github.com/gustavolsj/datalogger-conservacion)
 - [Machine Learning para la identificación del proceso fotográfico](https://github.com/gustavolsj/image-recognition)
 
-Algo muy similar que también he exlporado ultimamente es el uso de Jekyll + Github Pages para hospedar exposiciones digitales con [CollectionBuilder]()
+Algo muy similar que también he exlporado ultimamente es el uso de Jekyll + Github Pages para hospedar exposiciones digitales con [CollectionBuilder](https://collectionbuilder.github.io)
 
-La Universidad de los Andes de Colombia y [The Programming Historian](https://twitter.com/ProgHist) organizaron hace unos días un taller sobre creación de exposiciones digitales con esta herramienta y me ha fascinado. Permite visualizar las fotos en un mapa, en una linea de tiempo, en una nube de palabras y visualizar las fotos en un visor integrado.
+La Universidad de los Andes de Colombia y [The Programming Historian](https://twitter.com/ProgHist) organizaron hace unos días un taller sobre creación de exposiciones digitales con esta herramienta y me ha fascinado. Permite visualizar las fotos en un mapa, en una linea de tiempo, en una nube de palabras y ampliar las fotos en un visor integrado.
 
 ![Demo Collection Builder](../images/collection_builder_demo.jpg)
 
-Este es un demo que estoy probando en otro repositorio y hasta el momento he subido varias fotos con algunos metadatos.
+Este es un [demo](https://gustavolsj.github.io/test2_collection_builder/) que estoy probando en otro repositorio y hasta el momento he subido varias fotos con algunos metadatos.
 
 Seguimos,
