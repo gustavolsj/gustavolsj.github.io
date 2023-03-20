@@ -3,20 +3,23 @@ layout: post
 title: Hola mundo 2.0!
 ---
 
-## IA en el archivo fotográfico
+## Mi segundo blog
 
-Desde hace años, en mis tiempos libres, he estado aprendiendo y experimentando con las tecnicas de inteligencia artificial (IA) para aplicarlas a las tareas de la conservación y los archivos. Una primera hipótesis es que estas herramientas pueden servir para apoyar la identificación del proceso fotográfico (técnica de elaboración) en fotografías históricas.
+Estoy intentando retomar el blog y esta es una primera prueba. Abandoné Wordpress y el alojamiento en Bluehost porque nunca lo usaba pero lo seguía pagando y me mude a la combinación de Jekyll + Github Pages, que son gratuitos y solo continuaré pagando el dominio desdeelarchivo.com aunque la verdad tampoco lo uso mucho.
 
-![imagenes de camara](../images/tSNE-imagenes_camara.jpg)
+Estoy siguiendo está [guía](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/) que les recomiendo mucho.
 
-A lo largo de la historía la fotografía ha evolucionado materialmente pasando de soportes rigidos y pesados como el vidrio y el metal a soportes ligeros y flexibles como los plásticos y el papel; las tomas que antes tomaban varios segundos después se podían hacer en una fracción de segundo y finalmente las fotografías que originalmente solo podían ser monocromas, después pudieron registrar y mostrar todos los colores de la naturaleza.
+Ahora mismo escribo dentro de VS code en lenguaje markdown, es algo relativamente nuevo para mi, porque también lo he usado en los cuadernos de Jupyter y en los archivos Readme.md de los dos repositorios que tengo en Github
 
-Cada uno de estos avances le da a los objetos fotográficos características físicas unicas que en un archivo es importante reconocer ya que nos ayudan a conocer su contexto histórico, saber de qué manera se deben conservar y poder describirlas correctamente.
+- [Datalogger para conservación](https://github.com/gustavolsj/datalogger-conservacion)
+- [Machine Learning para la identificación del proceso fotográfico](https://github.com/gustavolsj/image-recognition)
 
-La forma más sencilla de aplicar la IA a esta tarea es proporcionando un conjunto heterogeneo de imagenes para ver de qué manera las organiza o clasifica, ya que estas herramientas no han sido entrenadas para esta tarea no es posible que lo hagan mediante categorias concretas pero se puede hacer de manera comparativa y obtener el resultado de manera visual.
+Algo muy similar que también he exlporado ultimamente es el uso de Jekyll + Github Pages para hospedar exposiciones digitales con [CollectionBuilder](https://collectionbuilder.github.io)
 
-El resultado es una imagen como la que se muestra arriba, en la que 250 fotografías de cuatro técnicas diferentes son agrupadas por sus principales rasgos visuales, pero que no coinciden con su técnica sino con su forma de presentación como el tipo de estuche o marco en el que se han colocado.
+La Universidad de los Andes de Colombia y [The Programming Historian](https://twitter.com/ProgHist) organizaron hace unos días un taller sobre creación de exposiciones digitales con esta herramienta y me ha fascinado. Permite visualizar las fotos en un mapa, en una linea de tiempo, en una nube de palabras y ampliar las fotos en un visor integrado.
 
-Para este experimento seguí los pasos de esta [guía](https://github.com/ml4a/ml4a/blob/master/examples/info_retrieval/image-tsne.ipynb)
+![Demo Collection Builder](../images/collection_builder_demo.jpg)
 
-Y escribí un artículo donde explicó con más detalle las motivaciones de este experimeto y los aspectos técnicos detras de él, lo puedes leer [aquí](https://www.academia.edu/92501941/Identificación_de_procesos_fotográficos_mediante_técnicas_de_aprendizaje_de_máquina)
+Este es un [demo](https://gustavolsj.github.io/test2_collection_builder/) que estoy probando en otro repositorio y hasta el momento he subido varias fotos con algunos metadatos.
+
+Seguimos,
