@@ -1,10 +1,10 @@
 ---
 layout: page
-title: About
+title: Acerca de mí
 permalink: /about/
 ---
 
-![Coyote](./images/coyote.gif)
+![Coyote](./images/coyote.gif){:width="250"}
 
 ## Hacker cultural en formación.
 
