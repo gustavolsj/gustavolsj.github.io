@@ -4,12 +4,18 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+![Coyote](./images/coyote.gif)
 
-### More Information
+## Hacker cultural en formación.
 
-A place to include any other types of information that you'd like to include about yourself.
+Soy conservador de fotografías y documentos históricos y me interesan la aplicación de técnicas computacionales para el estudio y difusión del patrimonoio cultural. Vivo y en la CDMX y Trabajo en la UNAM.
 
-### Contact me
+### Mis intereses
 
-[email@domain.com](mailto:email@domain.com)
+- IA para el analisis de imagenes
+- Webscrapping y datos abiertos
+- Cultural Analitycs
+- Fotogrametría y modelado 3D
+- Realidad Aumentada en museos
+- Processing
+- Arduino
