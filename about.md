@@ -4,7 +4,7 @@ title: Acerca de mí
 permalink: /about/
 ---
 
-![Coyote](./images/coyote.gif){:width="250"}
+![Coyote](./images/coyote.gif){:width="500"}
 
 ## Hacker cultural en formación.
 
@@ -12,10 +12,10 @@ Soy conservador de fotografías y documentos históricos y me interesan la aplic
 
 ### Mis intereses
 
-- IA para el analisis de imagenes
-- Webscrapping y datos abiertos
-- Cultural Analitycs
-- Fotogrametría y modelado 3D
-- Realidad Aumentada en museos
+- IA para la ID de la técnica en fotografías históricas
+- Webscrapping y datos abiertos de objetos culturales
+- Cultural Analitycs para el análisis de imagenes
+- Fotogrametría y modelado 3D de objetos y sitios culturales
+- Realidad Aumentada en museos y exposiciones
+- Arduino para el monitoreo ambiental y la conservación preventiva
 - Processing
-- Arduino
