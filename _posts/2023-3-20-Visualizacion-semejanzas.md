@@ -2,8 +2,7 @@
 layout: post
 title: IA en el archivo fotográfico
 excerpt_separator: <!--more-->
-images:
-  - url: ../images/tSNE-imagenes_camara.jpg
+tags: "inteligencia artificial" archivos fotografías
 ---
 
 ![imagenes de camara](../images/tSNE-imagenes_camara.jpg)
