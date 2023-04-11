@@ -8,7 +8,7 @@ permalink: /about/
 
 ## Hacker cultural en formación.
 
-Soy conservador de fotografías y documentos históricos y me interesan la aplicación de técnicas computacionales para el estudio y difusión del patrimonoio cultural. Vivo y en la CDMX y Trabajo en la UNAM.
+Soy conservador de fotografías y documentos históricos y me interesa la aplicación de técnicas computacionales para el estudio y difusión del patrimonoio cultural. Vivo en la CDMX y trabajo en la UNAM.
 
 ### Mis intereses
 

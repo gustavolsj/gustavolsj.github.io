@@ -1,6 +1,9 @@
 ---
 layout: post
 title: IA en el archivo fotográfico
+excerpt: Desde hace años, en mis tiempos libres, he estado aprendiendo y experimentando con las tecnicas de inteligencia artificial (IA) para aplicarlas a las tareas de la conservación y los archivos.
+images:
+  - url: ../images/tSNE-imagenes_camara.jpg
 ---
 
 ## 🤖 Inteligencia artificial y fotografía
