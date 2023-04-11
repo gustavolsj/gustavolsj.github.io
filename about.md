@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Acerca de mí
-permalink: /acerca/
+permalink: /about/
 ---
 
 ![Coyote](./images/coyote.gif){:width="500"}
