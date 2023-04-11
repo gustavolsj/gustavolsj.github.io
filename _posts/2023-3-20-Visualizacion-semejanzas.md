@@ -6,6 +6,8 @@ images:
   - url: ../images/tSNE-imagenes_camara.jpg
 ---
 
+![imagenes de camara](../images/tSNE-imagenes_camara.jpg)
+
 ## 🤖 Inteligencia artificial y fotografía
 
 Desde hace años, en mis tiempos libres, he estado aprendiendo y experimentando con las tecnicas de inteligencia artificial (IA) para aplicarlas a las tareas de la conservación y los archivos. Una primera hipótesis es que estas herramientas pueden servir para apoyar la identificación del proceso fotográfico (técnica de elaboración) en fotografías históricas.
@@ -15,8 +17,6 @@ Desde hace años, en mis tiempos libres, he estado aprendiendo y experimentando 
 ## 🔗 Resultado
 
 Mi primer resultado lo he compartido en un repositorio de Github que contiene el cuaderno de Jupyter, el conjunto de datos y la lista de paquetes necesarios. Lo puedes encontrar aqui [https://github.com/gustavolsj/image-recognition](https://github.com/gustavolsj/image-recognition)
-
-![imagenes de camara](../images/tSNE-imagenes_camara.jpg)
 
 ## 🤔 Justificación
 
