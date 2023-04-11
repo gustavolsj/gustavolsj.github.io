@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hola mundo 2.0!
+published: false
 excerpt_separator: <!--more-->
 tags: archivos fotografías collection_builder github_pages
 ---
@@ -9,7 +10,7 @@ tags: archivos fotografías collection_builder github_pages
 
 ## Mi segundo blog
 
-Estoy intentando retomar el blog y esta es una primera prueba. Abandoné Wordpress y el alojamiento en Bluehost porque nunca lo usaba pero lo seguía pagando y me mude a la combinación de Jekyll + Github Pages, que son gratuitos y solo continuaré pagando el dominio desdeelarchivo.com aunque la verdad tampoco lo uso mucho.
+- [Datalogger para conservación](https://github.com/gustavolsj/datalogger-conservacion)
 
 <!--more-->
 
