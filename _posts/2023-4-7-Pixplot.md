@@ -7,7 +7,7 @@ tags: inteligencia_artificial archivos fotografías pixplot
 
 ![pixplot](../images/pixplot.JPG)
 
-# Pixplot
+## Pixplot
 
 Uno de las primeros experimentos con Inteligencia artificial y fotografía que pude replicar fue Pixplot, un desarrollo del programador Douglas Duhaime del Yale Digital Humanities Lab, que es muy fácil de utilizar para principiantes como yo.
 
