@@ -1,17 +1,18 @@
 ---
 layout: post
 title: Visualización de semejanzas
+excerpt_separator: <!--more-->
+tags: "inteligencia artificial" archivos fotografías pixplot
 ---
 
-# Pixplot
+![pixplot](../images/pixplot.JPG)
 
-## Descripción
+# Pixplot
 
 Uno de las primeros experimentos con Inteligencia artificial y fotografía que pude replicar fue Pixplot, un desarrollo del programador Douglas Duhaime del Yale Digital Humanities Lab, que es muy fácil de utilizar para principiantes como yo.
 
 En este caso utilicé una porción del conjunto de datos Wikiart, que contiene pinturas impresionistas como Monet y Morisot, pero tambien murales de Diego Rivera.
 
-![pixplot](../images/pixplot.JPG)
 El resultado lo puedes ver [aqui](https://gustavolsj.github.io/pixplot_wikiart/#).
 
 ## Funcionamiento
