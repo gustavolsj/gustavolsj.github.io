@@ -1,7 +1,7 @@
 ---
 layout: post
 title: IA en el archivo fotográfico
-excerpt: Tecnicas de inteligencia artificial (IA) aplicadas a las tareas de la conservación y los archivos.
+excerpt_separator: <!--more-->
 images:
   - url: ../images/tSNE-imagenes_camara.jpg
 ---
@@ -9,6 +9,8 @@ images:
 ## 🤖 Inteligencia artificial y fotografía
 
 Desde hace años, en mis tiempos libres, he estado aprendiendo y experimentando con las tecnicas de inteligencia artificial (IA) para aplicarlas a las tareas de la conservación y los archivos. Una primera hipótesis es que estas herramientas pueden servir para apoyar la identificación del proceso fotográfico (técnica de elaboración) en fotografías históricas.
+
+<!--more-->
 
 ## 🔗 Resultado
 
