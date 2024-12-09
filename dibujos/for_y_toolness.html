@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+  <title>Sketch</title>
+</head>
+
+<body>
+
+  <script type="text/p5" data-p5-version="1.0.0" data-preview-width="500" data-height="500" data-autoplay>
+    mi_time = -1;
+mi_delay = 100;
+
+function setup() {
+createCanvas(400,400);
+background(0,0,0);
+smooth();
+frameRate(10);
+colorMode(RGB, 255, 255, 255, 1);
+}
+
+function draw() {
+
+  for(let i=0; i<250; i=i+1){
+        if (i===80){
+        fill (0,0,0,0.01);
+        noStroke();
+        rect(0,0,500);  
+        }
+      if( millis() > mi_time ){
+        mi_time = millis() + mi_delay; // x is also delay in ms.
+
+        stroke(random(20,250));
+        strokeWeight(random(2,4));
+        line(random(width-width*1.8),random(height-        height*1.8),random(width,width*1.8),random(height,height*1.8));
+    }
+
+  }
+ } 
+</script>
+</body>
+
+</html>

@@ -17,6 +17,6 @@ Soy conservador de fotografías y documentos históricos y me interesa la aplica
 
     <script>
         function cambia_sketch() {
-            document.getElementById("iframe_id").src = "https://www.desdeelarchivo.com/processing/for_y_variable.html";
+            document.getElementById("iframe_id").src = "/dibujos/cieloHue_toolness";
         }
     </script>

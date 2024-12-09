@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+    <title>Sketch</title>
+</head>
+
+<body>
+    <script type="text/p5" data-p5-version="1.0.0" data-autoplay data-preview-width="500" data-height="500">
+        let separacion;
+        function setup() {
+          createCanvas(400, 400);
+          separacion = 50;
+          angleMode(DEGREES);
+        }
+        
+        function draw() {
+          background(220);
+          noFill()
+          stroke(0);
+          strokeWeight(2);
+          for (j=0; j<height; j+=separacion){
+            for (i=0; i<width+separacion; i+=separacion){  
+            
+              push();
+            // rotate(5);
+              
+              pop();
+              square(i,j,30+j)
+              // square(i,j,30+i)
+            print(i);
+              }
+          }
+        }        
+</script>
+</body>
+
+</html>

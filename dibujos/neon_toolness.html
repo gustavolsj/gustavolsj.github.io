@@ -1,0 +1,85 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+    <title>Sketch</title>
+</head>
+
+<body>
+    <script type="text/p5" data-p5-version="1.0.0" data-autoplay data-preview-width="500" data-height="500">
+        let mi_tiempo = -1;
+      let lapso = 50;
+
+function setup() {
+      createCanvas(400, 400);
+      background(0);
+      blendMode(SCREEN); // es un tipo de transparencia 
+      // noLoop();
+    }
+
+    function draw() {
+      fill(0);
+      noStroke();
+      rect(0,0,400,400);
+      // for (let j = 0; j < 5000; j = j + 1){ //No recuerdo que es
+      for (let i = 0; i < 65; i = i + 1){ // cantidad lineas
+       
+        
+      if (millis() > mi_tiempo+lapso){     
+        let rdmx1 = random(width - width * 1.8);
+        let rdmy1 = random(height - height * 1.8);
+        let rdmx2 = random(width, width * 1.8);
+        let rdmy2 = random(height, height * 1.8);
+
+        let strkw = random(1, 5);
+
+        let index = floor(random(0, 3)); //color  glow
+        // print(index);
+    
+        
+        if (index == 0) {
+            stroke(255, 0, 0.122); //cian o rojo
+        } else if (index == 1) {
+            stroke(0, 255, 0, 122); //magenta o verde
+        } else {
+            stroke(0, 0, 255, 122); //amarillo o azul
+        }
+        
+        strokeWeight(strkw + 6);
+        // para que aumente el grosor de las lineas conforme se enciman el valor máximo del random puede ser la variable i 
+        line(rdmx1, rdmy1, rdmx2, rdmy2);
+        //filter(BLUR, 3);
+        
+         index = floor(random(3)); //color linea interna  
+
+         index = int(random(3)); // aleatoriamente se define un int que corresponde al color que tendrá la linea  
+        if (index == 0) {
+           stroke(255, 0, 0); //cian o rojo
+        } else if (index == 1) {
+           stroke(0, 255, 0); //magenta o verde
+        } else {
+           stroke(0, 0, 255); //amarillo o azul
+        }
+        
+        strokeWeight(strkw);// el valor máximo del random puede ser la variable i de manera que vaya aumentando el grosor de las lineas conforme se enciman
+  line (rdmx1,rdmy1,rdmx2,rdmy2);
+        mi_tiempo = millis();
+        
+
+      }
+      }
+    
+      //  if (j==0){
+      //   fill (120,120,120,50);
+      //   noStroke();
+      //   rect(100,100,300,300);
+      // }
+      
+      // }
+  }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+  <title>Sketch</title>
+</head>
+
+<body>
+  <script type="text/p5" data-p5-version="1.0.0" data-autoplay data-preview-width="500" data-height="500">
+    // es el cielo y va cambiando va cambiando el color y la posicion de de acuerdo a la hora del día
+
+        tiempoactual = -1;
+        lapso = 30;
+        let i = 0; 
+        
+        function setup() {
+          createCanvas(400, 400);
+          colorMode (HSB,255);
+          textSize(30);
+          textAlign(CENTER);
+        }
+        
+        function draw() {
+        
+          //0 Naranja 250 Azul
+        stroke(50);  
+        strokeWeight(2);  
+         
+          if (millis () > tiempoactual){
+            tiempoactual = millis() + lapso;
+            background(i,255,255);
+            // background(i,150,150);
+            i= i+1;
+            if (i>250){
+                i=0;
+                }
+            text (i, width/2, height/2);
+            }
+          
+        }
+</script>
+</body>
+
+</html>
