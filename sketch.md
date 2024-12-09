@@ -36,4 +36,4 @@ permalink: /sketch/
 </td>
 </tr>
 </table>
-  </div><!-- .entry-content -->
+  </div>
