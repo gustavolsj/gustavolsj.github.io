@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mis sketches
+title: Dibujos generativos en p5.js
 permalink: /sketch/
 ---
 
