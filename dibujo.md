@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Acerca de mí
-permalink: /about/
+title: Dibujos
+permalink: /dibujo/
 ---
 
 ![Coyote](./images/coyote.gif){:width="500"}
@@ -10,12 +10,13 @@ permalink: /about/
 
 Soy conservador de fotografías y documentos históricos y me interesa la aplicación de técnicas computacionales para el estudio y difusión del patrimonoio cultural. Vivo en la CDMX y trabajo en la UNAM.
 
-### Mis intereses
 
-- IA para la ID de la técnica en fotografías históricas
-- Webscrapping y datos abiertos de objetos culturales
-- Cultural Analitycs para el análisis de imagenes
-- Fotogrametría y modelado 3D de objetos y sitios culturales
-- Realidad Aumentada en museos y exposiciones
-- Arduino para el monitoreo ambiental y la conservación preventiva
-- Processing
+<base target="ifrm"><!-- end Simple Custom CSS and JS -->
+    <!-- start Simple Custom CSS and JS -->
+
+
+    <script>
+        function cambia_sketch() {
+            document.getElementById("iframe_id").src = "https://www.desdeelarchivo.com/processing/for_y_variable.html";
+        }
+    </script>
