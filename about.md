@@ -1,22 +1,22 @@
 ---
 layout: page
-title: Dibujos
-permalink: /dibujo/
+title: Acerca de mí
+permalink: /about/
 ---
 
-
+![Coyote](./images/coyote.gif){:width="500"}
 
 ## Hacker cultural en formación.
 
 Soy conservador de fotografías y documentos históricos y me interesa la aplicación de técnicas computacionales para el estudio y difusión del patrimonoio cultural. Vivo en la CDMX y trabajo en la UNAM.
 
 
-<base target="ifrm"><!-- end Simple Custom CSS and JS -->
-  <!-- start Simple Custom CSS and JS -->
+### Mis intereses
 
-
-  <script>
-    function cambia_sketch() {
-      document.getElementById("iframe_id").src = "./for_y_variable.html";
-    }
-  </script><!-- end Simple Custom CSS and JS -->
+- IA para la ID de la técnica en fotografías históricas
+- Webscrapping y datos abiertos de objetos culturales
+- Cultural Analitycs para el análisis de imagenes
+- Fotogrametría y modelado 3D de objetos y sitios culturales
+- Realidad Aumentada en museos y exposiciones
+- Arduino para el monitoreo ambiental y la conservación preventiva
+- Processing
