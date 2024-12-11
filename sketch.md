@@ -15,24 +15,23 @@ permalink: /sketch/
 </td>
 
 <td>
-    <figure><img loading="lazy" width="200" height="200" src="https://gustavolsj.github.io/dibujos/cieloHue.jpg" alt="" /></figure>
-    <a href="https://gustavolsj.github.io/dibujos/cieloHue_toolness.html" target="ifrm">cielo</a>
+   
+    <a href="https://gustavolsj.github.io/dibujos/cieloHue_toolness.html" target="ifrm"><img loading="lazy" width="200" height="200" src="https://gustavolsj.github.io/dibujos/cieloHue.jpg" alt="" /></a>
 </td>
 
 <td>
-    <figure><img loading="lazy" width="200" height="200" src="https://gustavolsj.github.io/dibujos/colores.jpg" alt="" /></figure>
-    <a href="https://gustavolsj.github.io/dibujos/colores_toolness.html" target="ifrm">colores</a>
+    <a href="https://gustavolsj.github.io/dibujos/colores_toolness.html" target="ifrm"><img loading="lazy" width="200" height="200" src="https://gustavolsj.github.io/dibujos/colores.jpg" alt="" /></a>
 </td>
 
 <td>
-    <figure><img loading="lazy" width="200" height="200" src="https://gustavolsj.github.io/dibujos/rotacion.jpg" alt="" /></figure>
-    <a href="https://gustavolsj.github.io/dibujos/rotacion_toolness.html" target="ifrm">rotacion</a>
+    
+    <a href="https://gustavolsj.github.io/dibujos/rotacion_toolness.html" target="ifrm"><img loading="lazy" width="200" height="200" src="https://gustavolsj.github.io/dibujos/rotacion.jpg" alt="" /></a>
 </td>
 
 <tr>
 <td>
-    <figure><img loading="lazy" width="200" height="200" src="https://gustavolsj.github.io/dibujos/for_y.JPG" alt="" /></figure>
-    <a href="https://gustavolsj.github.io/dibujos/for_y_toolness.html" target="ifrm">for_y</a>
+    
+    <a href="https://gustavolsj.github.io/dibujos/for_y_toolness.html" target="ifrm"><img loading="lazy" width="200" height="200" src="https://gustavolsj.github.io/dibujos/for_y.JPG" alt="" /></a>
 </td>
 </tr>
 </table>
