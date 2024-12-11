@@ -10,8 +10,8 @@ permalink: /sketch/
 <table>
 <tr>
 <td>
-    <figure><img loading="lazy" width="200" height="200" src="https://gustavolsj.github.io/dibujos/neon.JPG" alt="" /></figure>
-    <a href="https://gustavolsj.github.io/dibujos/neon_toolness.html" target="ifrm">neon</a>
+    
+    <a href="https://gustavolsj.github.io/dibujos/neon_toolness.html" target="ifrm"><img loading="lazy" width="200" height="200" src="https://gustavolsj.github.io/dibujos/neon.JPG" alt="" /></a>
 </td>
 
 <td>
