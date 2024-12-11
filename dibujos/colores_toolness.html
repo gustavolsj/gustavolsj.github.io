@@ -9,30 +9,42 @@
 
 <body>
   <script type="text/p5" data-p5-version="1.0.0" data-autoplay data-preview-width="500" data-height="500">
-    function setup() {
+let mi_tiempo = -1;
+      let lapso = 500;
+
+function setup() {
     createCanvas(400, 400);
     redR =floor(random(0,255));
     greenR =floor(random(0,255));
     blueR =floor(random(0,255));
     print(redR,greenR,blueR);
-    noLoop();
+    //noLoop();
     noStroke();
   }
   
   function draw() {
-    background(45);
-    fill (redR,greenR,blueR);
-    print(redR,greenR,blueR);
-    circle (random (50,350),random(50,350), random(25,100));
+    if (millis() > mi_tiempo+lapso){  
+      redR =floor(random(0,255));
+      greenR =floor(random(0,255));
+      blueR =floor(random(0,255));
+      print(redR,greenR,blueR);    
+        
+      background(45);
+      fill (redR,greenR,blueR);
+      print(redR,greenR,blueR);
+      circle (random (50,350),random(50,350), random(25,100));
       
   //   //Monocromo 
-    fill (redR+40,greenR+40,blueR+40);
-    print ("+",redR+40,greenR+40,blueR+40);
-    circle (random (50,350),random(50,350),random(25,100));
+      fill (redR+40,greenR+40,blueR+40);
+      print ("+",redR+40,greenR+40,blueR+40);
+      circle (random (50,350),random(50,350),random(25,100));
     
-    fill (redR-40,greenR-40,blueR-40);
-    print ("-",redR-40,greenR-40,blueR-40);
-    circle (random (50,350),random(50,350), random(25,100));
+      fill (redR-40,greenR-40,blueR-40);
+      print ("-",redR-40,greenR-40,blueR-40);
+      circle (random (50,350),random(50,350), random(25,100));
+      
+      mi_tiempo = millis();
+      }
 }
 </script>
 </body>
