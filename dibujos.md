@@ -5,7 +5,7 @@ permalink: /sketch/
 ---
 
   <div>
-    <iframe src="https://gustavolsj.github.io/dibujos/colores_toolness.html" name="ifrm" width="900" height="550" frameborder="0"> </iframe>
+    <iframe src="https://gustavolsj.github.io/dibujos/colores_toolness.html" name="ifrm" width="1000" height="550" frameborder="0"> </iframe>
 
 <table>
 <tr>
