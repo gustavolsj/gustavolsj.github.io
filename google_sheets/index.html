@@ -1,0 +1,91 @@
+<!-- TUTORIAL PARA GENERAR UN INDEX A PARTIR DE GOOGLE SHEETS DATA https://www.bpwebs.com/visualize-google-sheets-data-in-html-charts/ -->
+<!DOCTYPE html>
+
+
+<!--REF: https://developers.google.com/chart/interactive/docs/quick_start-->
+<!-- <html>
+<head>
+    <base target="_top">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+        // Load the Visualization API and the corechart package.
+        google.charts.load('current', {
+            'packages': ['corechart']
+        });
+        // Set a callback to run when the Google Visualization API is loaded.
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            google.script.run.withSuccessHandler(displayChart).getChartData();
+        }
+
+        function displayChart(data) {
+            var chartData = google.visualization.arrayToDataTable(data);
+
+            // Set chart options
+            var options = {
+                title: 'Sales Data Visualization',
+                is3D: true
+                // Additional chart options
+            };
+
+            // Instantiate and draw our chart, passing in some options.
+            var chart = new google.visualization.PieChart(document.getElementById('pie_chart'));
+            chart.draw(chartData, options);
+        }
+    </script>
+</head>
+<body>
+    Div that will hold the pie chart
+
+    <div id="pie_chart" style="width: 50%; height: 400px;"></div>
+</body>
+</html> -->
+
+
+
+//TUTORIAL PARA GENERAR UN INDEX A PARTIR DE GOOGLE SHEETS DATA
+https://www.bpwebs.com/visualize-google-sheets-data-in-html-charts/
+
+<!--REF: https://developers.google.com/chart/interactive/docs/quick_start-->
+<html>
+
+<head>
+    <base target="_top">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script>
+        // Load the Visualization API and the corechart package.
+        google.charts.load('current', {
+            'packages': ['corechart']
+        });
+        // Set a callback to run when the Google Visualization API is loaded.
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            google.script.run.withSuccessHandler(displayChart).getChartData();
+        }
+
+        function displayChart(data) {
+            var chartData = google.visualization.arrayToDataTable(data);
+
+            // Set chart options
+            var options = {
+                title: 'Humedad y temperatura en tiempo real',
+                is3D: true
+                // Additional chart options
+            };
+
+            // Instantiate and draw our chart, passing in some options.
+            var chart = new google.visualization.LineChart(document.getElementById('line_chart'));
+            chart.draw(chartData, options);
+        }
+    </script>
+</head>
+
+<body>
+    <!--Div that will hold the pie chart-->
+    <div id="line_chart" style="width: 50%; height: 400px;"></div>
+</body>
+
+</html>

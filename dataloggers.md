@@ -42,5 +42,5 @@ permalink: /dataloggers/
   <div id="pie_chart" style="width: 50%; height: 400px;"></div>
   <iframe
     src="https://script.google.com/macros/s/AKfycbxcCKHVBXP8gerUcszrHLn23QwT68Tv4-98VkTmwgjdtSQFj1yfiteW_-sopTNdwO-oUA/exec"
-    height="500" width="100%"></iframe>
+    height="500" width="50%"></iframe>
 </body>
