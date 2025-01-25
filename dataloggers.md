@@ -41,6 +41,6 @@ permalink: /dataloggers/
   <!--Div that will hold the pie chart-->
   <div id="pie_chart" style="width: 50%; height: 400px;"></div>
   <iframe
-    src="https://script.google.com/macros/s/AKfycbxcCKHVBXP8gerUcszrHLn23QwT68Tv4-98VkTmwgjdtSQFj1yfiteW_-sopTNdwO-oUA/exec"
+    src="http://gusapps.zapto.org:8080/chart.html"
     height="500" width="50%"></iframe>
 </body>
