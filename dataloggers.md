@@ -17,11 +17,10 @@ permalink: /dataloggers/
 		}
     	.myChart {
     		margin-left:-400px
-    		width: 155%;
     	}
     	.chart {
-    		margin: auto;
-    		width: 100%;
+    		margin-left: 0px;
+			width: 155%;
     	}
     	.text-center {
     		text-align: center;
