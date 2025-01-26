@@ -19,7 +19,7 @@ permalink: /dataloggers/
 
 		.chart {
 			margin: auto;
-			width: 75%;
+			width: 155%;
 		}
 
 		.text-center {
