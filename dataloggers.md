@@ -4,68 +4,109 @@ title: Dataloggers y otros proyectos maker
 permalink: /dataloggers/
 ---
 
+
 <head>
-  <meta charset="UTF-8">
-  <title>Gráfica de Temperatura y Humedad</title>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datasource@0.1.0"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>chartjs-plugin-datasource sample</title>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datasource@0.1.0"></script>
+	<style>
+		canvas {
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+
+		.chart {
+			margin: auto;
+			width: 75%;
+		}
+
+		.text-center {
+			text-align: center;
+		}
+	</style>
 </head>
+
 <body>
-  <h2>Gráfica de Temperatura y Humedad</h2>
-  <canvas id="myChart" width="400" height="200"></canvas>
+	<div class="chart">
+		<canvas id="myChart"></canvas>
+	</div>
 
-  <script>
+	<script>
+		var chartColors = {
+			red: 'rgb(255, 99, 132)',
+			blue: 'rgb(54, 162, 235)'
+		};
 
+		var color = Chart.helpers.color;
+		var config = {
+			type: 'line',
+			data: {
+				datasets: [{
+					type: 'line',
+					yAxisID: 'temperature',
+					backgroundColor: 'transparent',
+					borderColor: chartColors.red,
+					pointBackgroundColor: chartColors.red,
+					tension: 0,
+					fill: false
+				}, {
+					yAxisID: 'precipitation',
+					backgroundColor: color(chartColors.blue).alpha(0.5).rgbString(),
+					borderColor: 'transparent'
+				}]
+			},
+			plugins: [ChartDataSource],
+			options: {
+				title: {
+					display: true,
+					text: 'CSV data source (index) sample'
+				},
+				scales: {
+					xAxes: [{
+						scaleLabel: {
+							display: true,
+							labelString: 'Month'
+						}
+					}],
+					yAxes: [{
+						id: 'temperature',
+						gridLines: {
+							drawOnChartArea: false
+						},
+						scaleLabel: {
+							display: true,
+							labelString: 'Temperature (°C)'
+						}
+					}, {
+						id: 'precipitation',
+						position: 'right',
+						gridLines: {
+							drawOnChartArea: false
+						},
+						scaleLabel: {
+							display: true,
+							labelString: 'Precipitation (mm)'
+						}
+					}]
+				},
+				plugins: {
+					datasource: {
+						type: 'csv',
+						url: 'datos.csv',
+						delimiter: ',',
+						rowMapping: 'index',
+						datasetLabels: true,
+						indexLabels: true
+					}
+				}
+			}
+		};
 
-      var ctx = document.getElementById('myChart').getContext('2d');
-      var  myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          datasets: [
-            {
-              label: 'Temperatura',
-              borderColor: 'rgba(255, 99, 132, 1)',
-              backgroundColor: 'rgba(255, 99, 132, 0.2)',
-              fill: true
-            },
-            {
-              label: 'Humedad',
-              borderColor: 'rgba(54, 162, 235, 1)',
-              backgroundColor: 'rgba(54, 162, 235, 0.2)',
-              fill: true
-            }
-          ]
-        },
-		plugins: [ChartDataSource],
-
-        options: {
-          scales: {
-            x: {
-              display: true,
-              title: {
-                display: true,
-                text: 'Fecha'
-              }
-            },
-            y: {
-              display: true,
-              title: {
-                display: true,
-                text: 'Valores'
-              }
-            }
-          }
-        },
-
-    plugins: {
-          datasource: {
-              url: 'datos.csv'
-          }
-        }
-
-      });
-    
-
-    renderChart();
-  </script>
+		window.onload = function () {
+			var ctx = document.getElementById('myChart').getContext('2d');
+			window.myChart = new Chart(ctx, config);
+		};
+	</script>
 </body>
