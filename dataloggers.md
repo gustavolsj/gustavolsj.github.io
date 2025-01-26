@@ -56,7 +56,7 @@ permalink: /dataloggers/
               }
             }
           }
-        }
+        },
 
     plugins: {
           datasource: {
