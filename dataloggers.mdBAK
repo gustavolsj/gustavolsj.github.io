@@ -4,18 +4,18 @@ title: Dataloggers y otros proyectos maker
 permalink: /dataloggers/
 ---
 
+
 <head>
   <meta charset="UTF-8">
   <title>Gráfica de Temperatura y Humedad</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datasource@0.1.0"></script>
 </head>
 <body>
   <h2>Gráfica de Temperatura y Humedad</h2>
   <canvas id="myChart" width="400" height="200"></canvas>
 
   <script>
-<!--     async function fetchData() {
+    async function fetchData() {
       const response = await fetch('http://gusapps.zapto.org:8080/chart.php');
       const data = await response.json();
 
@@ -24,7 +24,7 @@ permalink: /dataloggers/
       const humedades = data.map(row => row.humedad);
 
       return { labels, temperaturas, humedades };
-    } -->
+    }
 
     async function renderChart() {
       const { labels, temperaturas, humedades } = await fetchData();
@@ -37,19 +37,20 @@ permalink: /dataloggers/
           datasets: [
             {
               label: 'Temperatura',
+              data: temperaturas,
               borderColor: 'rgba(255, 99, 132, 1)',
               backgroundColor: 'rgba(255, 99, 132, 0.2)',
               fill: true
             },
             {
               label: 'Humedad',
+              data: humedades,
               borderColor: 'rgba(54, 162, 235, 1)',
               backgroundColor: 'rgba(54, 162, 235, 0.2)',
               fill: true
             }
           ]
         },
-		plugins: [ChartDataSource],
         options: {
           scales: {
             x: {
@@ -67,11 +68,6 @@ permalink: /dataloggers/
               }
             }
           }
-        }
-        plugins: {
-            datasource: {
-                url: 'datos.csv'
-            }
         }
       });
     }
