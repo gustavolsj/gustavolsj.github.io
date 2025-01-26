@@ -16,11 +16,9 @@ permalink: /dataloggers/
 
   <script>
 
-    async function renderChart() {
-      const { labels, temperaturas, humedades } = await fetchData();
 
-      const ctx = document.getElementById('myChart').getContext('2d');
-      const myChart = new Chart(ctx, {
+      var ctx = document.getElementById('myChart').getContext('2d');
+      var  myChart = new Chart(ctx, {
         type: 'line',
         data: {
           labels: labels,
@@ -40,6 +38,7 @@ permalink: /dataloggers/
           ]
         },
 		plugins: [ChartDataSource],
+
         options: {
           scales: {
             x: {
@@ -58,13 +57,15 @@ permalink: /dataloggers/
             }
           }
         }
-        plugins: {
-            datasource: {
-                url: 'datos.csv'
-            }
+
+    plugins: {
+          datasource: {
+              url: 'datos.csv'
+          }
         }
+
       });
-    }
+    
 
     renderChart();
   </script>
