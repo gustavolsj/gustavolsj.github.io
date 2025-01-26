@@ -15,13 +15,14 @@ permalink: /dataloggers/
 			-webkit-user-select: none;
 			-ms-user-select: none;
 		}
-
-    	.chart {
-    		<!-- margin: auto; -->
+    	.myChart {
     		margin-left:-400px
     		width: 155%;
     	}
-
+    	.chart {
+    		margin: auto;
+    		width: 100%;
+    	}
     	.text-center {
     		text-align: center;
     	}
