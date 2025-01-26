@@ -17,7 +17,7 @@ permalink: /dataloggers/
 		}
 
     	.chart {
-    		margin: auto;
+    		<!-- margin: auto; -->
     		margin-left:-400px
     		width: 155%;
     	}
