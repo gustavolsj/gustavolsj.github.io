@@ -21,7 +21,6 @@ permalink: /dataloggers/
       var  myChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: labels,
           datasets: [
             {
               label: 'Temperatura',
