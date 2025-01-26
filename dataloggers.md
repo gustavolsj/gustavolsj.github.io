@@ -15,16 +15,6 @@ permalink: /dataloggers/
   <canvas id="myChart" width="400" height="200"></canvas>
 
   <script>
-<!--     async function fetchData() {
-      const response = await fetch('http://gusapps.zapto.org:8080/chart.php');
-      const data = await response.json();
-
-      const labels = data.map(row => row.fecha_hora);
-      const temperaturas = data.map(row => row.temperatura);
-      const humedades = data.map(row => row.humedad);
-
-      return { labels, temperaturas, humedades };
-    } -->
 
     async function renderChart() {
       const { labels, temperaturas, humedades } = await fetchData();
