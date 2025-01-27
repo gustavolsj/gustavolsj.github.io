@@ -41,14 +41,14 @@
 			data: {
 				datasets: [{
 					type: 'line',
-					yAxisID: 'temperature',
+					yAxisID: 'temperatura',
 					backgroundColor: 'transparent',
 					borderColor: chartColors.red,
 					pointBackgroundColor: chartColors.red,
 					tension: 0,
 					fill: false
 				}, {
-					yAxisID: 'precipitation',
+					yAxisID: 'humedad',
 					backgroundColor: color(chartColors.blue).alpha(0.5).rgbString(),
 					borderColor: 'transparent'
 				}]
@@ -57,33 +57,33 @@
 			options: {
 				title: {
 					display: true,
-					text: 'CSV data source (index) sample'
+					text: 'Datalogger SHT31: temperatura y humedad relativa'
 				},
 				scales: {
 					xAxes: [{
 						scaleLabel: {
 							display: true,
-							labelString: 'Month'
+							labelString: 'Fecha'
 						}
 					}],
 					yAxes: [{
-						id: 'temperature',
+						id: 'temperatura',
 						gridLines: {
 							drawOnChartArea: false
 						},
 						scaleLabel: {
 							display: true,
-							labelString: 'Temperature (°C)'
+							labelString: 'Temperatura (°C)'
 						}
 					}, {
-						id: 'precipitation',
+						id: 'humedad',
 						position: 'right',
 						gridLines: {
 							drawOnChartArea: false
 						},
 						scaleLabel: {
 							display: true,
-							labelString: 'Precipitation (mm)'
+							labelString: 'Humedad (%)'
 						}
 					}]
 				},

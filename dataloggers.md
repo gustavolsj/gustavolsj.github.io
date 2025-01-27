@@ -34,81 +34,81 @@ permalink: /dataloggers/
 		<canvas id="myChart"></canvas>
 	</div>
 
-    <script>
-    	var chartColors = {
-    		red: 'rgb(255, 99, 132)',
-    		blue: 'rgb(54, 162, 235)'
-    	};
+   <script>
+		var chartColors = {
+			red: 'rgb(255, 99, 132)',
+			blue: 'rgb(54, 162, 235)'
+		};
 
-    	var color = Chart.helpers.color;
-    	var config = {
-    		type: 'line',
-    		data: {
-    			datasets: [{
-    				type: 'line',
-    				yAxisID: 'temperature',
-    				backgroundColor: 'transparent',
-    				borderColor: chartColors.red,
-    				pointBackgroundColor: chartColors.red,
-    				tension: 0,
-    				fill: false
-    			}, {
-    				yAxisID: 'precipitation',
-    				backgroundColor: color(chartColors.blue).alpha(0.5).rgbString(),
-    				borderColor: 'transparent'
-    			}]
-    		},
-    		plugins: [ChartDataSource],
-    		options: {
-    			title: {
-    				display: true,
-    				text: 'CSV data source (index) sample'
-    			},
-    			scales: {
-    				xAxes: [{
-    					scaleLabel: {
-    						display: true,
-    						labelString: 'Month'
-    					}
-    				}],
-    				yAxes: [{
-    					id: 'temperature',
-    					gridLines: {
-    						drawOnChartArea: false
-    					},
-    					scaleLabel: {
-    						display: true,
-    						labelString: 'Temperature (°C)'
-    					}
-    				}, {
-    					id: 'precipitation',
-    					position: 'right',
-    					gridLines: {
-    						drawOnChartArea: false
-    					},
-    					scaleLabel: {
-    						display: true,
-    						labelString: 'Precipitation (mm)'
-    					}
-    				}]
-    			},
-    			plugins: {
-    				datasource: {
-    					type: 'csv',
-    					url: '../datos.csv',
-    					delimiter: ',',
-    					rowMapping: 'index',
-    					datasetLabels: true,
-    					indexLabels: true
-    				}
-    			}
-    		}
-    	};
+		var color = Chart.helpers.color;
+		var config = {
+			type: 'line',
+			data: {
+				datasets: [{
+					type: 'line',
+					yAxisID: 'temperatura',
+					backgroundColor: 'transparent',
+					borderColor: chartColors.red,
+					pointBackgroundColor: chartColors.red,
+					tension: 0,
+					fill: false
+				}, {
+					yAxisID: 'humedad',
+					backgroundColor: color(chartColors.blue).alpha(0.5).rgbString(),
+					borderColor: 'transparent'
+				}]
+			},
+			plugins: [ChartDataSource],
+			options: {
+				title: {
+					display: true,
+					text: 'Datalogger SHT31: temperatura y humedad relativa'
+				},
+				scales: {
+					xAxes: [{
+						scaleLabel: {
+							display: true,
+							labelString: 'Fecha'
+						}
+					}],
+					yAxes: [{
+						id: 'temperatura',
+						gridLines: {
+							drawOnChartArea: false
+						},
+						scaleLabel: {
+							display: true,
+							labelString: 'Temperatura (°C)'
+						}
+					}, {
+						id: 'humedad',
+						position: 'right',
+						gridLines: {
+							drawOnChartArea: false
+						},
+						scaleLabel: {
+							display: true,
+							labelString: 'Humedad (%)'
+						}
+					}]
+				},
+				plugins: {
+					datasource: {
+						type: 'csv',
+						url: 'datos.csv',
+						delimiter: ',',
+						rowMapping: 'index',
+						datasetLabels: true,
+						indexLabels: true
+					}
+				}
+			}
+		};
 
-    	window.onload = function () {
-    		var ctx = document.getElementById('myChart').getContext('2d');
-    		window.myChart = new Chart(ctx, config);
-    	};
-    </script>
+		window.onload = function () {
+			var ctx = document.getElementById('myChart').getContext('2d');
+			window.myChart = new Chart(ctx, config);
+		};
+	</script>
 
 </body>
