@@ -95,7 +95,7 @@ permalink: /dataloggers/
 				plugins: {
 					datasource: {
 						type: 'csv',
-						url: 'datos.csv',
+						url: '../datos.csv',
 						delimiter: ',',
 						rowMapping: 'index',
 						datasetLabels: true,
