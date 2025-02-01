@@ -16,7 +16,7 @@ permalink: /dataloggers/
 			-ms-user-select: none;
 		}
     	.myChart {
-    		margin-left:-400px
+    		
     	}
     	.chart {
     		margin-left: 0px;
@@ -31,7 +31,7 @@ permalink: /dataloggers/
 
 <body>
 	<div class="chart">
-		<canvas id="myChart"></canvas>
+		<canvas id="myChart" style="margin-left:-400px"></canvas>
 	</div>
 
    <script>
