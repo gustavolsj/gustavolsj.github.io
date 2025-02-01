@@ -21,6 +21,7 @@ permalink: /dataloggers/
     	.chart {
     		margin-left: 0px;
 			width: 155%;
+			height:	155%
     	}
     	.text-center {
     		text-align: center;
@@ -31,7 +32,7 @@ permalink: /dataloggers/
 
 <body>
 	<div class="chart">
-		<canvas id="myChart" style="margin-left:-400px"></canvas>
+		<canvas id="myChart" style="margin-left:-200px"></canvas>
 	</div>
 
    <script>
