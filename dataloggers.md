@@ -60,13 +60,13 @@ permalink: /dataloggers/
 	<table border="1">
 		<thead>
 		<tr>
-			<th>Última Fecha</th>
-			<th>Temperatura Mínima</th>
-			<th>Temperatura Máxima</th>
-			<th>Temperatura Promedio</th>
-			<th>Humedad Mínima</th>
-			<th>Humedad Máxima</th>
-			<th>Humedad Promedio</th>
+			<th>Último registro</th>
+			<th>T mín</th>
+			<th>T máx</th>
+			<th>T promedio</th>
+			<th>HR mín</th>
+			<th>HR máx</th>
+			<th>HR promedio</th>
 		</tr>
 		</thead>
 		<tbody id="tabla-resumen"></tbody>
