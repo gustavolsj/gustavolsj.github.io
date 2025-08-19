@@ -25,7 +25,30 @@ permalink: /dataloggers/
     	}
     	.text-center {
     		text-align: center;
-    	}
+		}
+		
+    	    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border-bottom: 1px solid #999;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      font-weight: bold;
+      border-left: none;
+      border-right: none;
+    }
+
+    td {
+      border-left: none;
+      border-right: none;
+    }
+
     </style>
 
 </head>
