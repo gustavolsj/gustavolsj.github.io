@@ -57,22 +57,6 @@ permalink: /dataloggers/
 </head>
 
 <body>
-	<div id="tabla">
-		<table border="1">
-			<thead>
-			<tr>
-				<th>Último registro</th>
-				<th>T mín</th>
-				<th>T máx</th>
-				<th>T promedio</th>
-				<th>HR mín</th>
-				<th>HR máx</th>
-				<th>HR promedio</th>
-			</tr>
-			</thead>
-			<tbody id="tabla-resumen"></tbody>
-		</table>
-	</div>
 
   <script>
     fetch('datos.csv')
@@ -123,7 +107,24 @@ permalink: /dataloggers/
   </script>
 
     <div class="chart">
-    	<canvas id="myChart" style="margin-left:-200px"></canvas>
+    	<canvas id="myChart" style="margin-left:-200px">
+    		<div id="tabla">
+    		<table border="1">
+    			<thead>
+    			<tr>
+    				<th>Último registro</th>
+    				<th>T mín</th>
+    				<th>T máx</th>
+    				<th>T promedio</th>
+    				<th>HR mín</th>
+    				<th>HR máx</th>
+    				<th>HR promedio</th>
+    			</tr>
+    			</thead>
+    			<tbody id="tabla-resumen"></tbody>
+    		</table>
+    	</div>
+    </canvas>
     </div>
 
    <script>
