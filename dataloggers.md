@@ -27,13 +27,13 @@ permalink: /dataloggers/
     		text-align: center;
 		}
 		
-    	    table {
+  table {
       border-collapse: collapse;
       width: 100%;
     }
 
     th, td {
-      border-bottom: 1px solid #999;
+      border-bottom: 1px solid;
       padding: 8px;
       text-align: center;
     }
@@ -42,12 +42,14 @@ permalink: /dataloggers/
       font-weight: bold;
       border-left: none;
       border-right: none;
+      border-top: none;
     }
 
     td {
       border-left: none;
       border-right: none;
     }
+
 
     </style>
 
