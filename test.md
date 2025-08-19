@@ -34,22 +34,25 @@ permalink: /test/
 </head>
 
 <body>
-	<div id="tabla">
-		<table border="1">
-			<thead>
-			<tr>
-				<th>Fecha</th>
-				<th>T mín</th>
-				<th>T máx</th>
-				<th>T prom</th>
-				<th>HR mín</th>
-				<th>HR máx</th>
-				<th>HR prom</th>
-			</tr>
-			</thead>
-			<tbody id="tabla-resumen"></tbody>
-		</table>
-	</div>
+
+ <iframe src="https://gustavolsj.github.io/tabla.html" name="ifrm" width="1000" height="550" frameborder="0"> </iframe>
+
+    <div id="tabla">
+    	<table border="1">
+    		<thead>
+    		<tr>
+    			<th>Fecha</th>
+    			<th>T mín</th>
+    			<th>T máx</th>
+    			<th>T prom</th>
+    			<th>HR mín</th>
+    			<th>HR máx</th>
+    			<th>HR prom</th>
+    		</tr>
+    		</thead>
+    		<tbody id="tabla-resumen"></tbody>
+    	</table>
+    </div>
 
   <script>
     fetch('datos.csv')
