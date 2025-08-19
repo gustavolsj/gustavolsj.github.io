@@ -7,36 +7,30 @@ permalink: /test/
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>chartjs-plugin-datasource sample</title>
-	
 	<style>
-	
-		.tabla{
+			.tabla{
 			width: 155%;
 		}
 	    table {
      	 border-collapse: collapse;
       	width: 100%;
     	}
-
     	th, td {
     	border-bottom: 1px solid;
     	padding: 8px;
     	text-align: center;
     	}
-
     	th {
     	font-weight: bold;
     	border-left: none;
     	border-right: none;
     	border-top: none;
     	}
-
     	td {
     	border-left: none;
     	border-right: none;
     	}
-    </style>
-
+  </style>
 </head>
 
 <body>
@@ -104,5 +98,4 @@ permalink: /test/
       })
       .catch(error => console.error('Error al cargar datos.csv:', error));
   </script>
-
 </body>

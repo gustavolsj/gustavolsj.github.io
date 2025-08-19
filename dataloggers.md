@@ -16,7 +16,6 @@ permalink: /dataloggers/
 			-ms-user-select: none;
 		}
     	.myChart {
-    		
     	}
     	.chart {
     		margin-left: 0px;
@@ -26,7 +25,6 @@ permalink: /dataloggers/
     	.text-center {
     		text-align: center;
 		}
-		
 		.tabla{
 			width: 155%;
 		}
@@ -34,26 +32,22 @@ permalink: /dataloggers/
      	 border-collapse: collapse;
       	width: 100%;
     	}
-
     	th, td {
     	border-bottom: 1px solid;
     	padding: 8px;
     	text-align: center;
     	}
-
     	th {
     	font-weight: bold;
     	border-left: none;
     	border-right: none;
     	border-top: none;
     	}
-
     	td {
     	border-left: none;
     	border-right: none;
     	}
     </style>
-
 </head>
 
 <body>
