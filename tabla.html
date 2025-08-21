@@ -31,33 +31,41 @@
 
 </head>
 <body>
-  <h2>Resumen desde datos.csv</h2>
   <table border="1">
-    <thead>
-      <tr>
-        <th>Último registro</th>
-        <th>T mín</th>
-        <th>T máx</th>
-        <th>T promedio</th>
-        <th>HR mín</th>
-        <th>HR máx</th>
-        <th>HR promedio</th>
-      </tr>
-    </thead>
-    <tbody id="tabla-resumen"></tbody>
-  </table>
-  
-    <table border="1">
     <thead>
       <tr>
         <td> # de mediciones:<td/>
 		<td id="totalLineas"> <td/>
-		        <td> ultima medición: <td/>
+		        <td> Última medición: <td/>
 		<td id="ultimaFecha"> <td/>
       </tr>
+	  
     </thead>
     <tbody>
-	
+	<tr>
+        <td>T mín</th>
+        <td>T máx</th>
+        <td>T promedio</th>
+        <td>HR mín</th>
+        <td>HR máx</th>
+        <td>HR promedio</th>
+      </tr>
+          <tr>
+            <td>${tempMin} °C</td>
+            <td>${tempMax} °C</td>
+            <td>${tempProm} °C</td>
+            <td>${humMin} %</td>
+            <td>${humMax} %</td>
+            <td>${humProm} %</td>
+          </tr>
+	  </tbody>
+  </table>
+  
+    <table border="1">
+    <thead>
+      
+    </thead>
+    <tbody>
 	</tbody>
   </table>
   
@@ -98,22 +106,14 @@
         const humMax = Math.max(...humedades);
         const humProm = (humedades.reduce((a, b) => a + b, 0) / humedades.length).toFixed(2);
 
-        const fila = `
-          <tr>
-            <td>${ultimaFecha}</td>
-            <td>${tempMin} °C</td>
-            <td>${tempMax} °C</td>
-            <td>${tempProm} °C</td>
-            <td>${humMin} %</td>
-            <td>${humMax} %</td>
-            <td>${humProm} %</td>
-          </tr>
-        `;
-
-        document.getElementById('tabla-resumen').innerHTML = fila;
 		document.getElementById("totalLineas").innerHTML = totalLineas;
 		document.getElementById("ultimaFecha").innerHTML = ultimaFecha;
-
+		document.getElementById("ultimaFecha").innerHTML = ultimaFecha;
+		document.getElementById("ultimaFecha").innerHTML = ultimaFecha;
+		document.getElementById("ultimaFecha").innerHTML = ultimaFecha;
+		document.getElementById("ultimaFecha").innerHTML = ultimaFecha;
+		document.getElementById("ultimaFecha").innerHTML = ultimaFecha;
+		document.getElementById("ultimaFecha").innerHTML = ultimaFecha;
       })
       .catch(error => console.error('Error al cargar datos.csv:', error));
   </script>
