@@ -51,22 +51,14 @@
         <td>HR promedio</th>
       </tr>
           <tr>
-            <td>${tempMin} °C</td>
-            <td>${tempMax} °C</td>
-            <td>${tempProm} °C</td>
-            <td>${humMin} %</td>
-            <td>${humMax} %</td>
-            <td>${humProm} %</td>
+            <td id="tempMin"> °C</td>
+            <td id="tempMax"> °C</td>
+            <td id="tempProm"> °C</td>
+            <td id= "humMin"> %</td>
+            <td id="humMax"> %</td>
+            <td id="humProm"> %</td>
           </tr>
 	  </tbody>
-  </table>
-  
-    <table border="1">
-    <thead>
-      
-    </thead>
-    <tbody>
-	</tbody>
   </table>
   
   <script>
@@ -108,12 +100,12 @@
 
 		document.getElementById("totalLineas").innerHTML = totalLineas;
 		document.getElementById("ultimaFecha").innerHTML = ultimaFecha;
-		document.getElementById("ultimaFecha").innerHTML = ultimaFecha;
-		document.getElementById("ultimaFecha").innerHTML = ultimaFecha;
-		document.getElementById("ultimaFecha").innerHTML = ultimaFecha;
-		document.getElementById("ultimaFecha").innerHTML = ultimaFecha;
-		document.getElementById("ultimaFecha").innerHTML = ultimaFecha;
-		document.getElementById("ultimaFecha").innerHTML = ultimaFecha;
+		document.getElementById("tempMin").innerHTML = tempMin;
+		document.getElementById("tempMax").innerHTML = tempMax;
+		document.getElementById("tempProm").innerHTML = tempProm;
+		document.getElementById("humMin").innerHTML = humMin;
+		document.getElementById("humMax").innerHTML = humMax;
+		document.getElementById("humProm").innerHTML = humProm;
       })
       .catch(error => console.error('Error al cargar datos.csv:', error));
   </script>
