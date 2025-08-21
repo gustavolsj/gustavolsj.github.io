@@ -30,7 +30,7 @@ permalink: /dataloggers/
 
 <body>
 	<div>
- 		<iframe src="https://gustavolsj.github.io/tabla.html" name="ifrm" width="900" height="250" frameborder="0"> </iframe>
+ 		<iframe src="https://gustavolsj.github.io/tabla.html" name="ifrm" width="900" height="150" frameborder="0"> </iframe>
 	</div>
 
     <div class="chart">
