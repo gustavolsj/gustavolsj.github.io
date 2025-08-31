@@ -33,6 +33,14 @@ permalink: /test/
  		<iframe src="https://gustavolsj.github.io/tabla.html" name="ifrm" width="900" height="200" frameborder="0"> </iframe>
 	</div>
 
+<div id="botones">
+  <button onclick="filtrarRango('dia')">1 Día</button>
+  <button onclick="filtrarRango('semana')">1 Semana</button>
+  <button onclick="filtrarRango('mes')">1 Mes</button>
+  <button onclick="filtrarRango('anio')">1 Año</button>
+</div>
+<canvas id="myChart"></canvas>
+
     <div class="chart">
     	<canvas id="myChart" style="margin-left:-200px"></canvas>
     </div>
@@ -108,9 +116,52 @@ permalink: /test/
 			}
 		};
 
+
+        function filtrarRango(rango) {
+            const diasPorRango = {
+                dia: 1,
+                semana: 7,
+                mes: 30,
+                anio: 365
+            };
+
+            const dias = diasPorRango[rango];
+            const hoy = new Date();
+
+            // Filtrar los datos del CSV ya cargado
+            const datasets = window.myChart.data.datasets;
+            const labels = window.myChart.data.labels;
+
+            const fechaLimite = new Date(hoy);
+            fechaLimite.setDate(hoy.getDate() - dias);
+
+            // Filtrar etiquetas y datos
+            const nuevasLabels = [];
+            const nuevosDatasets = datasets.map(ds => ({
+                ...ds,
+                data: []
+            }));
+
+            labels.forEach((label, i) => {
+                const fecha = new Date(label);
+                if (fecha >= fechaLimite) {
+                    nuevasLabels.push(label);
+                    nuevosDatasets.forEach((ds, idx) => {
+                        ds.data.push(datasets[idx].data[i]);
+                    });
+                }
+            });
+
+            window.myChart.data.labels = nuevasLabels;
+            window.myChart.data.datasets = nuevosDatasets;
+            window.myChart.update();
+        }
+
 		window.onload = function () {
 			var ctx = document.getElementById('myChart').getContext('2d');
 			window.myChart = new Chart(ctx, config);
+            
+            filtrarRango('semana');
 		};
 	</script>
 
