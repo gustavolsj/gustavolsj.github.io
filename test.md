@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Dataloggers y otros proyectos maker
-permalink: /dataloggers/
+permalink: /test/
 ---
 
 <head>
