@@ -104,7 +104,7 @@ permalink: /test/
     datasetLabels: true,
     indexLabels: true,
     filter: function(row, index, rows) {
-      return index >= rows.length - 5000;
+      return index >= rows.length - 1500;
     }
   }
 }
