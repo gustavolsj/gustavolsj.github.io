@@ -96,17 +96,14 @@ permalink: /test/
 					}]
 				},
 				plugins: {
-  datasource: {
-    type: 'csv',
-    url: 'https://gustavolsj.github.io/datos.csv',
-    delimiter: ',',
-    rowMapping: 'index',
-    datasetLabels: true,
-    indexLabels: true,
-    filter: function(row, index, rows) {
-      return index >= rows.length - 1500;
-    }
+datasource: {
+  type: 'json',
+  url: 'https://gustavolsj.github.io/datos.json',
+  filter: function(row, index, rows) {
+    return index >= rows.length - 1500;
   }
+}
+
 }
 			}
 		};
