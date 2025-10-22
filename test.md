@@ -46,14 +46,7 @@ permalink: /test/
 </head>
 
 <body>
-  <div class="text-center">
-    <!-- Reemplazado: el iframe fue sustituido por la tabla HTML integrada más abajo -->
-  </div>
-
-  <!-- Tabla de resumen (integrada en la página en lugar del iframe) -->
   <div class="container">
-    <h2>Resumen de datos climáticos</h2>
-
     <table class="table table-sm" border="1">
       <thead class="thead-light">
         <tr>
