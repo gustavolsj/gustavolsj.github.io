@@ -33,12 +33,6 @@ permalink: /test/
       text-align: center;
     }
 
-    iframe {
-      display: block;
-      margin: 0 auto 20px auto;
-      border: none;
-    }
-
     /* Estilos para la tabla de resumen integrada */
     table { border-collapse: collapse; width: auto; margin-bottom: 1rem; }
     th, td { border-bottom: 1px solid; padding: 8px; text-align: center; }
@@ -61,7 +55,7 @@ permalink: /test/
     <h2>Resumen de datos climáticos</h2>
 
     <table class="table table-sm" border="1">
-      <thead class="thead-dark">
+      <thead class="thead-light">
         <tr>
           <th># de mediciones</th>
           <th>Última medición</th>
