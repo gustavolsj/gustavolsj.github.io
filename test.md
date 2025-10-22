@@ -98,7 +98,7 @@ permalink: /test/
 				plugins: {
   datasource: {
     type: 'csv',
-    url: '../datos.csv',
+    url: 'https://gustavolsj.github.io/datos.csv',
     delimiter: ',',
     rowMapping: 'index',
     datasetLabels: true,
