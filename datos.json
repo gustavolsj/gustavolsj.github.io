@@ -48,5 +48,10 @@
         "fecha_hora": "22\/10\/25\/ 15:23",
         "temperatura": "23.95",
         "humedad": "62.81"
+    },
+    {
+        "fecha_hora": "22\/10\/25\/ 15:53",
+        "temperatura": "24.15",
+        "humedad": "62.94"
     }
 ]
