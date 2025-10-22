@@ -1,0 +1,27 @@
+[
+    {
+        "fecha_hora": "22\/10\/25\/ 11:11",
+        "temperatura": "22.00",
+        "humedad": "22.00"
+    },
+    {
+        "fecha_hora": "22\/10\/25\/ 11:23",
+        "temperatura": "22.54",
+        "humedad": "66.72"
+    },
+    {
+        "fecha_hora": "22\/10\/25\/ 11:53",
+        "temperatura": "22.52",
+        "humedad": "67.01"
+    },
+    {
+        "fecha_hora": "22\/10\/25\/ 12:23",
+        "temperatura": "22.46",
+        "humedad": "67.48"
+    },
+    {
+        "fecha_hora": "22\/10\/25\/ 12:53",
+        "temperatura": "22.54",
+        "humedad": "66.90"
+    }
+]
