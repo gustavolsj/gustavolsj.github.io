@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Dataloggers y otros proyectos maker
-permalink: /test/
+permalink: /dataloggers/
 ---
 
 <!-- ✅ Modernizado para Chart.js v4 y carga JSON vía fetch -->
