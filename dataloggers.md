@@ -310,7 +310,8 @@ async function calcularTWPI() {
 		const twpiIPI = total && acumuladoIPI ? Math.round(total / acumuladoIPI) : '—';
 		const twpiTP = total && acumuladoTP ? Math.round(total / acumuladoTP) : '—';
 
-		document.getElementById("twpiResumen").textContent = `${twpiIPI} / ${twpiTP} años`;
+		// document.getElementById("twpiResumen").textContent = `${twpiIPI} / ${twpiTP} años`;
+		document.getElementById("twpiResumen").textContent = `${twpiIPI} años`;
 	  } catch (err) {
 		console.error("Error al calcular TWPI:", err);
 		document.getElementById("twpiResumen").textContent = 'Error';
