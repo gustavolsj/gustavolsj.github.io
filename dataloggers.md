@@ -52,7 +52,7 @@ permalink: /dataloggers/
     <tr>
       <th># de mediciones</th>
       <th>Última medición</th>
-      <th>TWPI (IPI / TP)</th>
+      <th>TWPI</th>
     </tr>
   </thead>
   <tbody>
