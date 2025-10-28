@@ -265,7 +265,23 @@ permalink: /dataloggers/
       }
     }
 	
-	async function calcularTWPI() {
+	function calcPI(tCelsius, rh, metodo) {
+	  const tKelvin = parseFloat(tCelsius) + 273.15;
+	  rh = parseFloat(rh);
+	  const R = 8.314;
+	  let years;
+
+	  if (metodo === 'IPI') {
+		years = Math.exp((95220 - 134.9 * rh) / (R * tKelvin) + (0.0284 * rh) - 28.023) / 360;
+	  } else if (metodo === 'TP') {
+		years = 1.0 / (rh * 5.9e12 * Math.exp(-90300 / (R * tKelvin)));
+	  }
+
+	  const rate = 1.0 / years;
+	  return { rate, years };
+	}
+
+async function calcularTWPI() {
 	  try {
 		const resp = await fetch('https://gustavolsj.github.io/datos.json');
 		const json = await resp.json();
