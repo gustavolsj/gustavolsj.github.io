@@ -47,20 +47,22 @@ permalink: /dataloggers/
 
 <body>
   <div class="container">
-    <table class="table table-sm" border="1">
-      <thead class="thead-light">
-        <tr>
-          <th># de mediciones</th>
-          <th>Última medición</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td id="totalLineas">—</td>
-          <td id="ultimaFecha">—</td>
-        </tr>
-      </tbody>
-    </table>
+<table class="table table-sm" border="1">
+  <thead class="thead-light">
+    <tr>
+      <th># de mediciones</th>
+      <th>Última medición</th>
+      <th>TWPI (IPI / TP)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="totalLineas">—</td>
+      <td id="ultimaFecha">—</td>
+      <td id="twpiResumen">—</td>
+    </tr>
+  </tbody>
+</table>
 
     <table class="table table-sm" border="1">
       <thead>
@@ -262,11 +264,49 @@ permalink: /dataloggers/
         if (uf) uf.textContent = 'Error';
       }
     }
+	
+	async function calcularTWPI() {
+	  try {
+		const resp = await fetch('https://gustavolsj.github.io/datos.json');
+		const json = await resp.json();
+		const registros = Array.isArray(json) ? json : (Array.isArray(json.data) ? json.data : []);
+
+		let acumuladoIPI = 0;
+		let acumuladoTP = 0;
+		let total = 0;
+
+		registros.forEach(r => {
+		  const tempRaw = r['temperatura'] ?? r['temp'] ?? r['temperature'];
+		  const humRaw = r['humedad'] ?? r['hum'] ?? r['humidity'];
+
+		  const t = parseNumber(tempRaw);
+		  const rh = parseNumber(humRaw);
+
+		  if (!Number.isNaN(t) && !Number.isNaN(rh)) {
+			const ipi = calcPI(t, rh, 'IPI');
+			const tp = calcPI(t, rh, 'TP');
+			acumuladoIPI += ipi.rate;
+			acumuladoTP += tp.rate;
+			total++;
+		  }
+		});
+
+		const twpiIPI = total && acumuladoIPI ? Math.round(total / acumuladoIPI) : '—';
+		const twpiTP = total && acumuladoTP ? Math.round(total / acumuladoTP) : '—';
+
+		document.getElementById("twpiResumen").textContent = `${twpiIPI} / ${twpiTP} años`;
+	  } catch (err) {
+		console.error("Error al calcular TWPI:", err);
+		document.getElementById("twpiResumen").textContent = 'Error';
+	  }
+	}
 
     // Ejecutar cuando cargue la página: correr ambos cargadores
     window.onload = function() {
       cargarDatos();
       cargarTabla();
+      calcularTWPI();
+
     };
   </script>
 </body>
