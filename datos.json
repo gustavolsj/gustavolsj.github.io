@@ -1958,5 +1958,10 @@
         "fecha_hora": "30\/10\/25\/ 14:53",
         "temperatura": "23.88",
         "humedad": "53.29"
+    },
+    {
+        "fecha_hora": "30\/10\/25\/ 15:23",
+        "temperatura": "24.50",
+        "humedad": "54.01"
     }
 ]
