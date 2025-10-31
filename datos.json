@@ -1993,5 +1993,10 @@
         "fecha_hora": "30\/10\/25\/ 18:23",
         "temperatura": "24.43",
         "humedad": "53.65"
+    },
+    {
+        "fecha_hora": "30\/10\/25\/ 18:53",
+        "temperatura": "24.01",
+        "humedad": "54.22"
     }
 ]
