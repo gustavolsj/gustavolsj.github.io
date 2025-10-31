@@ -2013,5 +2013,10 @@
         "fecha_hora": "30\/10\/25\/ 20:23",
         "temperatura": "24.25",
         "humedad": "56.59"
+    },
+    {
+        "fecha_hora": "30\/10\/25\/ 20:53",
+        "temperatura": "24.02",
+        "humedad": "56.73"
     }
 ]
