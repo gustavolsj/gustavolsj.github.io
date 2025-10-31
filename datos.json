@@ -2058,5 +2058,10 @@
         "fecha_hora": "31\/10\/25\/ 00:53",
         "temperatura": "22.91",
         "humedad": "58.14"
+    },
+    {
+        "fecha_hora": "31\/10\/25\/ 01:23",
+        "temperatura": "22.74",
+        "humedad": "58.33"
     }
 ]
