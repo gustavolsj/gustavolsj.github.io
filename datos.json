@@ -2433,5 +2433,10 @@
         "fecha_hora": "01\/11\/25\/ 14:23",
         "temperatura": "24.35",
         "humedad": "54.78"
+    },
+    {
+        "fecha_hora": "01\/11\/25\/ 14:53",
+        "temperatura": "24.33",
+        "humedad": "53.76"
     }
 ]
