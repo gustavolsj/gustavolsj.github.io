@@ -318,10 +318,10 @@ permalink: /dataloggers/
 
             if (diffInMinutes > 65) {
               console.log('Result: OFFLINE (difference > 65 minutes)');
-              statusImage = '<img src="/images/cloud-offline.png" alt="Offline" style="width: 24px; height: 24px; margin-left: 8px;">';
+              statusImage = '<img src="/images/cloud-offline.png" alt="Offline" style="width: 44px; height: 44px; margin-left: 8px;">';
             } else {
               console.log('Result: ONLINE (difference ≤ 65 minutes)');
-              statusImage = '<img src="/images/cloud-online.png" alt="Online" style="width: 24px; height: 24px; margin-left: 8px;">';
+              statusImage = '<img src="/images/cloud-online.png" alt="Online" style="width: 44px; height: 44px; margin-left: 8px;">';
             }
             console.log('=============================================');
           } catch (dateError) {
