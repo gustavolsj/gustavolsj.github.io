@@ -113,7 +113,7 @@ permalink: /dataloggers/
       src="/images/datalogger_wifi.jpg"
       alt="Datalogger de conservación basado en SHT31"
       class="img-fluid"
-      style="max-height: 320px; object-fit: contain;"
+      style="max-height: 550px; object-fit: contain;"
     >
   </div>
 </div>
@@ -265,16 +265,33 @@ permalink: /dataloggers/
             // Parse the last date (adjust format if needed - assuming ISO or parseable format)
             const lastDate = new Date(ultimaFecha);
             const currentDate = new Date();
-            const diffInMinutes = (currentDate - lastDate) / (1000 * 60); // difference in minutes
+            const diffInMilliseconds = currentDate - lastDate;
+            const diffInMinutes = diffInMilliseconds / (1000 * 60); // difference in minutes
+
+            // 🔍 Debug logging
+            console.log('=== DATALOGGER STATUS DEBUG ===');
+            console.log('Last date string:', ultimaFecha);
+            console.log('Last date parsed:', lastDate);
+            console.log('Current date:', currentDate);
+            console.log('Difference in milliseconds:', diffInMilliseconds);
+            console.log('Formula: (currentDate - lastDate) / (1000 * 60)');
+            console.log('Difference in minutes:', diffInMinutes.toFixed(2));
+            console.log('Threshold: 65 minutes');
+            console.log('Condition: diffInMinutes > 65 ?', diffInMinutes > 65);
 
             if (diffInMinutes > 65) {
+              console.log('Result: OFFLINE (difference > 65 minutes)');
               statusImage = '<img src="/images/cloud-offline.png" alt="Offline" style="width: 24px; height: 24px; margin-left: 8px;">';
             } else {
+              console.log('Result: ONLINE (difference ≤ 65 minutes)');
               statusImage = '<img src="/images/cloud-online.png" alt="Online" style="width: 24px; height: 24px; margin-left: 8px;">';
             }
+            console.log('===============================');
           } catch (dateError) {
             console.error('Error parsing date:', dateError);
           }
+        } else {
+          console.log('No valid last date found (ultimaFecha = "—")');
         }
 
         function safeMin(arr) { return arr.length ? Math.min(...arr) : null; }
