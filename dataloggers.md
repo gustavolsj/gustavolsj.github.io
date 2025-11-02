@@ -261,9 +261,11 @@ permalink: /dataloggers/
         // Helpers: parse dd/mm/yyyy[ HH:mm[:ss]] and format "now" as dd/mm/yyyy HH:mm:ss
         function parseDMY(s) {
           if (!s) return null;
-          const m = String(s).trim().match(/^(\d{1,2})[\/-](\d{1,2})[\/-](\d{2,4})(?:[ T](\d{1,2}):(\d{2})(?::(\d{2}))?)?$/);
+          const cleaned = String(s).trim().replace(/\s+/g, ' ');
+          // accept an optional stray slash after the year: dd/mm/yyyy/ HH:mm
+          const m = cleaned.match(/^(\d{1,2})[\/-](\d{1,2})[\/-](\d{2,4})\/?(?:[ T](\d{1,2}):(\d{2})(?::(\d{2}))?)?$/);
           if (!m) {
-            const d = new Date(s);
+            const d = new Date(cleaned);
             return isNaN(d) ? null : d;
           }
           const day = parseInt(m[1], 10);
@@ -285,7 +287,12 @@ permalink: /dataloggers/
         let statusImage = '';
         if (ultimaFecha !== '—') {
           try {
-            const lastDate = parseDMY(ultimaFecha);               // keep last date as DMY
+            // normalize the last date string to remove a stray slash after the year
+            const lastDateStrClean = String(ultimaFecha).trim()
+              .replace(/\s+/g, ' ')
+              .replace(/^(\d{1,2}[\/-]\d{1,2}[\/-]\d{2,4})\/\s/, '$1 ');
+
+            const lastDate = parseDMY(lastDateStrClean);          // keep last date as DMY
             const currentDateStr = nowDMYString();                // adjust current date to DMY string
             const currentDate = parseDMY(currentDateStr);         // parse with same DMY rules
 
@@ -298,7 +305,8 @@ permalink: /dataloggers/
 
             // 🔍 Debug logging
             console.log('=== DATALOGGER STATUS DEBUG (DMY aligned) ===');
-            console.log('Last date string (DMY):', ultimaFecha);
+            console.log('Last date string (raw):', ultimaFecha);
+            console.log('Last date string (clean):', lastDateStrClean);
             console.log('Current date string (DMY adjusted):', currentDateStr);
             console.log('Last date parsed:', lastDate);
             console.log('Current date parsed:', currentDate);
