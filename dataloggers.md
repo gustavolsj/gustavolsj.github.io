@@ -86,11 +86,33 @@ permalink: /dataloggers/
         </tr>
       </tbody>
     </table>
+
   </div>
 
   <div class="chart-container">
     <canvas id="myChart"></canvas>
   </div>
+
+<div id="nuevo" class="row">
+  <div class="col-12 col-md-6">
+    <p>
+      Un datalogger es un aparato indispensable en la conservación de bienes culturales que mide, almacena y muestra los valores de algunos agentes de deterioro a lo largo del tiempo; los más comunes son la humedad relativa y la temperatura, aunque algunos dataloggers cuentan con sensores de radiación visible y ultravioleta, o de contaminantes gaseosos y partículas sólidas. Existen marcas y modelos de dataloggers especiales para la conservación de gran calidad, pero que no son accesibles a muchas instituciones en Latinoamérica debido a su alto costo.
+      <br><br>
+      Por eso me interesó construir mi propio datalogger usando componentes electrónicos y programación. El resultado es un dispositivo accesible, confiable y sostenible, cuyo desempeño se ubica al mismo nivel que los dataloggers comerciales, con un costo mucho menor (alrededor de $800 pesos mexicanos).
+      <br><br>
+      Para fabricar el tuyo puedes seguir esta <a href="https://github.com/gustavolsj/datalogger-conservacion" target="_blank" rel="noopener noreferrer">guía</a>.
+    </p>
+  </div>
+
+  <div class="col-12 col-md-6 text-center">
+    <img
+      src="https://raw.githubusercontent.com/gustavolsj/datalogger-conservacion/master/imagenes/datalogger_wifi.jpg"
+      alt="Datalogger de conservación basado en SHT31"
+      class="img-fluid"
+      style="max-height: 320px; object-fit: contain;"
+    >
+  </div>
+</div>
 
   <script>
     async function cargarDatos() {
