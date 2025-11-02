@@ -99,7 +99,7 @@ permalink: /dataloggers/
   <div class="col-12 col-md-6">
     <p>
       La grafica que ves arriba muestra en tiempo real los datos de temperatura y humedad relativa que mi datalogger está midiendo en este mismo momento, en la tabla superior se muestra tambien el estado del datalogger -si está en linea o no- así como un resumen de las estadísticas más relevantes, incluyendo el cálculo del <a href="https://www.padfield.org/tim/cfys/twpi/twpi_03.html">TWPI</a> un parametro que se expresa en años y que resume el desempeño de un espacio que es utilizado para la conservación de fotografías.
-      
+      <br><br>
       Un datalogger es un aparato indispensable en la conservación de bienes culturales que mide, almacena y muestra los valores de algunos agentes de deterioro a lo largo del tiempo; los más comunes son la humedad relativa y la temperatura, aunque algunos dataloggers cuentan con sensores de radiación visible y ultravioleta, o de contaminantes gaseosos y partículas sólidas. Existen marcas y modelos de dataloggers especiales para la conservación de gran calidad, pero que no son accesibles a muchas instituciones en Latinoamérica debido a su alto costo.
       <br><br>
       Por eso me interesó construir mi propio datalogger usando componentes electrónicos y programación. El resultado es un dispositivo accesible, confiable y sostenible, cuyo desempeño se ubica al mismo nivel que los dataloggers comerciales, con un costo mucho menor (alrededor de $800 pesos mexicanos).
@@ -258,21 +258,50 @@ permalink: /dataloggers/
         const fechasValidas = fechas.filter(f => f && f.length);
         const ultimaFecha = fechasValidas.length ? fechasValidas[fechasValidas.length - 1] : '—';
 
-        // 🔹 Calculate time difference and determine online/offline status
+        // Helpers: parse dd/mm/yyyy[ HH:mm[:ss]] and format "now" as dd/mm/yyyy HH:mm:ss
+        function parseDMY(s) {
+          if (!s) return null;
+          const m = String(s).trim().match(/^(\d{1,2})[\/-](\d{1,2})[\/-](\d{2,4})(?:[ T](\d{1,2}):(\d{2})(?::(\d{2}))?)?$/);
+          if (!m) {
+            const d = new Date(s);
+            return isNaN(d) ? null : d;
+          }
+          const day = parseInt(m[1], 10);
+          const month = parseInt(m[2], 10) - 1;
+          let year = parseInt(m[3], 10);
+          if (year < 100) year += 2000;
+          const hour = m[4] ? parseInt(m[4], 10) : 0;
+          const minute = m[5] ? parseInt(m[5], 10) : 0;
+          const second = m[6] ? parseInt(m[6], 10) : 0;
+          return new Date(year, month, day, hour, minute, second);
+        }
+        function pad2(n){ return String(n).padStart(2,'0'); }
+        function nowDMYString() {
+          const d = new Date();
+          return `${pad2(d.getDate())}/${pad2(d.getMonth()+1)}/${d.getFullYear()} ${pad2(d.getHours())}:${pad2(d.getMinutes())}:${pad2(d.getSeconds())}`;
+        }
+
+        // 🔹 Calculate time difference and determine online/offline status (using DMY for both dates)
         let statusImage = '';
         if (ultimaFecha !== '—') {
           try {
-            // Parse the last date (adjust format if needed - assuming ISO or parseable format)
-            const lastDate = new Date(ultimaFecha);
-            const currentDate = new Date();
+            const lastDate = parseDMY(ultimaFecha);               // keep last date as DMY
+            const currentDateStr = nowDMYString();                // adjust current date to DMY string
+            const currentDate = parseDMY(currentDateStr);         // parse with same DMY rules
+
+            if (!lastDate || isNaN(lastDate) || !currentDate || isNaN(currentDate)) {
+              throw new Error('Fecha inválida al comparar (lastDate/currentDate)');
+            }
+
             const diffInMilliseconds = currentDate - lastDate;
-            const diffInMinutes = diffInMilliseconds / (1000 * 60); // difference in minutes
+            const diffInMinutes = diffInMilliseconds / (1000 * 60);
 
             // 🔍 Debug logging
-            console.log('=== DATALOGGER STATUS DEBUG ===');
-            console.log('Last date string:', ultimaFecha);
+            console.log('=== DATALOGGER STATUS DEBUG (DMY aligned) ===');
+            console.log('Last date string (DMY):', ultimaFecha);
+            console.log('Current date string (DMY adjusted):', currentDateStr);
             console.log('Last date parsed:', lastDate);
-            console.log('Current date:', currentDate);
+            console.log('Current date parsed:', currentDate);
             console.log('Difference in milliseconds:', diffInMilliseconds);
             console.log('Formula: (currentDate - lastDate) / (1000 * 60)');
             console.log('Difference in minutes:', diffInMinutes.toFixed(2));
@@ -286,9 +315,9 @@ permalink: /dataloggers/
               console.log('Result: ONLINE (difference ≤ 65 minutes)');
               statusImage = '<img src="/images/cloud-online.png" alt="Online" style="width: 24px; height: 24px; margin-left: 8px;">';
             }
-            console.log('===============================');
+            console.log('=============================================');
           } catch (dateError) {
-            console.error('Error parsing date:', dateError);
+            console.error('Error comparing dates:', dateError, 'ultimaFecha:', ultimaFecha);
           }
         } else {
           console.log('No valid last date found (ultimaFecha = "—")');
