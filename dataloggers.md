@@ -50,6 +50,7 @@ permalink: /dataloggers/
 <table class="table table-sm" border="1">
   <thead class="thead-light">
     <tr>
+      <th>Estado</th>
       <th># de mediciones</th>
       <th>Última medición</th>
       <th>TWPI</th>
@@ -57,6 +58,7 @@ permalink: /dataloggers/
   </thead>
   <tbody>
     <tr>
+      <td id="estatus">—</td>
       <td id="totalLineas">—</td>
       <td id="ultimaFecha">—</td>
       <td id="twpiResumen">—</td>
@@ -108,7 +110,7 @@ permalink: /dataloggers/
 
   <div class="col-12 col-md-6 text-center">
     <img
-      src="../imagenes/datalogger_wifi.jpg"
+      src="/images/datalogger_wifi.jpg"
       alt="Datalogger de conservación basado en SHT31"
       class="img-fluid"
       style="max-height: 320px; object-fit: contain;"
@@ -256,6 +258,25 @@ permalink: /dataloggers/
         const fechasValidas = fechas.filter(f => f && f.length);
         const ultimaFecha = fechasValidas.length ? fechasValidas[fechasValidas.length - 1] : '—';
 
+        // 🔹 Calculate time difference and determine online/offline status
+        let statusImage = '';
+        if (ultimaFecha !== '—') {
+          try {
+            // Parse the last date (adjust format if needed - assuming ISO or parseable format)
+            const lastDate = new Date(ultimaFecha);
+            const currentDate = new Date();
+            const diffInMinutes = (currentDate - lastDate) / (1000 * 60); // difference in minutes
+
+            if (diffInMinutes > 65) {
+              statusImage = '<img src="/images/cloud-offline.png" alt="Offline" style="width: 24px; height: 24px; margin-left: 8px;">';
+            } else {
+              statusImage = '<img src="/images/cloud-online.png" alt="Online" style="width: 24px; height: 24px; margin-left: 8px;">';
+            }
+          } catch (dateError) {
+            console.error('Error parsing date:', dateError);
+          }
+        }
+
         function safeMin(arr) { return arr.length ? Math.min(...arr) : null; }
         function safeMax(arr) { return arr.length ? Math.max(...arr) : null; }
         function safeProm(arr) { return arr.length ? (arr.reduce((a,b) => a + b, 0) / arr.length) : null; }
@@ -269,6 +290,7 @@ permalink: /dataloggers/
         const humProm = safeProm(humedades);
 
         // Actualiza DOM
+        document.getElementById("estatus").innerHTML = statusImage;
         document.getElementById("totalLineas").textContent = totalLineas;
         document.getElementById("ultimaFecha").textContent = ultimaFecha;
 
