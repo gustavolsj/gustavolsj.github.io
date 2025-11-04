@@ -69,8 +69,8 @@ permalink: /dataloggers/
     <table class="table table-sm" border="1">
       <thead>
         <tr>
-          <th colspan"3">T °C</th>
-          <th colspan"3">HR %</th>
+          <th colspan="3">T °C</th>
+          <th colspan="3">HR %</th>
         </tr>
         <tr>
           <th>mín</th>
