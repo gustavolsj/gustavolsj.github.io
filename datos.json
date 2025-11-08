@@ -3753,5 +3753,10 @@
         "fecha_hora": "07\/11\/25\/ 21:15",
         "temperatura": "23.74",
         "humedad": "59.10"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 21:45",
+        "temperatura": "23.74",
+        "humedad": "59.71"
     }
 ]
