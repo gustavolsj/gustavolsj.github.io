@@ -3863,5 +3863,10 @@
         "fecha_hora": "08\/11\/25\/ 08:15",
         "temperatura": "21.91",
         "humedad": "56.86"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 08:45",
+        "temperatura": "22.28",
+        "humedad": "56.17"
     }
 ]
