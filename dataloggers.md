@@ -60,12 +60,11 @@ permalink: /dataloggers/
     <tr>
       <td id="estatus">—</td>
       <td id="totalLineas">—</td>
-      <td id="ultimaFecha">—</td>
+      <td id="lastDateStrClean">—</td>
       <td id="twpiResumen">—</td>
     </tr>
   </tbody>
 </table>
-
     <table class="table table-sm" border="1">
       <thead>
         <tr>
@@ -92,7 +91,6 @@ permalink: /dataloggers/
         </tr>
       </tbody>
     </table>
-
   </div>
 
   <div class="chart-container">
@@ -350,7 +348,7 @@ permalink: /dataloggers/
         // Actualiza DOM
         document.getElementById("estatus").innerHTML = statusImage;
         document.getElementById("totalLineas").textContent = totalLineas;
-        document.getElementById("ultimaFecha").textContent = ultimaFecha;
+        document.getElementById("lastDateStrClean").textContent = lastDateStrClean;
 
         document.getElementById("tempMin").textContent = tempMin !== null ? tempMin.toFixed(0) + '' : '—';
         document.getElementById("tempMax").textContent = tempMax !== null ? tempMax.toFixed(0) + '' : '—';
