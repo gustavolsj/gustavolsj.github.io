@@ -69,22 +69,26 @@ permalink: /dataloggers/
     <table class="table table-sm" border="1">
       <thead>
         <tr>
-          <th>T mín</th>
-          <th>T máx</th>
-          <th>T promedio</th>
-          <th>HR mín</th>
-          <th>HR máx</th>
-          <th>HR promedio</th>
+          <th colspan="3">T °C</th>
+          <th colspan="3">HR %</th>
+        </tr>
+        <tr>
+          <th>mín</th>
+          <th>máx</th>
+          <th>prom</th>
+          <th>mín</th>
+          <th>máx</th>
+          <th>prom</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td id="tempMin">— °C</td>
-          <td id="tempMax">— °C</td>
-          <td id="tempProm">— °C</td>
-          <td id="humMin">— %</td>
-          <td id="humMax">— %</td>
-          <td id="humProm">— %</td>
+          <td id="tempMin">—</td>
+          <td id="tempMax">—</td>
+          <td id="tempProm">—</td>
+          <td id="humMin">—</td>
+          <td id="humMax">—</td>
+          <td id="humProm">—</td>
         </tr>
       </tbody>
     </table>
@@ -348,14 +352,14 @@ permalink: /dataloggers/
         document.getElementById("totalLineas").textContent = totalLineas;
         document.getElementById("ultimaFecha").textContent = ultimaFecha;
 
-        document.getElementById("tempMin").textContent = tempMin !== null ? tempMin.toFixed(2) + ' °C' : '— °C';
-        document.getElementById("tempMax").textContent = tempMax !== null ? tempMax.toFixed(2) + ' °C' : '— °C';
+        document.getElementById("tempMin").textContent = tempMin !== null ? tempMin.toFixed(0) + '' : '—';
+        document.getElementById("tempMax").textContent = tempMax !== null ? tempMax.toFixed(0) + '' : '—';
 
-        document.getElementById("tempProm").textContent = tempProm !== null ? tempProm.toFixed(2) + ' °C' : '— °C';
+        document.getElementById("tempProm").textContent = tempProm !== null ? tempProm.toFixed(0) + '' : '—';
 
-        document.getElementById("humMin").textContent = humMin !== null ? humMin.toFixed(2) + ' %' : '— %';
-        document.getElementById("humMax").textContent = humMax !== null ? humMax.toFixed(2) + ' %' : '— %';
-        document.getElementById("humProm").textContent = humProm !== null ? humProm.toFixed(2) + ' %' : '— %';
+        document.getElementById("humMin").textContent = humMin !== null ? humMin.toFixed(0) + '' : '—';
+        document.getElementById("humMax").textContent = humMax !== null ? humMax.toFixed(0) + '' : '—';
+        document.getElementById("humProm").textContent = humProm !== null ? humProm.toFixed(0) + '' : '—';
       } catch (err) {
         console.error(err);
         const tl = document.getElementById("totalLineas");

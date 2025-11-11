@@ -2678,5 +2678,1905 @@
         "fecha_hora": "02\/11\/25\/ 15:54",
         "temperatura": "24.84",
         "humedad": "59.93"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 08:53",
+        "temperatura": "24.00",
+        "humedad": "59.00"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 10:18",
+        "temperatura": "22.60",
+        "humedad": "60.74"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 10:48",
+        "temperatura": "22.74",
+        "humedad": "60.51"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 11:18",
+        "temperatura": "22.90",
+        "humedad": "60.28"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 11:48",
+        "temperatura": "22.99",
+        "humedad": "59.36"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 12:18",
+        "temperatura": "23.11",
+        "humedad": "58.90"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 12:48",
+        "temperatura": "23.19",
+        "humedad": "57.94"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 13:18",
+        "temperatura": "23.22",
+        "humedad": "57.02"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 13:48",
+        "temperatura": "23.23",
+        "humedad": "55.84"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 14:18",
+        "temperatura": "23.39",
+        "humedad": "55.52"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 14:48",
+        "temperatura": "23.57",
+        "humedad": "55.35"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 15:18",
+        "temperatura": "23.82",
+        "humedad": "54.15"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 15:48",
+        "temperatura": "23.78",
+        "humedad": "53.90"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 16:18",
+        "temperatura": "23.56",
+        "humedad": "53.76"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 16:48",
+        "temperatura": "23.46",
+        "humedad": "54.25"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 17:18",
+        "temperatura": "23.43",
+        "humedad": "54.56"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 17:48",
+        "temperatura": "23.45",
+        "humedad": "54.36"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 18:18",
+        "temperatura": "23.45",
+        "humedad": "53.65"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 18:48",
+        "temperatura": "23.36",
+        "humedad": "53.57"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 19:18",
+        "temperatura": "23.38",
+        "humedad": "54.46"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 19:48",
+        "temperatura": "23.30",
+        "humedad": "57.31"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 20:18",
+        "temperatura": "23.26",
+        "humedad": "59.01"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 20:48",
+        "temperatura": "23.22",
+        "humedad": "59.89"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 21:18",
+        "temperatura": "23.15",
+        "humedad": "60.29"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 21:48",
+        "temperatura": "23.22",
+        "humedad": "60.47"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 22:18",
+        "temperatura": "23.22",
+        "humedad": "60.93"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 22:48",
+        "temperatura": "23.09",
+        "humedad": "60.64"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 23:18",
+        "temperatura": "22.98",
+        "humedad": "60.62"
+    },
+    {
+        "fecha_hora": "03\/11\/25\/ 23:48",
+        "temperatura": "22.95",
+        "humedad": "60.92"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 00:18",
+        "temperatura": "22.87",
+        "humedad": "61.38"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 00:48",
+        "temperatura": "22.80",
+        "humedad": "61.48"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 01:18",
+        "temperatura": "22.71",
+        "humedad": "61.46"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 01:48",
+        "temperatura": "22.64",
+        "humedad": "61.49"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 02:18",
+        "temperatura": "22.64",
+        "humedad": "61.27"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 02:48",
+        "temperatura": "22.54",
+        "humedad": "61.27"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 03:18",
+        "temperatura": "22.49",
+        "humedad": "61.21"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 03:48",
+        "temperatura": "22.43",
+        "humedad": "60.95"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 04:18",
+        "temperatura": "22.43",
+        "humedad": "60.86"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 04:48",
+        "temperatura": "22.40",
+        "humedad": "60.66"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 05:18",
+        "temperatura": "22.28",
+        "humedad": "60.96"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 05:48",
+        "temperatura": "22.25",
+        "humedad": "61.08"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 06:18",
+        "temperatura": "22.15",
+        "humedad": "61.22"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 06:48",
+        "temperatura": "22.19",
+        "humedad": "61.04"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 07:18",
+        "temperatura": "22.12",
+        "humedad": "60.86"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 07:48",
+        "temperatura": "22.08",
+        "humedad": "60.99"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 08:18",
+        "temperatura": "21.97",
+        "humedad": "61.11"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 08:48",
+        "temperatura": "21.25",
+        "humedad": "61.24"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 09:18",
+        "temperatura": "21.35",
+        "humedad": "61.24"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 09:48",
+        "temperatura": "21.57",
+        "humedad": "61.19"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 10:18",
+        "temperatura": "21.92",
+        "humedad": "60.76"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 10:48",
+        "temperatura": "22.29",
+        "humedad": "60.47"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 11:18",
+        "temperatura": "22.54",
+        "humedad": "59.82"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 11:48",
+        "temperatura": "22.61",
+        "humedad": "58.71"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 12:18",
+        "temperatura": "22.73",
+        "humedad": "58.17"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 12:48",
+        "temperatura": "22.88",
+        "humedad": "57.65"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 13:18",
+        "temperatura": "22.88",
+        "humedad": "56.77"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 13:48",
+        "temperatura": "22.83",
+        "humedad": "55.67"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 14:18",
+        "temperatura": "22.86",
+        "humedad": "55.36"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 14:48",
+        "temperatura": "22.99",
+        "humedad": "53.67"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 15:18",
+        "temperatura": "23.46",
+        "humedad": "53.56"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 15:48",
+        "temperatura": "23.43",
+        "humedad": "52.54"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 16:18",
+        "temperatura": "23.14",
+        "humedad": "52.87"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 16:48",
+        "temperatura": "23.02",
+        "humedad": "51.39"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 17:18",
+        "temperatura": "22.91",
+        "humedad": "52.06"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 17:48",
+        "temperatura": "22.90",
+        "humedad": "53.07"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 18:18",
+        "temperatura": "22.90",
+        "humedad": "53.62"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 18:48",
+        "temperatura": "22.99",
+        "humedad": "54.26"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 19:18",
+        "temperatura": "23.07",
+        "humedad": "54.94"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 19:48",
+        "temperatura": "22.95",
+        "humedad": "56.60"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 20:29",
+        "temperatura": "23.38",
+        "humedad": "57.12"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 20:59",
+        "temperatura": "24.19",
+        "humedad": "57.43"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 21:29",
+        "temperatura": "24.55",
+        "humedad": "58.10"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 21:59",
+        "temperatura": "23.50",
+        "humedad": "59.35"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 22:29",
+        "temperatura": "23.16",
+        "humedad": "60.68"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 22:59",
+        "temperatura": "23.05",
+        "humedad": "61.49"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 23:29",
+        "temperatura": "22.92",
+        "humedad": "62.18"
+    },
+    {
+        "fecha_hora": "04\/11\/25\/ 23:59",
+        "temperatura": "22.91",
+        "humedad": "62.45"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 00:29",
+        "temperatura": "22.75",
+        "humedad": "62.88"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 00:59",
+        "temperatura": "22.67",
+        "humedad": "63.23"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 01:29",
+        "temperatura": "22.63",
+        "humedad": "63.26"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 01:59",
+        "temperatura": "22.57",
+        "humedad": "63.42"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 02:29",
+        "temperatura": "22.56",
+        "humedad": "63.47"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 02:59",
+        "temperatura": "22.47",
+        "humedad": "63.75"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 03:29",
+        "temperatura": "22.46",
+        "humedad": "63.92"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 03:59",
+        "temperatura": "22.49",
+        "humedad": "63.85"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 04:29",
+        "temperatura": "22.43",
+        "humedad": "64.09"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 04:59",
+        "temperatura": "22.35",
+        "humedad": "64.18"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 05:29",
+        "temperatura": "22.25",
+        "humedad": "64.04"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 05:59",
+        "temperatura": "22.25",
+        "humedad": "63.90"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 06:29",
+        "temperatura": "22.19",
+        "humedad": "63.90"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 06:59",
+        "temperatura": "22.16",
+        "humedad": "63.73"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 07:29",
+        "temperatura": "22.25",
+        "humedad": "63.92"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 07:59",
+        "temperatura": "22.30",
+        "humedad": "63.49"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 08:29",
+        "temperatura": "22.19",
+        "humedad": "63.51"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 08:59",
+        "temperatura": "21.95",
+        "humedad": "63.44"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 09:29",
+        "temperatura": "21.83",
+        "humedad": "63.44"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 09:59",
+        "temperatura": "21.90",
+        "humedad": "63.54"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 10:29",
+        "temperatura": "22.06",
+        "humedad": "63.60"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 10:59",
+        "temperatura": "21.80",
+        "humedad": "62.90"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 11:29",
+        "temperatura": "21.90",
+        "humedad": "62.67"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 11:59",
+        "temperatura": "21.95",
+        "humedad": "62.17"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 12:29",
+        "temperatura": "22.02",
+        "humedad": "61.83"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 12:59",
+        "temperatura": "21.98",
+        "humedad": "61.47"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 13:29",
+        "temperatura": "21.92",
+        "humedad": "60.90"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 13:59",
+        "temperatura": "22.02",
+        "humedad": "60.86"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 14:29",
+        "temperatura": "22.08",
+        "humedad": "59.79"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 14:59",
+        "temperatura": "22.42",
+        "humedad": "59.73"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 15:29",
+        "temperatura": "22.80",
+        "humedad": "59.29"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 15:59",
+        "temperatura": "22.77",
+        "humedad": "59.04"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 16:29",
+        "temperatura": "22.52",
+        "humedad": "58.95"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 16:59",
+        "temperatura": "22.40",
+        "humedad": "58.65"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 17:29",
+        "temperatura": "22.30",
+        "humedad": "59.21"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 17:59",
+        "temperatura": "22.25",
+        "humedad": "59.05"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 18:29",
+        "temperatura": "22.19",
+        "humedad": "59.34"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 18:59",
+        "temperatura": "22.18",
+        "humedad": "59.48"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 19:29",
+        "temperatura": "22.13",
+        "humedad": "59.70"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 19:59",
+        "temperatura": "22.06",
+        "humedad": "57.37"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 20:29",
+        "temperatura": "22.02",
+        "humedad": "56.95"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 20:59",
+        "temperatura": "22.04",
+        "humedad": "57.41"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 21:29",
+        "temperatura": "22.06",
+        "humedad": "58.78"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 21:59",
+        "temperatura": "22.02",
+        "humedad": "60.32"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 22:29",
+        "temperatura": "22.06",
+        "humedad": "59.48"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 22:59",
+        "temperatura": "21.97",
+        "humedad": "58.65"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 23:29",
+        "temperatura": "21.87",
+        "humedad": "57.70"
+    },
+    {
+        "fecha_hora": "05\/11\/25\/ 23:59",
+        "temperatura": "21.78",
+        "humedad": "57.47"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 00:29",
+        "temperatura": "21.71",
+        "humedad": "57.26"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 00:59",
+        "temperatura": "21.67",
+        "humedad": "57.20"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 01:29",
+        "temperatura": "21.61",
+        "humedad": "56.64"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 01:59",
+        "temperatura": "21.53",
+        "humedad": "56.26"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 02:29",
+        "temperatura": "21.50",
+        "humedad": "57.17"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 02:59",
+        "temperatura": "21.43",
+        "humedad": "57.79"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 03:29",
+        "temperatura": "21.38",
+        "humedad": "57.62"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 03:59",
+        "temperatura": "21.30",
+        "humedad": "57.31"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 04:29",
+        "temperatura": "21.22",
+        "humedad": "57.04"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 04:59",
+        "temperatura": "21.13",
+        "humedad": "56.85"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 05:29",
+        "temperatura": "21.09",
+        "humedad": "57.03"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 05:59",
+        "temperatura": "21.02",
+        "humedad": "56.93"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 06:29",
+        "temperatura": "20.95",
+        "humedad": "58.12"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 06:59",
+        "temperatura": "21.01",
+        "humedad": "58.11"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 07:29",
+        "temperatura": "20.98",
+        "humedad": "58.04"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 07:59",
+        "temperatura": "20.94",
+        "humedad": "58.21"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 08:29",
+        "temperatura": "19.33",
+        "humedad": "59.38"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 08:59",
+        "temperatura": "19.63",
+        "humedad": "59.02"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 09:29",
+        "temperatura": "20.04",
+        "humedad": "58.56"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 09:59",
+        "temperatura": "20.43",
+        "humedad": "56.48"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 10:29",
+        "temperatura": "20.98",
+        "humedad": "55.57"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 10:59",
+        "temperatura": "21.26",
+        "humedad": "54.21"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 11:29",
+        "temperatura": "21.40",
+        "humedad": "52.97"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 11:59",
+        "temperatura": "21.60",
+        "humedad": "53.25"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 12:29",
+        "temperatura": "22.94",
+        "humedad": "59.34"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 12:59",
+        "temperatura": "22.97",
+        "humedad": "54.36"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 13:29",
+        "temperatura": "22.97",
+        "humedad": "53.12"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 13:59",
+        "temperatura": "23.02",
+        "humedad": "52.10"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 14:29",
+        "temperatura": "23.09",
+        "humedad": "51.49"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 14:59",
+        "temperatura": "23.27",
+        "humedad": "51.31"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 15:29",
+        "temperatura": "23.69",
+        "humedad": "50.67"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 15:59",
+        "temperatura": "23.57",
+        "humedad": "50.52"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 16:29",
+        "temperatura": "23.41",
+        "humedad": "51.01"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 17:15",
+        "temperatura": "24.18",
+        "humedad": "50.68"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 17:45",
+        "temperatura": "24.11",
+        "humedad": "50.63"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 18:15",
+        "temperatura": "24.26",
+        "humedad": "51.58"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 18:45",
+        "temperatura": "24.05",
+        "humedad": "50.83"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 19:15",
+        "temperatura": "24.18",
+        "humedad": "51.67"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 19:45",
+        "temperatura": "23.66",
+        "humedad": "53.98"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 20:15",
+        "temperatura": "23.70",
+        "humedad": "54.43"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 20:45",
+        "temperatura": "23.61",
+        "humedad": "53.93"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 21:15",
+        "temperatura": "23.60",
+        "humedad": "53.82"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 21:45",
+        "temperatura": "23.61",
+        "humedad": "53.84"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 22:15",
+        "temperatura": "23.82",
+        "humedad": "53.70"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 22:45",
+        "temperatura": "23.64",
+        "humedad": "54.04"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 23:15",
+        "temperatura": "23.59",
+        "humedad": "54.28"
+    },
+    {
+        "fecha_hora": "06\/11\/25\/ 23:45",
+        "temperatura": "23.53",
+        "humedad": "54.49"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 00:15",
+        "temperatura": "23.53",
+        "humedad": "54.58"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 00:45",
+        "temperatura": "24.00",
+        "humedad": "54.44"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 01:15",
+        "temperatura": "23.43",
+        "humedad": "55.02"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 01:45",
+        "temperatura": "23.47",
+        "humedad": "55.00"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 02:15",
+        "temperatura": "23.27",
+        "humedad": "55.35"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 02:45",
+        "temperatura": "23.20",
+        "humedad": "55.70"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 03:15",
+        "temperatura": "23.27",
+        "humedad": "55.92"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 03:45",
+        "temperatura": "23.18",
+        "humedad": "56.09"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 04:15",
+        "temperatura": "23.11",
+        "humedad": "55.80"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 04:45",
+        "temperatura": "23.02",
+        "humedad": "56.22"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 05:15",
+        "temperatura": "23.02",
+        "humedad": "56.43"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 05:45",
+        "temperatura": "22.71",
+        "humedad": "56.29"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 06:15",
+        "temperatura": "22.26",
+        "humedad": "56.45"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 06:45",
+        "temperatura": "22.11",
+        "humedad": "56.80"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 07:15",
+        "temperatura": "21.19",
+        "humedad": "57.41"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 07:45",
+        "temperatura": "21.36",
+        "humedad": "57.33"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 08:15",
+        "temperatura": "21.58",
+        "humedad": "57.58"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 08:45",
+        "temperatura": "21.98",
+        "humedad": "57.38"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 09:15",
+        "temperatura": "22.47",
+        "humedad": "57.26"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 09:45",
+        "temperatura": "22.90",
+        "humedad": "56.19"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 10:15",
+        "temperatura": "23.15",
+        "humedad": "56.07"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 10:45",
+        "temperatura": "23.39",
+        "humedad": "56.35"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 11:15",
+        "temperatura": "23.43",
+        "humedad": "56.13"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 11:45",
+        "temperatura": "23.52",
+        "humedad": "55.05"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 12:15",
+        "temperatura": "23.52",
+        "humedad": "54.44"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 12:45",
+        "temperatura": "23.50",
+        "humedad": "54.08"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 13:15",
+        "temperatura": "23.50",
+        "humedad": "53.86"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 13:45",
+        "temperatura": "23.60",
+        "humedad": "53.81"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 14:15",
+        "temperatura": "23.63",
+        "humedad": "53.71"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 14:45",
+        "temperatura": "23.75",
+        "humedad": "53.01"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 15:15",
+        "temperatura": "24.32",
+        "humedad": "52.47"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 15:45",
+        "temperatura": "24.15",
+        "humedad": "52.51"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 16:15",
+        "temperatura": "23.84",
+        "humedad": "52.43"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 16:45",
+        "temperatura": "23.81",
+        "humedad": "52.27"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 17:15",
+        "temperatura": "23.81",
+        "humedad": "52.09"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 17:45",
+        "temperatura": "23.74",
+        "humedad": "52.49"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 18:15",
+        "temperatura": "23.73",
+        "humedad": "53.05"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 18:45",
+        "temperatura": "23.67",
+        "humedad": "54.01"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 19:15",
+        "temperatura": "23.66",
+        "humedad": "55.61"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 19:45",
+        "temperatura": "23.73",
+        "humedad": "56.63"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 20:15",
+        "temperatura": "23.70",
+        "humedad": "57.55"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 20:45",
+        "temperatura": "23.71",
+        "humedad": "58.24"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 21:15",
+        "temperatura": "23.74",
+        "humedad": "59.10"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 21:45",
+        "temperatura": "23.74",
+        "humedad": "59.71"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 22:15",
+        "temperatura": "23.70",
+        "humedad": "59.69"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 22:45",
+        "temperatura": "23.66",
+        "humedad": "59.18"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 23:15",
+        "temperatura": "23.67",
+        "humedad": "58.39"
+    },
+    {
+        "fecha_hora": "07\/11\/25\/ 23:45",
+        "temperatura": "23.67",
+        "humedad": "57.17"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 00:15",
+        "temperatura": "23.59",
+        "humedad": "56.92"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 00:45",
+        "temperatura": "23.47",
+        "humedad": "57.45"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 01:15",
+        "temperatura": "23.30",
+        "humedad": "58.54"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 01:45",
+        "temperatura": "23.14",
+        "humedad": "56.23"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 02:15",
+        "temperatura": "23.04",
+        "humedad": "56.18"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 02:45",
+        "temperatura": "22.97",
+        "humedad": "55.93"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 03:15",
+        "temperatura": "22.87",
+        "humedad": "55.64"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 03:45",
+        "temperatura": "22.74",
+        "humedad": "55.42"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 04:15",
+        "temperatura": "22.53",
+        "humedad": "55.71"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 04:45",
+        "temperatura": "22.63",
+        "humedad": "56.02"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 05:15",
+        "temperatura": "22.42",
+        "humedad": "55.86"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 05:45",
+        "temperatura": "22.39",
+        "humedad": "56.32"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 06:15",
+        "temperatura": "21.98",
+        "humedad": "56.45"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 06:45",
+        "temperatura": "21.94",
+        "humedad": "57.11"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 07:15",
+        "temperatura": "22.05",
+        "humedad": "57.39"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 07:45",
+        "temperatura": "21.67",
+        "humedad": "56.98"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 08:15",
+        "temperatura": "21.91",
+        "humedad": "56.86"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 08:45",
+        "temperatura": "22.28",
+        "humedad": "56.17"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 09:15",
+        "temperatura": "22.84",
+        "humedad": "55.88"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 09:45",
+        "temperatura": "22.91",
+        "humedad": "55.76"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 10:15",
+        "temperatura": "23.18",
+        "humedad": "55.81"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 10:45",
+        "temperatura": "23.41",
+        "humedad": "55.53"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 11:15",
+        "temperatura": "23.56",
+        "humedad": "55.69"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 11:45",
+        "temperatura": "23.60",
+        "humedad": "55.35"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 12:15",
+        "temperatura": "23.57",
+        "humedad": "54.85"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 12:45",
+        "temperatura": "23.56",
+        "humedad": "53.63"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 13:15",
+        "temperatura": "23.57",
+        "humedad": "52.97"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 13:45",
+        "temperatura": "23.60",
+        "humedad": "52.51"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 14:15",
+        "temperatura": "23.66",
+        "humedad": "52.34"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 14:45",
+        "temperatura": "23.81",
+        "humedad": "52.34"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 15:15",
+        "temperatura": "24.12",
+        "humedad": "52.69"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 15:45",
+        "temperatura": "24.14",
+        "humedad": "51.95"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 16:15",
+        "temperatura": "23.97",
+        "humedad": "51.53"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 16:45",
+        "temperatura": "23.98",
+        "humedad": "51.38"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 17:15",
+        "temperatura": "23.85",
+        "humedad": "52.39"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 17:45",
+        "temperatura": "23.89",
+        "humedad": "53.03"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 18:15",
+        "temperatura": "23.97",
+        "humedad": "53.69"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 18:45",
+        "temperatura": "24.02",
+        "humedad": "54.61"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 19:15",
+        "temperatura": "23.80",
+        "humedad": "54.05"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 19:45",
+        "temperatura": "23.80",
+        "humedad": "54.26"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 20:15",
+        "temperatura": "23.75",
+        "humedad": "52.97"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 20:45",
+        "temperatura": "23.82",
+        "humedad": "51.19"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 21:15",
+        "temperatura": "23.80",
+        "humedad": "52.20"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 21:45",
+        "temperatura": "23.84",
+        "humedad": "51.55"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 22:15",
+        "temperatura": "23.77",
+        "humedad": "51.72"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 22:45",
+        "temperatura": "23.71",
+        "humedad": "52.33"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 23:15",
+        "temperatura": "23.53",
+        "humedad": "52.22"
+    },
+    {
+        "fecha_hora": "08\/11\/25\/ 23:45",
+        "temperatura": "23.53",
+        "humedad": "51.51"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 00:15",
+        "temperatura": "23.41",
+        "humedad": "51.58"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 00:45",
+        "temperatura": "23.38",
+        "humedad": "51.69"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 01:15",
+        "temperatura": "23.46",
+        "humedad": "51.99"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 01:45",
+        "temperatura": "23.20",
+        "humedad": "52.03"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 02:15",
+        "temperatura": "23.20",
+        "humedad": "51.87"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 02:45",
+        "temperatura": "23.07",
+        "humedad": "52.18"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 03:15",
+        "temperatura": "22.97",
+        "humedad": "52.55"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 03:45",
+        "temperatura": "22.92",
+        "humedad": "53.12"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 04:15",
+        "temperatura": "22.86",
+        "humedad": "53.35"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 04:45",
+        "temperatura": "22.81",
+        "humedad": "53.15"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 05:15",
+        "temperatura": "22.67",
+        "humedad": "53.60"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 05:45",
+        "temperatura": "22.67",
+        "humedad": "53.91"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 06:15",
+        "temperatura": "22.65",
+        "humedad": "54.34"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 07:31",
+        "temperatura": "20.85",
+        "humedad": "56.98"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 08:01",
+        "temperatura": "20.61",
+        "humedad": "57.41"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 08:31",
+        "temperatura": "21.28",
+        "humedad": "56.05"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 09:01",
+        "temperatura": "21.54",
+        "humedad": "55.52"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 09:31",
+        "temperatura": "22.18",
+        "humedad": "54.60"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 10:01",
+        "temperatura": "22.52",
+        "humedad": "53.72"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 10:31",
+        "temperatura": "22.75",
+        "humedad": "52.65"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 11:01",
+        "temperatura": "23.22",
+        "humedad": "52.86"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 11:31",
+        "temperatura": "23.35",
+        "humedad": "52.85"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 12:01",
+        "temperatura": "23.45",
+        "humedad": "52.45"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 12:31",
+        "temperatura": "23.87",
+        "humedad": "51.91"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 13:01",
+        "temperatura": "24.00",
+        "humedad": "51.23"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 13:31",
+        "temperatura": "23.74",
+        "humedad": "50.54"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 14:01",
+        "temperatura": "23.77",
+        "humedad": "51.21"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 14:31",
+        "temperatura": "23.98",
+        "humedad": "48.85"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 15:01",
+        "temperatura": "24.16",
+        "humedad": "47.04"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 15:31",
+        "temperatura": "24.68",
+        "humedad": "43.51"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 16:01",
+        "temperatura": "24.42",
+        "humedad": "43.35"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 16:31",
+        "temperatura": "24.25",
+        "humedad": "42.76"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 17:01",
+        "temperatura": "24.19",
+        "humedad": "44.82"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 17:31",
+        "temperatura": "24.08",
+        "humedad": "44.62"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 18:01",
+        "temperatura": "23.98",
+        "humedad": "44.22"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 18:31",
+        "temperatura": "23.73",
+        "humedad": "43.71"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 19:01",
+        "temperatura": "23.77",
+        "humedad": "46.67"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 19:31",
+        "temperatura": "23.71",
+        "humedad": "47.25"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 20:01",
+        "temperatura": "23.64",
+        "humedad": "48.46"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 20:31",
+        "temperatura": "23.71",
+        "humedad": "50.23"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 21:01",
+        "temperatura": "23.66",
+        "humedad": "51.89"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 21:31",
+        "temperatura": "23.60",
+        "humedad": "54.40"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 22:01",
+        "temperatura": "23.54",
+        "humedad": "55.93"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 22:31",
+        "temperatura": "23.29",
+        "humedad": "56.10"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 23:01",
+        "temperatura": "23.15",
+        "humedad": "56.93"
+    },
+    {
+        "fecha_hora": "09\/11\/25\/ 23:31",
+        "temperatura": "22.98",
+        "humedad": "57.22"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 00:01",
+        "temperatura": "22.81",
+        "humedad": "57.26"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 00:31",
+        "temperatura": "22.70",
+        "humedad": "57.22"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 01:01",
+        "temperatura": "22.61",
+        "humedad": "56.89"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 01:31",
+        "temperatura": "22.50",
+        "humedad": "56.40"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 02:01",
+        "temperatura": "22.46",
+        "humedad": "56.28"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 02:31",
+        "temperatura": "22.39",
+        "humedad": "55.99"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 03:01",
+        "temperatura": "22.29",
+        "humedad": "55.96"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 03:31",
+        "temperatura": "22.16",
+        "humedad": "56.44"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 04:01",
+        "temperatura": "22.28",
+        "humedad": "56.26"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 04:31",
+        "temperatura": "22.20",
+        "humedad": "55.68"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 05:01",
+        "temperatura": "22.16",
+        "humedad": "55.19"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 05:31",
+        "temperatura": "22.15",
+        "humedad": "55.57"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 06:01",
+        "temperatura": "22.13",
+        "humedad": "55.66"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 06:31",
+        "temperatura": "22.11",
+        "humedad": "55.68"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 07:01",
+        "temperatura": "22.16",
+        "humedad": "55.57"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 07:31",
+        "temperatura": "21.92",
+        "humedad": "56.12"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 08:01",
+        "temperatura": "22.15",
+        "humedad": "57.42"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 08:31",
+        "temperatura": "22.49",
+        "humedad": "57.73"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 09:01",
+        "temperatura": "22.49",
+        "humedad": "58.50"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 09:31",
+        "temperatura": "22.23",
+        "humedad": "58.64"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 10:01",
+        "temperatura": "22.42",
+        "humedad": "59.70"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 10:31",
+        "temperatura": "22.81",
+        "humedad": "59.27"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 11:01",
+        "temperatura": "22.54",
+        "humedad": "60.14"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 11:31",
+        "temperatura": "22.40",
+        "humedad": "60.19"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 12:01",
+        "temperatura": "22.43",
+        "humedad": "60.14"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 12:31",
+        "temperatura": "22.52",
+        "humedad": "60.09"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 13:01",
+        "temperatura": "22.45",
+        "humedad": "60.18"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 13:31",
+        "temperatura": "22.30",
+        "humedad": "59.58"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 14:01",
+        "temperatura": "22.37",
+        "humedad": "59.66"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 14:31",
+        "temperatura": "22.46",
+        "humedad": "60.06"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 15:01",
+        "temperatura": "22.43",
+        "humedad": "59.93"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 15:31",
+        "temperatura": "22.29",
+        "humedad": "59.88"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 16:01",
+        "temperatura": "22.71",
+        "humedad": "59.35"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 16:31",
+        "temperatura": "22.77",
+        "humedad": "59.12"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 17:01",
+        "temperatura": "22.87",
+        "humedad": "58.92"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 17:58",
+        "temperatura": "23.23",
+        "humedad": "58.55"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 18:28",
+        "temperatura": "22.77",
+        "humedad": "58.89"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 18:58",
+        "temperatura": "22.46",
+        "humedad": "58.89"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 19:28",
+        "temperatura": "22.36",
+        "humedad": "58.73"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 19:58",
+        "temperatura": "22.25",
+        "humedad": "58.64"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 20:28",
+        "temperatura": "22.08",
+        "humedad": "58.53"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 20:58",
+        "temperatura": "21.98",
+        "humedad": "58.65"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 21:28",
+        "temperatura": "21.90",
+        "humedad": "58.28"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 21:58",
+        "temperatura": "22.05",
+        "humedad": "57.99"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 22:28",
+        "temperatura": "21.77",
+        "humedad": "58.36"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 22:58",
+        "temperatura": "21.68",
+        "humedad": "58.32"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 23:28",
+        "temperatura": "21.61",
+        "humedad": "58.23"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 23:58",
+        "temperatura": "21.57",
+        "humedad": "58.14"
+    },
+    {
+        "fecha_hora": "11\/11\/25\/ 00:28",
+        "temperatura": "21.49",
+        "humedad": "58.16"
+    },
+    {
+        "fecha_hora": "11\/11\/25\/ 00:58",
+        "temperatura": "21.36",
+        "humedad": "58.14"
+    },
+    {
+        "fecha_hora": "11\/11\/25\/ 01:28",
+        "temperatura": "21.28",
+        "humedad": "58.27"
+    },
+    {
+        "fecha_hora": "11\/11\/25\/ 01:58",
+        "temperatura": "21.26",
+        "humedad": "58.25"
+    },
+    {
+        "fecha_hora": "11\/11\/25\/ 02:28",
+        "temperatura": "21.42",
+        "humedad": "58.15"
+    },
+    {
+        "fecha_hora": "11\/11\/25\/ 02:58",
+        "temperatura": "21.35",
+        "humedad": "58.10"
+    },
+    {
+        "fecha_hora": "11\/11\/25\/ 03:28",
+        "temperatura": "21.15",
+        "humedad": "58.21"
+    },
+    {
+        "fecha_hora": "11\/11\/25\/ 03:58",
+        "temperatura": "21.05",
+        "humedad": "58.00"
+    },
+    {
+        "fecha_hora": "11\/11\/25\/ 04:28",
+        "temperatura": "21.02",
+        "humedad": "58.22"
+    },
+    {
+        "fecha_hora": "11\/11\/25\/ 04:58",
+        "temperatura": "20.95",
+        "humedad": "58.39"
+    },
+    {
+        "fecha_hora": "11\/11\/25\/ 05:28",
+        "temperatura": "20.91",
+        "humedad": "58.50"
+    },
+    {
+        "fecha_hora": "11\/11\/25\/ 05:58",
+        "temperatura": "20.78",
+        "humedad": "58.61"
+    },
+    {
+        "fecha_hora": "11\/11\/25\/ 06:28",
+        "temperatura": "20.74",
+        "humedad": "58.80"
+    },
+    {
+        "fecha_hora": "11\/11\/25\/ 06:58",
+        "temperatura": "17.45",
+        "humedad": "62.61"
+    },
+    {
+        "fecha_hora": "11\/11\/25\/ 07:28",
+        "temperatura": "17.38",
+        "humedad": "62.83"
+    },
+    {
+        "fecha_hora": "11\/11\/25\/ 07:58",
+        "temperatura": "17.16",
+        "humedad": "63.12"
+    },
+    {
+        "fecha_hora": "11\/11\/25\/ 08:28",
+        "temperatura": "16.80",
+        "humedad": "63.63"
+    },
+    {
+        "fecha_hora": "11\/11\/25\/ 08:58",
+        "temperatura": "20.01",
+        "humedad": "60.16"
     }
 ]
