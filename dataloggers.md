@@ -348,7 +348,7 @@ permalink: /dataloggers/
         // Actualiza DOM
         document.getElementById("estatus").innerHTML = statusImage;
         document.getElementById("totalLineas").textContent = totalLineas;
-        document.getElementById("ultimaFecha").textContent = ultimaFecha;
+        document.getElementById("ultimaFecha").textContent = lastDate;
 
         document.getElementById("tempMin").textContent = tempMin !== null ? tempMin.toFixed(0) + '' : '—';
         document.getElementById("tempMax").textContent = tempMax !== null ? tempMax.toFixed(0) + '' : '—';
