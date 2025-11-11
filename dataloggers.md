@@ -345,25 +345,25 @@ permalink: /dataloggers/
         const humMax = safeMax(humedades);
         const humProm = safeProm(humedades);
 
-        // Actualiza DOM
+        // Actualiza DOM (sin necesidad de usar lastDate directamente)
         document.getElementById("estatus").innerHTML = statusImage;
         document.getElementById("totalLineas").textContent = totalLineas;
-        document.getElementById("ultimaFecha").textContent = lastDate;
+        document.getElementById("ultimaFecha").textContent = ultimaFecha;
 
-        document.getElementById("tempMin").textContent = tempMin !== null ? tempMin.toFixed(0) + '' : '—';
-        document.getElementById("tempMax").textContent = tempMax !== null ? tempMax.toFixed(0) + '' : '—';
-        document.getElementById("tempProm").textContent = tempProm !== null ? tempProm.toFixed(0) + '' : '—';
+        document.getElementById("tempMin").textContent = tempMin !== null ? tempMin.toFixed(0) : '—';
+        document.getElementById("tempMax").textContent = tempMax !== null ? tempMax.toFixed(0) : '—';
+        document.getElementById("tempProm").textContent = tempProm !== null ? tempProm.toFixed(0) : '—';
 
-        document.getElementById("humMin").textContent = humMin !== null ? humMin.toFixed(0) + '' : '—';
-        document.getElementById("humMax").textContent = humMax !== null ? humMax.toFixed(0) + '' : '—';
-        document.getElementById("humProm").textContent = humProm !== null ? humProm.toFixed(0) + '' : '—';
-      } catch (err) {
-        console.error(err);
-        const tl = document.getElementById("totalLineas");
-        const uf = document.getElementById("ultimaFecha");
-        if (tl) tl.textContent = 'Error';
-        if (uf) uf.textContent = 'Error';
-      }
+        document.getElementById("humMin").textContent = humMin !== null ? humMin.toFixed(0) : '—';
+        document.getElementById("humMax").textContent = humMax !== null ? humMax.toFixed(0) : '—';
+        document.getElementById("humProm").textContent = humProm !== null ? humProm.toFixed(0) : '—';
+        } catch (err) {
+          console.error(err);
+          const tl = document.getElementById("totalLineas");
+          const uf = document.getElementById("ultimaFecha");
+          if (tl) tl.textContent = 'Error';
+          if (uf) uf.textContent = 'Error';
+        }
     }
 	
 	function calcPI(tCelsius, rh, metodo) {
