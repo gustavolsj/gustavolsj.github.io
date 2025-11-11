@@ -376,19 +376,7 @@ permalink: /dataloggers/
 		years = Math.exp((95220 - 134.9 * rh) / (R * tKelvin) + (0.0284 * rh) - 28.023) / 360;
 	  } else if (metodo === 'TP') {
 		// Debug: descomponer la fórmula TP en componentes
-		const A = 1.0;
-		const C = 5.9e12;
-		const exponent = -90300 / (R * tKelvin);
-		const expTerm = Math.exp(exponent);
-		const denominator = rh * C * expTerm;
-		years = A / denominator;
-
-		console.log('=== DEBUG TP years ===');
-		console.log(`tCelsius=${tCelsius}, tKelvin=${tKelvin}, rh=${rh}, R=${R}`);
-		console.log(`exponent = -90300 / (R * tKelvin) = -90300 / (${R} * ${tKelvin}) = ${exponent}`);
-		console.log(`expTerm = Math.exp(exponent) = ${expTerm}`);
-		console.log(`denominator = rh * 5.9e12 * expTerm = ${rh} * ${C} * ${expTerm} = ${denominator}`);
-		console.log(`years = 1.0 / denominator = 1 / ${denominator} = ${years}`);
+		years = 1.0 / (rh * 5.9e12 * Math.exp(-90300 / (R * tKelvin)));
 	  }
 
 	  const rate = 1.0 / years;
