@@ -4473,5 +4473,10 @@
         "fecha_hora": "10\/11\/25\/ 22:28",
         "temperatura": "21.77",
         "humedad": "58.36"
+    },
+    {
+        "fecha_hora": "10\/11\/25\/ 22:58",
+        "temperatura": "21.68",
+        "humedad": "58.32"
     }
 ]
