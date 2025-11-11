@@ -4,7 +4,7 @@ title: Dataloggers y otros proyectos maker
 permalink: /dataloggers/
 ---
 
-<!-- ✅ Modernizado para Chart.js v4 y carga JSON vía fetch -->
+<!-- ✅ Modernizado para Chart.js v4 y carga JSON vía  fetch -->
 
 <head>
   <meta charset="utf-8" />
