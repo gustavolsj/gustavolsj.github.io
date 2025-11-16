@@ -5623,5 +5623,10 @@
         "fecha_hora": "15\/11\/25\/ 19:47",
         "temperatura": "20.40",
         "humedad": "52.41"
+    },
+    {
+        "fecha_hora": "15\/11\/25\/ 20:17",
+        "temperatura": "20.32",
+        "humedad": "52.67"
     }
 ]
