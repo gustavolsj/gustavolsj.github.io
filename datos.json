@@ -8043,5 +8043,10 @@
         "fecha_hora": "01\/12\/25\/ 14:47",
         "temperatura": "21.16",
         "humedad": "63.12"
+    },
+    {
+        "fecha_hora": "01\/12\/25\/ 15:17",
+        "temperatura": "21.25",
+        "humedad": "63.00"
     }
 ]
