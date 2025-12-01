@@ -7988,5 +7988,10 @@
         "fecha_hora": "01\/12\/25\/ 09:17",
         "temperatura": "20.01",
         "humedad": "63.97"
+    },
+    {
+        "fecha_hora": "01\/12\/25\/ 09:47",
+        "temperatura": "20.32",
+        "humedad": "63.97"
     }
 ]
