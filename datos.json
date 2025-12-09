@@ -8223,5 +8223,10 @@
         "fecha_hora": "08\/12\/25\/ 23:47",
         "temperatura": "20.90",
         "humedad": "66.78"
+    },
+    {
+        "fecha_hora": "09\/12\/25\/ 00:17",
+        "temperatura": "20.80",
+        "humedad": "66.99"
     }
 ]
