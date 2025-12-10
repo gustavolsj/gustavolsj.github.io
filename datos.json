@@ -8608,5 +8608,10 @@
         "fecha_hora": "10\/12\/25\/ 14:17",
         "temperatura": "21.01",
         "humedad": "65.04"
+    },
+    {
+        "fecha_hora": "10\/12\/25\/ 14:47",
+        "temperatura": "21.05",
+        "humedad": "65.20"
     }
 ]
