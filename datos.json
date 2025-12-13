@@ -9158,5 +9158,15 @@
         "fecha_hora": "13\/12\/25\/ 11:49",
         "temperatura": "22.78",
         "humedad": "60.75"
+    },
+    {
+        "fecha_hora": "13\/12\/25\/ 11:54",
+        "temperatura": "23.05",
+        "humedad": "62.66"
+    },
+    {
+        "fecha_hora": "13\/12\/25\/ 11:57",
+        "temperatura": "23.09",
+        "humedad": "62.03"
     }
 ]
