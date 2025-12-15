@@ -9588,5 +9588,10 @@
         "fecha_hora": "15\/12\/25\/ 06:21",
         "temperatura": "20.33",
         "humedad": "62.05"
+    },
+    {
+        "fecha_hora": "15\/12\/25\/ 06:51",
+        "temperatura": "20.37",
+        "humedad": "62.33"
     }
 ]
