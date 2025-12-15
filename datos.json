@@ -9493,5 +9493,10 @@
         "fecha_hora": "14\/12\/25\/ 20:51",
         "temperatura": "21.25",
         "humedad": "59.41"
+    },
+    {
+        "fecha_hora": "14\/12\/25\/ 21:21",
+        "temperatura": "21.21",
+        "humedad": "59.78"
     }
 ]
