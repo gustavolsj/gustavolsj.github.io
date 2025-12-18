@@ -9638,5 +9638,10 @@
         "fecha_hora": "15\/12\/25\/ 11:21",
         "temperatura": "21.47",
         "humedad": "62.71"
+    },
+    {
+        "fecha_hora": "18\/12\/25\/ 09:14",
+        "temperatura": "24.00",
+        "humedad": "59.00"
     }
 ]
