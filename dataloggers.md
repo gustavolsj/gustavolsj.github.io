@@ -68,7 +68,7 @@ permalink: /dataloggers/
     <table class="table table-sm" border="1">
       <thead>
         <tr>
-          <th>Métrica</th>
+          <th>Métricas Estadísticas</th>
           <th>T °C</th>
           <th>HR %</th>
         </tr>
@@ -105,9 +105,9 @@ permalink: /dataloggers/
     <table class="table table-sm" border="1">
       <thead>
         <tr>
-          <th>Rango</th>
-          <th>Temperatura</th>
-          <th>Humedad</th>
+          <th>Rangos Límite</th>
+          <th>T °C 21 - 24</th>
+          <th>HR % 45 - 55</th>
         </tr>
       </thead>
       <tbody>
