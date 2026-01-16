@@ -68,33 +68,35 @@ permalink: /dataloggers/
     <table class="table table-sm" border="1">
       <thead>
         <tr>
-          <th colspan="5">T °C</th>
-          <th colspan="5">HR %</th>
-        </tr>
-        <tr>
-          <th>mín</th>
-          <th>máx</th>
-          <th>prom</th>
-          <th>mediana</th>
-          <th>desv. est.</th>
-          <th>mín</th>
-          <th>máx</th>
-          <th>prom</th>
-          <th>mediana</th>
-          <th>desv. est.</th>
+          <th>Métrica</th>
+          <th>T °C</th>
+          <th>HR %</th>
         </tr>
       </thead>
       <tbody>
         <tr>
+          <td>mín</td>
           <td id="tempMin">—</td>
-          <td id="tempMax">—</td>
-          <td id="tempProm">—</td>
-          <td id="tempMediana">—</td>
-          <td id="tempDesv">—</td>
           <td id="humMin">—</td>
+        </tr>
+        <tr>
+          <td>máx</td>
+          <td id="tempMax">—</td>
           <td id="humMax">—</td>
+        </tr>
+        <tr>
+          <td>prom</td>
+          <td id="tempProm">—</td>
           <td id="humProm">—</td>
+        </tr>
+        <tr>
+          <td>mediana</td>
+          <td id="tempMediana">—</td>
           <td id="humMediana">—</td>
+        </tr>
+        <tr>
+          <td>desv. est.</td>
+          <td id="tempDesv">—</td>
           <td id="humDesv">—</td>
         </tr>
       </tbody>
@@ -126,6 +128,7 @@ permalink: /dataloggers/
         </tr>
       </tbody>
     </table>
+
   </div>
 
   <div class="chart-container">
