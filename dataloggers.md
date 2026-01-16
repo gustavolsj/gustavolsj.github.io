@@ -53,24 +53,10 @@ permalink: /dataloggers/
 
 <body>
   <div class="container">
-<table class="table table-sm" border="1">
-  <thead class="thead-light">
-    <tr>
-      <th>Estado</th>
-      <th># de mediciones</th>
-      <th>Última medición</th>
-      <th>TWPI</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td id="estatus">—</td>
-      <td id="totalLineas">—</td>
-      <td id="ultimaFecha">—</td>
-      <td id="twpiResumen">—</td>
-    </tr>
-  </tbody>
-</table>
+<div class="status-indicator text-center" style="margin-bottom: 0.5rem;">
+  <span>Estado:</span> <span id="estatus">—</span>
+  <!-- La imagen online/offline se inserta aquí por JavaScript -->
+</div>
     <div class="row">
       <div class="col-12 col-md-6">
         <table class="table table-sm compact-table" border="1">
@@ -111,6 +97,24 @@ permalink: /dataloggers/
         </table>
       </div>
       <div class="col-12 col-md-6">
+        <!-- Tabla compacta con métricas generales arriba de rangos -->
+        <table class="table table-sm compact-table" border="1">
+          <thead>
+            <tr>
+              <th># de mediciones</th>
+              <th>Última medición</th>
+              <th>TWPI</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="totalLineas">—</td>
+              <td id="ultimaFecha">—</td>
+              <td id="twpiResumen">—</td>
+            </tr>
+          </tbody>
+        </table>
+
         <table class="table table-sm compact-table" border="1">
           <thead>
             <tr>
