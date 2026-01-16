@@ -9843,5 +9843,10 @@
         "fecha_hora": "16\/01\/26\/ 01:50",
         "temperatura": "18.90",
         "humedad": "45.00"
+    },
+    {
+        "fecha_hora": "16\/01\/26\/ 02:00",
+        "temperatura": "18.90",
+        "humedad": "45.00"
     }
 ]
