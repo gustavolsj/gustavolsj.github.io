@@ -9788,5 +9788,10 @@
         "fecha_hora": "15\/01\/26\/ 23:59",
         "temperatura": "19.10",
         "humedad": "46.00"
+    },
+    {
+        "fecha_hora": "16\/01\/26\/ 00:09",
+        "temperatura": "19.00",
+        "humedad": "45.00"
     }
 ]
