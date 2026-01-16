@@ -68,20 +68,16 @@ permalink: /dataloggers/
     <table class="table table-sm" border="1">
       <thead>
         <tr>
-          <th colspan="5">T °C</th>
-          <th colspan="5">HR %</th>
+          <th colspan="3">T °C</th>
+          <th colspan="3">HR %</th>
         </tr>
         <tr>
           <th>mín</th>
           <th>máx</th>
           <th>prom</th>
-          <th>mediana</th>
-          <th>desv. est.</th>
           <th>mín</th>
           <th>máx</th>
           <th>prom</th>
-          <th>mediana</th>
-          <th>desv. est.</th>
         </tr>
       </thead>
       <tbody>
@@ -89,40 +85,9 @@ permalink: /dataloggers/
           <td id="tempMin">—</td>
           <td id="tempMax">—</td>
           <td id="tempProm">—</td>
-          <td id="tempMediana">—</td>
-          <td id="tempDesv">—</td>
           <td id="humMin">—</td>
           <td id="humMax">—</td>
           <td id="humProm">—</td>
-          <td id="humMediana">—</td>
-          <td id="humDesv">—</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <table class="table table-sm" border="1">
-      <thead>
-        <tr>
-          <th>Rango</th>
-          <th>Temperatura</th>
-          <th>Humedad</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>% < límite inferior</td>
-          <td id="tempBajo">—</td>
-          <td id="humBaja">—</td>
-        </tr>
-        <tr>
-          <td>% dentro del rango</td>
-          <td id="tempMedio">—</td>
-          <td id="humMedia">—</td>
-        </tr>
-        <tr>
-          <td>% > límite superior</td>
-          <td id="tempAlto">—</td>
-          <td id="humAlta">—</td>
         </tr>
       </tbody>
     </table>
@@ -371,45 +336,14 @@ permalink: /dataloggers/
         function safeMin(arr) { return arr.length ? Math.min(...arr) : null; }
         function safeMax(arr) { return arr.length ? Math.max(...arr) : null; }
         function safeProm(arr) { return arr.length ? (arr.reduce((a,b) => a + b, 0) / arr.length) : null; }
-        
-        function safeMediana(arr) {
-          if (!arr.length) return null;
-          const sorted = [...arr].sort((a, b) => a - b);
-          const mid = Math.floor(sorted.length / 2);
-          return sorted.length % 2 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
-        }
-        
-        function safeDesviacion(arr) {
-          if (arr.length < 2) return null;
-          const promedio = arr.reduce((a,b) => a + b, 0) / arr.length;
-          const varianza = arr.reduce((a,b) => a + Math.pow(b - promedio, 2), 0) / arr.length;
-          return Math.sqrt(varianza);
-        }
-
-        function calcularPorcentajes(arr, limite1, limite2) {
-          if (!arr.length) return { bajo: '—', medio: '—', alto: '—' };
-          const bajo = arr.filter(v => v < limite1).length;
-          const medio = arr.filter(v => v >= limite1 && v <= limite2).length;
-          const alto = arr.filter(v => v > limite2).length;
-          const total = arr.length;
-          return {
-            bajo: ((bajo / total) * 100).toFixed(1) + '%',
-            medio: ((medio / total) * 100).toFixed(1) + '%',
-            alto: ((alto / total) * 100).toFixed(1) + '%'
-          };
-        }
 
         const tempMin = safeMin(temperaturas);
         const tempMax = safeMax(temperaturas);
         const tempProm = safeProm(temperaturas);
-        const tempMediana = safeMediana(temperaturas);
-        const tempDesv = safeDesviacion(temperaturas);
 
         const humMin = safeMin(humedades);
         const humMax = safeMax(humedades);
         const humProm = safeProm(humedades);
-        const humMediana = safeMediana(humedades);
-        const humDesv = safeDesviacion(humedades);
 
         // Actualiza DOM (sin necesidad de usar lastDate directamente)
         document.getElementById("estatus").innerHTML = statusImage;
@@ -419,26 +353,10 @@ permalink: /dataloggers/
         document.getElementById("tempMin").textContent = tempMin !== null ? tempMin.toFixed(0) : '—';
         document.getElementById("tempMax").textContent = tempMax !== null ? tempMax.toFixed(0) : '—';
         document.getElementById("tempProm").textContent = tempProm !== null ? tempProm.toFixed(0) : '—';
-        document.getElementById("tempMediana").textContent = tempMediana !== null ? tempMediana.toFixed(0) : '—';
-        document.getElementById("tempDesv").textContent = tempDesv !== null ? tempDesv.toFixed(2) : '—';
 
         document.getElementById("humMin").textContent = humMin !== null ? humMin.toFixed(0) : '—';
         document.getElementById("humMax").textContent = humMax !== null ? humMax.toFixed(0) : '—';
         document.getElementById("humProm").textContent = humProm !== null ? humProm.toFixed(0) : '—';
-        document.getElementById("humMediana").textContent = humMediana !== null ? humMediana.toFixed(0) : '—';
-        document.getElementById("humDesv").textContent = humDesv !== null ? humDesv.toFixed(2) : '—';
-
-        // Calcular porcentajes por rangos
-        const tempRanges = calcularPorcentajes(temperaturas, 21, 24);
-        const humRanges = calcularPorcentajes(humedades, 40, 50);
-
-        document.getElementById("tempBajo").textContent = tempRanges.bajo;
-        document.getElementById("tempMedio").textContent = tempRanges.medio;
-        document.getElementById("tempAlto").textContent = tempRanges.alto;
-
-        document.getElementById("humBaja").textContent = humRanges.bajo;
-        document.getElementById("humMedia").textContent = humRanges.medio;
-        document.getElementById("humAlta").textContent = humRanges.alto;
         } catch (err) {
           console.error(err);
           const tl = document.getElementById("totalLineas");
