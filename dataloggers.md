@@ -99,6 +99,33 @@ permalink: /dataloggers/
         </tr>
       </tbody>
     </table>
+
+    <table class="table table-sm" border="1">
+      <thead>
+        <tr>
+          <th>Rango</th>
+          <th>Temperatura</th>
+          <th>Humedad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>% < límite inferior</td>
+          <td id="tempBajo">—</td>
+          <td id="humBaja">—</td>
+        </tr>
+        <tr>
+          <td>% dentro del rango</td>
+          <td id="tempMedio">—</td>
+          <td id="humMedia">—</td>
+        </tr>
+        <tr>
+          <td>% > límite superior</td>
+          <td id="tempAlto">—</td>
+          <td id="humAlta">—</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
   <div class="chart-container">
@@ -359,6 +386,19 @@ permalink: /dataloggers/
           return Math.sqrt(varianza);
         }
 
+        function calcularPorcentajes(arr, limite1, limite2) {
+          if (!arr.length) return { bajo: '—', medio: '—', alto: '—' };
+          const bajo = arr.filter(v => v < limite1).length;
+          const medio = arr.filter(v => v >= limite1 && v <= limite2).length;
+          const alto = arr.filter(v => v > limite2).length;
+          const total = arr.length;
+          return {
+            bajo: ((bajo / total) * 100).toFixed(1) + '%',
+            medio: ((medio / total) * 100).toFixed(1) + '%',
+            alto: ((alto / total) * 100).toFixed(1) + '%'
+          };
+        }
+
         const tempMin = safeMin(temperaturas);
         const tempMax = safeMax(temperaturas);
         const tempProm = safeProm(temperaturas);
@@ -387,6 +427,18 @@ permalink: /dataloggers/
         document.getElementById("humProm").textContent = humProm !== null ? humProm.toFixed(0) : '—';
         document.getElementById("humMediana").textContent = humMediana !== null ? humMediana.toFixed(0) : '—';
         document.getElementById("humDesv").textContent = humDesv !== null ? humDesv.toFixed(2) : '—';
+
+        // Calcular porcentajes por rangos
+        const tempRanges = calcularPorcentajes(temperaturas, 21, 24);
+        const humRanges = calcularPorcentajes(humedades, 40, 50);
+
+        document.getElementById("tempBajo").textContent = tempRanges.bajo;
+        document.getElementById("tempMedio").textContent = tempRanges.medio;
+        document.getElementById("tempAlto").textContent = tempRanges.alto;
+
+        document.getElementById("humBaja").textContent = humRanges.bajo;
+        document.getElementById("humMedia").textContent = humRanges.medio;
+        document.getElementById("humAlta").textContent = humRanges.alto;
         } catch (err) {
           console.error(err);
           const tl = document.getElementById("totalLineas");
