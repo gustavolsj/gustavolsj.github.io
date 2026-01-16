@@ -42,6 +42,12 @@ permalink: /dataloggers/
     /* Ajustes responsivos menores */
     .table-sm { max-width: 900px; margin: 0 auto 1rem; }
     .container h2 { text-align: center; margin-top: 1rem; }
+    /* Tablas compactas lado a lado */
+    .compact-table { margin-bottom: 0.5rem; }
+    .compact-table th, .compact-table td { padding: 4px; font-size: 0.9rem; }
+    @media (min-width: 768px) {
+      .compact-table th, .compact-table td { padding: 6px; }
+    }
   </style>
 </head>
 
@@ -65,69 +71,74 @@ permalink: /dataloggers/
     </tr>
   </tbody>
 </table>
-    <table class="table table-sm" border="1">
-      <thead>
-        <tr>
-          <th>Métricas Estadísticas</th>
-          <th>T °C</th>
-          <th>HR %</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>mín</td>
-          <td id="tempMin">—</td>
-          <td id="humMin">—</td>
-        </tr>
-        <tr>
-          <td>máx</td>
-          <td id="tempMax">—</td>
-          <td id="humMax">—</td>
-        </tr>
-        <tr>
-          <td>prom</td>
-          <td id="tempProm">—</td>
-          <td id="humProm">—</td>
-        </tr>
-        <tr>
-          <td>mediana</td>
-          <td id="tempMediana">—</td>
-          <td id="humMediana">—</td>
-        </tr>
-        <tr>
-          <td>desv. est.</td>
-          <td id="tempDesv">—</td>
-          <td id="humDesv">—</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <table class="table table-sm" border="1">
-      <thead>
-        <tr>
-          <th>Rangos Límite</th>
-          <th>T °C 21 - 24</th>
-          <th>HR % 45 - 55</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>% < límite inferior</td>
-          <td id="tempBajo">—</td>
-          <td id="humBaja">—</td>
-        </tr>
-        <tr>
-          <td>% dentro del rango</td>
-          <td id="tempMedio">—</td>
-          <td id="humMedia">—</td>
-        </tr>
-        <tr>
-          <td>% > límite superior</td>
-          <td id="tempAlto">—</td>
-          <td id="humAlta">—</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <table class="table table-sm compact-table" border="1">
+          <thead>
+            <tr>
+              <th>Métricas Estadísticas</th>
+              <th>T °C</th>
+              <th>HR %</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>mín</td>
+              <td id="tempMin">—</td>
+              <td id="humMin">—</td>
+            </tr>
+            <tr>
+              <td>máx</td>
+              <td id="tempMax">—</td>
+              <td id="humMax">—</td>
+            </tr>
+            <tr>
+              <td>prom</td>
+              <td id="tempProm">—</td>
+              <td id="humProm">—</td>
+            </tr>
+            <tr>
+              <td>mediana</td>
+              <td id="tempMediana">—</td>
+              <td id="humMediana">—</td>
+            </tr>
+            <tr>
+              <td>desv. est.</td>
+              <td id="tempDesv">—</td>
+              <td id="humDesv">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-12 col-md-6">
+        <table class="table table-sm compact-table" border="1">
+          <thead>
+            <tr>
+              <th>Rangos Límite</th>
+              <th>T °C 21 - 24</th>
+              <th>HR % 45 - 55</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>% < límite inferior</td>
+              <td id="tempBajo">—</td>
+              <td id="humBaja">—</td>
+            </tr>
+            <tr>
+              <td>% dentro del rango</td>
+              <td id="tempMedio">—</td>
+              <td id="humMedia">—</td>
+            </tr>
+            <tr>
+              <td>% > límite superior</td>
+              <td id="tempAlto">—</td>
+              <td id="humAlta">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
   </div>
 
