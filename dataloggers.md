@@ -58,6 +58,52 @@ permalink: /dataloggers/
   <!-- La imagen online/offline se inserta aquí por JavaScript -->
 </div>
     <div class="row">
+    <div class="col-12 col-md-6">
+        <!-- Tabla compacta con métricas generales arriba de rangos -->
+        <table class="table table-sm compact-table" border="1">
+          <thead>
+            <tr>
+              <th># de mediciones</th>
+              <th>Última medición</th>
+              <th>TWPI</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="totalLineas">—</td>
+              <td id="ultimaFecha">—</td>
+              <td id="twpiResumen">—</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="table table-sm compact-table" border="1">
+          <thead>
+            <tr>
+              <th>Rangos Límite</th>
+              <th>T °C 21 - 24</th>
+              <th>HR % 40 - 50</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>% < límite inferior</td>
+              <td id="tempBajo">—</td>
+              <td id="humBaja">—</td>
+            </tr>
+            <tr>
+              <td>% dentro del rango</td>
+              <td id="tempMedio">—</td>
+              <td id="humMedia">—</td>
+            </tr>
+            <tr>
+              <td>% > límite superior</td>
+              <td id="tempAlto">—</td>
+              <td id="humAlta">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <div class="col-12 col-md-6">
         <table class="table table-sm compact-table" border="1">
           <thead>
@@ -96,52 +142,7 @@ permalink: /dataloggers/
           </tbody>
         </table>
       </div>
-      <div class="col-12 col-md-6">
-        <!-- Tabla compacta con métricas generales arriba de rangos -->
-        <table class="table table-sm compact-table" border="1">
-          <thead>
-            <tr>
-              <th># de mediciones</th>
-              <th>Última medición</th>
-              <th>TWPI</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td id="totalLineas">—</td>
-              <td id="ultimaFecha">—</td>
-              <td id="twpiResumen">—</td>
-            </tr>
-          </tbody>
-        </table>
 
-        <table class="table table-sm compact-table" border="1">
-          <thead>
-            <tr>
-              <th>Rangos Límite</th>
-              <th>T °C 21 - 24</th>
-              <th>HR % 45 - 55</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>% < límite inferior</td>
-              <td id="tempBajo">—</td>
-              <td id="humBaja">—</td>
-            </tr>
-            <tr>
-              <td>% dentro del rango</td>
-              <td id="tempMedio">—</td>
-              <td id="humMedia">—</td>
-            </tr>
-            <tr>
-              <td>% > límite superior</td>
-              <td id="tempAlto">—</td>
-              <td id="humAlta">—</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
     </div>
 
   </div>
