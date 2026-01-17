@@ -10338,5 +10338,10 @@
         "fecha_hora": "16\/01\/26\/ 18:30",
         "temperatura": "19.10",
         "humedad": "44.00"
+    },
+    {
+        "fecha_hora": "16\/01\/26\/ 18:40",
+        "temperatura": "19.10",
+        "humedad": "43.00"
     }
 ]
