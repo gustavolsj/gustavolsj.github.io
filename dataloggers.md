@@ -57,11 +57,42 @@ permalink: /dataloggers/
     th { font-weight: bold; border-left: none; border-right: none; border-top: none; }
     td { border-left: none; border-right: none; }
 
+    /* Estilos modernos para tablas */
+    table thead {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+    
+    table tbody tr {
+      background-color: #f8f9ff;
+      transition: all 0.3s ease;
+    }
+    
+    table tbody tr:nth-child(even) {
+      background-color: #e8ebf7;
+    }
+    
+    table tbody tr:hover {
+      background-color: #d5ddf0;
+      box-shadow: inset 0 0 5px rgba(102, 126, 234, 0.2);
+    }
+    
+    table th {
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    
+    table td {
+      color: #333;
+      font-weight: 500;
+    }
+
     /* Ajustes responsivos menores */
     .table-sm { max-width: 900px; margin: 0 auto 1rem; }
     .container h2 { text-align: center; margin-top: 1rem; }
     /* Tablas compactas lado a lado */
-    .compact-table { margin-bottom: 0.5rem; }
+    .compact-table { margin-bottom: 0.5rem; border-radius: 6px; overflow: hidden; }
     .compact-table th, .compact-table td { padding: 4px; font-size: 0.9rem; }
     @media (min-width: 768px) {
       .compact-table th, .compact-table td { padding: 6px; }
@@ -162,13 +193,13 @@ permalink: /dataloggers/
   </div>
 
   <div class="row align-items-center chart-status-row">
-    <div class="col-12 col-md-4 text-center">
+    <div class="col-12 col-md-2 text-center">
       <div class="status-card">
         <div class="status-label">Estado</div>
         <div id="estatus">—</div>
       </div>
     </div>
-    <div class="col-12 col-md-8">
+    <div class="col-12 col-md-10">
       <div class="chart-container">
         <canvas id="myChart"></canvas>
       </div>
