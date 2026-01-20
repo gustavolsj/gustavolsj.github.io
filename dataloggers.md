@@ -29,6 +29,24 @@ permalink: /dataloggers/
       margin: 20px auto;
     }
 
+    .chart-status-row {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .status-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .status-card .status-label {
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+
     .text-center {
       text-align: center;
     }
@@ -53,10 +71,6 @@ permalink: /dataloggers/
 
 <body>
   <div class="container">
-<div class="status-indicator text-center" style="margin-bottom: 0.5rem;">
-  <span>Estado:</span> <span id="estatus">—</span>
-  <!-- La imagen online/offline se inserta aquí por JavaScript -->
-</div>
     <div class="row">
     <div class="col-12 col-md-6">
         <!-- Tabla compacta con métricas generales arriba de rangos -->
@@ -147,8 +161,18 @@ permalink: /dataloggers/
 
   </div>
 
-  <div class="chart-container">
-    <canvas id="myChart"></canvas>
+  <div class="row align-items-center chart-status-row">
+    <div class="col-12 col-md-4 text-center">
+      <div class="status-card">
+        <div class="status-label">Estado</div>
+        <div id="estatus">—</div>
+      </div>
+    </div>
+    <div class="col-12 col-md-8">
+      <div class="chart-container">
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
   </div>
 
 <div id="nuevo" class="row">
@@ -374,10 +398,10 @@ permalink: /dataloggers/
 
             if (diffInMinutes > 65) {
               console.log('Result: OFFLINE (difference > 65 minutes)');
-              statusImage = '<img src="/images/cloud-offline.png" alt="Offline" style="width: 44px; height: 44px; margin-left: 8px;">';
+              statusImage = '<img src="/images/cloud-offline.png" alt="Offline" style="width: 300px; height: 300px; max-width: 100%; object-fit: contain;">';
             } else {
               console.log('Result: ONLINE (difference ≤ 65 minutes)');
-              statusImage = '<img src="/images/cloud-online.png" alt="Online" style="width: 44px; height: 44px; margin-left: 8px;">';
+              statusImage = '<img src="/images/cloud-online.png" alt="Online" style="width: 300px; height: 300px; max-width: 100%; object-fit: contain;">';
             }
             console.log('=============================================');
           } catch (dateError) {
