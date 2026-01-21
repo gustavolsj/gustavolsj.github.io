@@ -12938,5 +12938,10 @@
         "fecha_hora": "20\/01\/26\/ 21:50",
         "temperatura": "20.60",
         "humedad": "48.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 22:00",
+        "temperatura": "20.50",
+        "humedad": "48.00"
     }
 ]
