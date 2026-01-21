@@ -12823,6 +12823,7 @@
         "fecha_hora": "20\/01\/26\/ 17:57",
         "temperatura": "19.80",
         "humedad": "48.00"
+<<<<<<< HEAD
     },
     {
         "fecha_hora": "20\/01\/26\/ 18:08",
@@ -16959,4 +16960,7 @@
         "temperatura": "21.00",
         "humedad": "39.00"
     },
+=======
+    }
+>>>>>>> 23d5a046 (commit automatico)
 ]
