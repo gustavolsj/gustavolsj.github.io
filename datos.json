@@ -12773,5 +12773,150 @@
         "fecha_hora": "20\/01\/26\/ 16:16",
         "temperatura": "19.40",
         "humedad": "47.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 16:26",
+        "temperatura": "19.50",
+        "humedad": "47.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 16:36",
+        "temperatura": "19.50",
+        "humedad": "47.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 16:47",
+        "temperatura": "19.60",
+        "humedad": "47.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 16:57",
+        "temperatura": "19.60",
+        "humedad": "47.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 17:07",
+        "temperatura": "19.60",
+        "humedad": "47.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 17:17",
+        "temperatura": "19.50",
+        "humedad": "47.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 17:27",
+        "temperatura": "19.50",
+        "humedad": "48.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 17:37",
+        "temperatura": "19.50",
+        "humedad": "48.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 17:47",
+        "temperatura": "19.60",
+        "humedad": "48.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 17:57",
+        "temperatura": "19.80",
+        "humedad": "48.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 18:08",
+        "temperatura": "20.00",
+        "humedad": "48.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 18:18",
+        "temperatura": "20.30",
+        "humedad": "49.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 18:28",
+        "temperatura": "20.60",
+        "humedad": "47.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 18:38",
+        "temperatura": "21.00",
+        "humedad": "46.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 18:48",
+        "temperatura": "21.30",
+        "humedad": "45.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 18:58",
+        "temperatura": "21.40",
+        "humedad": "45.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 19:08",
+        "temperatura": "21.50",
+        "humedad": "46.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 19:18",
+        "temperatura": "21.40",
+        "humedad": "46.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 19:29",
+        "temperatura": "21.30",
+        "humedad": "46.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 19:39",
+        "temperatura": "21.80",
+        "humedad": "45.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 19:49",
+        "temperatura": "22.00",
+        "humedad": "46.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 19:59",
+        "temperatura": "22.40",
+        "humedad": "46.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 20:09",
+        "temperatura": "22.50",
+        "humedad": "46.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 20:19",
+        "temperatura": "22.50",
+        "humedad": "46.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 20:29",
+        "temperatura": "22.60",
+        "humedad": "46.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 20:39",
+        "temperatura": "22.60",
+        "humedad": "46.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 20:48",
+        "temperatura": "22.60",
+        "humedad": "46.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 20:58",
+        "temperatura": "22.70",
+        "humedad": "47.00"
+    },
+    {
+        "fecha_hora": "20\/01\/26\/ 21:09",
+        "temperatura": "22.60",
+        "humedad": "46.00"
     }
 ]
