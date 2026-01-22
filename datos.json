@@ -13993,5 +13993,10 @@
         "fecha_hora": "22\/01\/26\/ 09:49",
         "temperatura": "18.50",
         "humedad": "54.00"
+    },
+    {
+        "fecha_hora": "22\/01\/26\/ 10:00",
+        "temperatura": "18.60",
+        "humedad": "52.00"
     }
 ]
