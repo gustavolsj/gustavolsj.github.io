@@ -16158,5 +16158,10 @@
         "fecha_hora": "25\/01\/26\/ 11:15",
         "temperatura": "19.90",
         "humedad": "39.00"
+    },
+    {
+        "fecha_hora": "25\/01\/26\/ 11:25",
+        "temperatura": "20.00",
+        "humedad": "39.00"
     }
 ]
