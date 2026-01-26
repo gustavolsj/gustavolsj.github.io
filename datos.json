@@ -16783,5 +16783,10 @@
         "fecha_hora": "26\/01\/26\/ 08:20",
         "temperatura": "19.80",
         "humedad": "43.00"
+    },
+    {
+        "fecha_hora": "26\/01\/26\/ 08:30",
+        "temperatura": "19.70",
+        "humedad": "43.00"
     }
 ]
