@@ -90,6 +90,9 @@ permalink: /dataloggers/
     }
     tbody tr:hover {
       background-color: #f8f9fa;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      position: relative;
+      z-index: 1;
     }
     tbody tr:nth-child(even) {
       background-color: #f8f9fa;
@@ -99,7 +102,7 @@ permalink: /dataloggers/
       font-size: 0.9rem;
     }
     tbody tr:first-child td {
-      color: #667eea;
+      color: #333;
       font-weight: 500;
     }
 
