@@ -17568,5 +17568,10 @@
         "fecha_hora": "27\/01\/26\/ 11:00",
         "temperatura": "20.10",
         "humedad": "39.00"
+    },
+    {
+        "fecha_hora": "27\/01\/26\/ 11:10",
+        "temperatura": "20.20",
+        "humedad": "39.00"
     }
 ]
