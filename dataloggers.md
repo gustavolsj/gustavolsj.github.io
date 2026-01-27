@@ -52,19 +52,62 @@ permalink: /dataloggers/
     }
 
     /* Estilos para la tabla de resumen integrada */
-    table { border-collapse: collapse; width: auto; margin-bottom: 1rem; }
-    th, td { border-bottom: 1px solid; padding: 8px; text-align: center; }
-    th { font-weight: bold; border-left: none; border-right: none; border-top: none; }
-    td { border-left: none; border-right: none; }
+    table { 
+      border-collapse: separate;
+      border-spacing: 0;
+      width: auto; 
+      margin-bottom: 1.5rem; 
+      border: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    th, td { 
+      padding: 10px 12px; 
+      text-align: center;
+      border: none;
+    }
+    th { 
+      font-weight: 600;
+      color: white;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      font-size: 0.9rem;
+    }
+    thead tr:first-child th:first-child {
+      border-radius: 12px 0 0 0;
+    }
+    thead tr:first-child th:last-child {
+      border-radius: 0 12px 0 0;
+    }
+    tbody tr {
+      border-bottom: 1px solid #e8e8e8;
+      transition: background-color 0.2s ease;
+    }
+    tbody tr:last-child {
+      border-bottom: none;
+    }
+    tbody tr:hover {
+      background-color: #f8f9fa;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #f8f9fa;
+    }
+    tbody td {
+      color: #333;
+      font-size: 0.9rem;
+    }
+    tbody tr:first-child td {
+      color: #667eea;
+      font-weight: 500;
+    }
 
     /* Ajustes responsivos menores */
     .table-sm { max-width: 900px; margin: 0 auto 1rem; }
     .container h2 { text-align: center; margin-top: 1rem; }
     /* Tablas compactas lado a lado */
     .compact-table { margin-bottom: 0.5rem; }
-    .compact-table th, .compact-table td { padding: 4px; font-size: 0.9rem; }
     @media (min-width: 768px) {
-      .compact-table th, .compact-table td { padding: 6px; }
+      table { margin-bottom: 1.5rem; }
     }
   </style>
 </head>
@@ -74,7 +117,7 @@ permalink: /dataloggers/
     <div class="row">
     <div class="col-12 col-md-6">
         <!-- Tabla compacta con métricas generales arriba de rangos -->
-        <table class="table table-sm compact-table" border="1">
+        <table class="table table-sm compact-table">
           <thead>
             <tr>
               <th># de mediciones</th>
@@ -91,7 +134,7 @@ permalink: /dataloggers/
           </tbody>
         </table>
 
-        <table class="table table-sm compact-table" border="1">
+        <table class="table table-sm compact-table">
           <thead>
             <tr>
               <th>Rangos Límite</th>
@@ -119,7 +162,7 @@ permalink: /dataloggers/
         </table>
       </div>
       <div class="col-12 col-md-6">
-        <table class="table table-sm compact-table" border="1">
+        <table class="table table-sm compact-table">
           <thead>
             <tr>
               <th>Métricas Estadísticas</th>
