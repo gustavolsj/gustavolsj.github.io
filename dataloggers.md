@@ -67,10 +67,12 @@ permalink: /dataloggers/
       text-align: center;
       border: none;
     }
+    thead tr:first-child {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
     th { 
       font-weight: 600;
       color: white;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       font-size: 0.9rem;
     }
     thead tr:first-child th:first-child {
@@ -441,10 +443,10 @@ permalink: /dataloggers/
 
             if (diffInMinutes > 65) {
               console.log('Result: OFFLINE (difference > 65 minutes)');
-              statusImage = '<img src="/images/cloud-offline.png" alt="Offline" style="width: 300px; height: 300px; max-width: 100%; object-fit: contain;">';
+              statusImage = '<img src="/images/cloud-offline.png" alt="Offline" style="width: 200px; height: 200px; max-width: 100%; object-fit: contain;">';
             } else {
               console.log('Result: ONLINE (difference ≤ 65 minutes)');
-              statusImage = '<img src="/images/cloud-online.png" alt="Online" style="width: 300px; height: 300px; max-width: 100%; object-fit: contain;">';
+              statusImage = '<img src="/images/cloud-online.png" alt="Online" style="width: 200px; height: 200px; max-width: 100%; object-fit: contain;">';
             }
             console.log('=============================================');
           } catch (dateError) {
