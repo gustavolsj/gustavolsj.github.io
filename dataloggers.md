@@ -52,10 +52,16 @@ permalink: /dataloggers/
     }
 
     /* Estilos para la tabla de resumen integrada */
-    table { border-collapse: collapse; width: auto; margin-bottom: 1rem; }
-    th, td { border-bottom: 1px solid; padding: 8px; text-align: center; }
-    th { font-weight: bold; border-left: none; border-right: none; border-top: none; }
-    td { border-left: none; border-right: none; }
+    table { border-collapse: collapse; width: auto; margin-bottom: 1rem; border: none; }
+    th, td { padding: 12px; text-align: center; border: none; }
+    th { 
+      font-weight: bold; 
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+    th:first-child { border-radius: 8px 0 0 0; }
+    th:last-child { border-radius: 0 8px 0 0; }
+    td { color: #333; }
 
     /* Ajustes responsivos menores */
     .table-sm { max-width: 900px; margin: 0 auto 1rem; }
@@ -74,7 +80,7 @@ permalink: /dataloggers/
     <div class="row">
     <div class="col-12 col-md-6">
         <!-- Tabla compacta con métricas generales arriba de rangos -->
-        <table class="table table-sm compact-table" border="1">
+        <table class="table table-sm compact-table">
           <thead>
             <tr>
               <th># de mediciones</th>
@@ -91,7 +97,7 @@ permalink: /dataloggers/
           </tbody>
         </table>
 
-        <table class="table table-sm compact-table" border="1">
+        <table class="table table-sm compact-table">
           <thead>
             <tr>
               <th>Rangos Límite</th>
@@ -119,7 +125,7 @@ permalink: /dataloggers/
         </table>
       </div>
       <div class="col-12 col-md-6">
-        <table class="table table-sm compact-table" border="1">
+        <table class="table table-sm compact-table">
           <thead>
             <tr>
               <th>Métricas Estadísticas</th>
