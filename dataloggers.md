@@ -106,6 +106,13 @@ permalink: /dataloggers/
       color: #333;
       font-weight: 500;
     }
+    tbody tr:first-child:hover {
+      background-color: #f8f9fa;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      position: relative;
+      z-index: 1;
+      font-weight: bold;
+    }
 
     /* Ajustes responsivos menores */
     .table-sm { max-width: 900px; margin: 0 auto 1rem; }
