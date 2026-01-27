@@ -93,6 +93,7 @@ permalink: /dataloggers/
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
       position: relative;
       z-index: 1;
+      font-weight: bold;
     }
     tbody tr:nth-child(even) {
       background-color: #f8f9fa;
