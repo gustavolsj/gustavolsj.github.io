@@ -18708,5 +18708,10 @@
         "fecha_hora": "03\/02\/26\/ 16:12",
         "temperatura": "20.20",
         "humedad": "35.00"
+    },
+    {
+        "fecha_hora": "03\/02\/26\/ 16:22",
+        "temperatura": "20.10",
+        "humedad": "35.00"
     }
 ]
