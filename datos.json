@@ -19408,5 +19408,10 @@
         "fecha_hora": "04\/02\/26\/ 15:40",
         "temperatura": "20.30",
         "humedad": "38.00"
+    },
+    {
+        "fecha_hora": "04\/02\/26\/ 15:50",
+        "temperatura": "20.40",
+        "humedad": "38.00"
     }
 ]
