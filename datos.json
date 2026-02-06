@@ -20223,5 +20223,10 @@
         "fecha_hora": "05\/02\/26\/ 19:20",
         "temperatura": "19.90",
         "humedad": "45.00"
+    },
+    {
+        "fecha_hora": "05\/02\/26\/ 19:30",
+        "temperatura": "19.90",
+        "humedad": "45.00"
     }
 ]
