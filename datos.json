@@ -22223,5 +22223,10 @@
         "fecha_hora": "08\/02\/26\/ 15:10",
         "temperatura": "20.30",
         "humedad": "25.00"
+    },
+    {
+        "fecha_hora": "08\/02\/26\/ 15:20",
+        "temperatura": "20.40",
+        "humedad": "26.00"
     }
 ]
