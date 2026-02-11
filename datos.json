@@ -23898,5 +23898,10 @@
         "fecha_hora": "10\/02\/26\/ 23:49",
         "temperatura": "21.80",
         "humedad": "36.00"
+    },
+    {
+        "fecha_hora": "10\/02\/26\/ 23:59",
+        "temperatura": "21.80",
+        "humedad": "36.00"
     }
 ]
