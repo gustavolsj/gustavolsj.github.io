@@ -24133,5 +24133,10 @@
         "fecha_hora": "11\/02\/26\/ 07:45",
         "temperatura": "21.40",
         "humedad": "40.00"
+    },
+    {
+        "fecha_hora": "11\/02\/26\/ 07:55",
+        "temperatura": "21.40",
+        "humedad": "45.00"
     }
 ]
