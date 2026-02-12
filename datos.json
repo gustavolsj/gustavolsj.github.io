@@ -24948,5 +24948,10 @@
         "fecha_hora": "12\/02\/26\/ 11:15",
         "temperatura": "23.00",
         "humedad": "37.00"
+    },
+    {
+        "fecha_hora": "12\/02\/26\/ 11:25",
+        "temperatura": "23.10",
+        "humedad": "37.00"
     }
 ]
