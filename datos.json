@@ -31973,5 +31973,10 @@
         "fecha_hora": "23\/02\/26\/ 00:10",
         "temperatura": "21.10",
         "humedad": "33.00"
+    },
+    {
+        "fecha_hora": "23\/02\/26\/ 00:20",
+        "temperatura": "21.10",
+        "humedad": "33.00"
     }
 ]
