@@ -33138,5 +33138,10 @@
         "fecha_hora": "24\/02\/26\/ 15:30",
         "temperatura": "20.00",
         "humedad": "25.00"
+    },
+    {
+        "fecha_hora": "24\/02\/26\/ 15:40",
+        "temperatura": "20.20",
+        "humedad": "25.00"
     }
 ]
