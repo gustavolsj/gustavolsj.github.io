@@ -34128,5 +34128,10 @@
         "fecha_hora": "26\/02\/26\/ 00:55",
         "temperatura": "20.20",
         "humedad": "34.00"
+    },
+    {
+        "fecha_hora": "26\/02\/26\/ 01:05",
+        "temperatura": "20.10",
+        "humedad": "34.00"
     }
 ]
