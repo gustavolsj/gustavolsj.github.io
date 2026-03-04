@@ -38593,5 +38593,10 @@
         "fecha_hora": "04\/03\/26\/ 08:30",
         "temperatura": "21.20",
         "humedad": "42.00"
+    },
+    {
+        "fecha_hora": "04\/03\/26\/ 08:40",
+        "temperatura": "21.20",
+        "humedad": "41.00"
     }
 ]
