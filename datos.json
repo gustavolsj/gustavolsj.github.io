@@ -39758,5 +39758,10 @@
         "fecha_hora": "06\/03\/26\/ 00:00",
         "temperatura": "21.40",
         "humedad": "48.00"
+    },
+    {
+        "fecha_hora": "06\/03\/26\/ 00:10",
+        "temperatura": "21.30",
+        "humedad": "48.00"
     }
 ]
