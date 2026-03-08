@@ -41428,5 +41428,10 @@
         "fecha_hora": "08\/03\/26\/ 09:55",
         "temperatura": "22.00",
         "humedad": "40.00"
+    },
+    {
+        "fecha_hora": "08\/03\/26\/ 10:05",
+        "temperatura": "22.10",
+        "humedad": "40.00"
     }
 ]
