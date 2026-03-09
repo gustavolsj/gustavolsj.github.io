@@ -41963,5 +41963,10 @@
         "fecha_hora": "09\/03\/26\/ 04:08",
         "temperatura": "22.00",
         "humedad": "44.00"
+    },
+    {
+        "fecha_hora": "09\/03\/26\/ 04:18",
+        "temperatura": "22.10",
+        "humedad": "44.00"
     }
 ]
