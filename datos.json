@@ -42638,5 +42638,10 @@
         "fecha_hora": "10\/03\/26\/ 02:55",
         "temperatura": "22.50",
         "humedad": "47.00"
+    },
+    {
+        "fecha_hora": "10\/03\/26\/ 03:05",
+        "temperatura": "22.50",
+        "humedad": "46.00"
     }
 ]
