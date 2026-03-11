@@ -43618,5 +43618,10 @@
         "fecha_hora": "11\/03\/26\/ 12:00",
         "temperatura": "23.70",
         "humedad": "37.00"
+    },
+    {
+        "fecha_hora": "11\/03\/26\/ 12:10",
+        "temperatura": "23.70",
+        "humedad": "37.00"
     }
 ]
