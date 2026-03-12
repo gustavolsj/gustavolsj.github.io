@@ -44343,5 +44343,10 @@
         "fecha_hora": "12\/03\/26\/ 12:24",
         "temperatura": "23.30",
         "humedad": "31.00"
+    },
+    {
+        "fecha_hora": "12\/03\/26\/ 12:34",
+        "temperatura": "23.20",
+        "humedad": "30.00"
     }
 ]
