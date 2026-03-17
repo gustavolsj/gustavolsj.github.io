@@ -47873,5 +47873,10 @@
         "fecha_hora": "17\/03\/26\/ 11:51",
         "temperatura": "22.70",
         "humedad": "42.00"
+    },
+    {
+        "fecha_hora": "17\/03\/26\/ 12:01",
+        "temperatura": "22.80",
+        "humedad": "41.00"
     }
 ]
