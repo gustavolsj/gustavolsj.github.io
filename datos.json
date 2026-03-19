@@ -49428,5 +49428,10 @@
         "fecha_hora": "19\/03\/26\/ 16:20",
         "temperatura": "22.70",
         "humedad": "25.00"
+    },
+    {
+        "fecha_hora": "19\/03\/26\/ 16:30",
+        "temperatura": "22.60",
+        "humedad": "24.00"
     }
 ]
