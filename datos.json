@@ -49928,5 +49928,10 @@
         "fecha_hora": "20\/03\/26\/ 09:12",
         "temperatura": "20.00",
         "humedad": "43.00"
+    },
+    {
+        "fecha_hora": "20\/03\/26\/ 09:23",
+        "temperatura": "20.10",
+        "humedad": "43.00"
     }
 ]
