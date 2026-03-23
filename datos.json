@@ -51813,5 +51813,10 @@
         "fecha_hora": "23\/03\/26\/ 01:00",
         "temperatura": "20.00",
         "humedad": "39.00"
+    },
+    {
+        "fecha_hora": "23\/03\/26\/ 01:10",
+        "temperatura": "20.00",
+        "humedad": "40.00"
     }
 ]
