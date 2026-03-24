@@ -52798,5 +52798,10 @@
         "fecha_hora": "24\/03\/26\/ 10:15",
         "temperatura": "20.60",
         "humedad": "44.00"
+    },
+    {
+        "fecha_hora": "24\/03\/26\/ 10:25",
+        "temperatura": "20.80",
+        "humedad": "45.00"
     }
 ]
