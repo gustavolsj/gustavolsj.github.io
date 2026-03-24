@@ -52613,5 +52613,10 @@
         "fecha_hora": "24\/03\/26\/ 04:00",
         "temperatura": "19.80",
         "humedad": "46.00"
+    },
+    {
+        "fecha_hora": "24\/03\/26\/ 04:11",
+        "temperatura": "19.90",
+        "humedad": "45.00"
     }
 ]
