@@ -52393,5 +52393,10 @@
         "fecha_hora": "23\/03\/26\/ 20:35",
         "temperatura": "20.60",
         "humedad": "42.00"
+    },
+    {
+        "fecha_hora": "23\/03\/26\/ 20:45",
+        "temperatura": "20.50",
+        "humedad": "43.00"
     }
 ]
