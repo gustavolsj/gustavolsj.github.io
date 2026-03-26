@@ -53768,5 +53768,10 @@
         "fecha_hora": "25\/03\/26\/ 19:00",
         "temperatura": "21.50",
         "humedad": "26.00"
+    },
+    {
+        "fecha_hora": "25\/03\/26\/ 19:10",
+        "temperatura": "21.40",
+        "humedad": "27.00"
     }
 ]
