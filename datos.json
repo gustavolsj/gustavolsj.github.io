@@ -54953,5 +54953,10 @@
         "fecha_hora": "27\/03\/26\/ 11:00",
         "temperatura": "21.20",
         "humedad": "37.00"
+    },
+    {
+        "fecha_hora": "27\/03\/26\/ 11:10",
+        "temperatura": "21.30",
+        "humedad": "37.00"
     }
 ]
