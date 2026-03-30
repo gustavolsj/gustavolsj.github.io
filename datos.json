@@ -57148,5 +57148,10 @@
         "fecha_hora": "30\/03\/26\/ 14:10",
         "temperatura": "20.00",
         "humedad": "40.00"
+    },
+    {
+        "fecha_hora": "30\/03\/26\/ 14:20",
+        "temperatura": "20.00",
+        "humedad": "40.00"
     }
 ]
