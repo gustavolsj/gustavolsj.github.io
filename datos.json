@@ -57718,5 +57718,10 @@
         "fecha_hora": "31\/03\/26\/ 09:15",
         "temperatura": "18.80",
         "humedad": "54.00"
+    },
+    {
+        "fecha_hora": "31\/03\/26\/ 09:25",
+        "temperatura": "18.90",
+        "humedad": "53.00"
     }
 ]
