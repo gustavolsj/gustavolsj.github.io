@@ -58478,5 +58478,10 @@
         "fecha_hora": "01\/04\/26\/ 11:04",
         "temperatura": "19.70",
         "humedad": "44.00"
+    },
+    {
+        "fecha_hora": "01\/04\/26\/ 11:15",
+        "temperatura": "19.70",
+        "humedad": "42.00"
     }
 ]
