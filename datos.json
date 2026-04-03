@@ -59458,5 +59458,10 @@
         "fecha_hora": "02\/04\/26\/ 20:20",
         "temperatura": "22.10",
         "humedad": "45.00"
+    },
+    {
+        "fecha_hora": "02\/04\/26\/ 20:30",
+        "temperatura": "22.00",
+        "humedad": "47.00"
     }
 ]
