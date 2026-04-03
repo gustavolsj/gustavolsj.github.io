@@ -59838,5 +59838,10 @@
         "fecha_hora": "03\/04\/26\/ 09:10",
         "temperatura": "20.70",
         "humedad": "45.00"
+    },
+    {
+        "fecha_hora": "03\/04\/26\/ 09:20",
+        "temperatura": "20.80",
+        "humedad": "44.00"
     }
 ]
