@@ -60213,5 +60213,10 @@
         "fecha_hora": "03\/04\/26\/ 21:40",
         "temperatura": "23.10",
         "humedad": "44.00"
+    },
+    {
+        "fecha_hora": "03\/04\/26\/ 21:50",
+        "temperatura": "23.00",
+        "humedad": "43.00"
     }
 ]
