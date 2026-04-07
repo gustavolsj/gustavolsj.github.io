@@ -60808,5 +60808,10 @@
         "fecha_hora": "07\/04\/26\/ 02:10",
         "temperatura": "22.30",
         "humedad": "46.00"
+    },
+    {
+        "fecha_hora": "07\/04\/26\/ 02:20",
+        "temperatura": "22.30",
+        "humedad": "45.00"
     }
 ]
