@@ -61768,5 +61768,10 @@
         "fecha_hora": "08\/04\/26\/ 11:00",
         "temperatura": "23.00",
         "humedad": "47.00"
+    },
+    {
+        "fecha_hora": "08\/04\/26\/ 11:10",
+        "temperatura": "23.10",
+        "humedad": "46.00"
     }
 ]
