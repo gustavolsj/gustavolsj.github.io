@@ -68528,5 +68528,10 @@
         "fecha_hora": "18\/04\/26\/ 20:50",
         "temperatura": "26.50",
         "humedad": "25.00"
+    },
+    {
+        "fecha_hora": "18\/04\/26\/ 21:00",
+        "temperatura": "26.40",
+        "humedad": "24.00"
     }
 ]
