@@ -68738,5 +68738,10 @@
         "fecha_hora": "19\/04\/26\/ 03:55",
         "temperatura": "25.50",
         "humedad": "40.00"
+    },
+    {
+        "fecha_hora": "19\/04\/26\/ 04:05",
+        "temperatura": "25.40",
+        "humedad": "40.00"
     }
 ]
