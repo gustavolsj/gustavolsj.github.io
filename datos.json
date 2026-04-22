@@ -70873,5 +70873,10 @@
         "fecha_hora": "22\/04\/26\/ 04:00",
         "temperatura": "23.40",
         "humedad": "54.00"
+    },
+    {
+        "fecha_hora": "22\/04\/26\/ 04:10",
+        "temperatura": "23.40",
+        "humedad": "54.00"
     }
 ]
