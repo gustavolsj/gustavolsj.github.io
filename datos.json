@@ -71373,5 +71373,10 @@
         "fecha_hora": "22\/04\/26\/ 20:52",
         "temperatura": "24.10",
         "humedad": "53.00"
+    },
+    {
+        "fecha_hora": "22\/04\/26\/ 21:03",
+        "temperatura": "24.00",
+        "humedad": "53.00"
     }
 ]
