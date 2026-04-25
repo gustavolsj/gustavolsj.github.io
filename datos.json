@@ -73138,5 +73138,10 @@
         "fecha_hora": "25\/04\/26\/ 09:30",
         "temperatura": "23.80",
         "humedad": "47.00"
+    },
+    {
+        "fecha_hora": "25\/04\/26\/ 09:40",
+        "temperatura": "23.90",
+        "humedad": "46.00"
     }
 ]
