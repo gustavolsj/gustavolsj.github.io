@@ -75513,5 +75513,10 @@
         "fecha_hora": "28\/04\/26\/ 22:50",
         "temperatura": "26.80",
         "humedad": "35.00"
+    },
+    {
+        "fecha_hora": "28\/04\/26\/ 23:00",
+        "temperatura": "26.80",
+        "humedad": "34.00"
     }
 ]
