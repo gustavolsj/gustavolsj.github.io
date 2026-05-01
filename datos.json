@@ -76963,5 +76963,10 @@
         "fecha_hora": "30\/04\/26\/ 23:50",
         "temperatura": "26.50",
         "humedad": "27.00"
+    },
+    {
+        "fecha_hora": "01\/05\/26\/ 00:00",
+        "temperatura": "26.50",
+        "humedad": "27.00"
     }
 ]
