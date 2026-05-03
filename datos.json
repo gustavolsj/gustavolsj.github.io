@@ -78678,5 +78678,10 @@
         "fecha_hora": "03\/05\/26\/ 10:19",
         "temperatura": "26.00",
         "humedad": "45.00"
+    },
+    {
+        "fecha_hora": "03\/05\/26\/ 10:29",
+        "temperatura": "26.10",
+        "humedad": "46.00"
     }
 ]
