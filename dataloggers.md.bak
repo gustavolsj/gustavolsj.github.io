@@ -52,75 +52,25 @@ permalink: /dataloggers/
     }
 
     /* Estilos para la tabla de resumen integrada */
-    table { 
-      border-collapse: separate;
-      border-spacing: 0;
-      width: auto; 
-      margin-bottom: 1.5rem; 
-      border: none;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      border-radius: 12px;
-      overflow: hidden;
-    }
-    th, td { 
-      padding: 10px 12px; 
-      text-align: center;
-      border: none;
-    }
-    thead tr:first-child {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    }
+    table { border-collapse: collapse; width: auto; margin-bottom: 1rem; border: none; }
+    th, td { padding: 12px; text-align: center; border: none; }
     th { 
-      font-weight: 600;
+      font-weight: bold; 
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       color: white;
-      font-size: 0.9rem;
     }
-    thead tr:first-child th:first-child {
-      border-radius: 12px 0 0 0;
-    }
-    thead tr:first-child th:last-child {
-      border-radius: 0 12px 0 0;
-    }
-    tbody tr {
-      border-bottom: 1px solid #e8e8e8;
-      transition: background-color 0.2s ease;
-    }
-    tbody tr:last-child {
-      border-bottom: none;
-    }
-    tbody tr:hover {
-      background-color: #f8f9fa;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      position: relative;
-      z-index: 1;
-      font-weight: bold;
-    }
-    tbody tr:nth-child(even) {
-      background-color: #f8f9fa;
-    }
-    tbody td {
-      color: #333;
-      font-size: 0.9rem;
-    }
-    tbody tr:first-child td {
-      color: #333;
-      font-weight: 500;
-    }
-    tbody tr:first-child:hover {
-      background-color: #f8f9fa;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      position: relative;
-      z-index: 1;
-      font-weight: bold;
-    }
+    th:first-child { border-radius: 8px 0 0 0; }
+    th:last-child { border-radius: 0 8px 0 0; }
+    td { color: #333; }
 
     /* Ajustes responsivos menores */
     .table-sm { max-width: 900px; margin: 0 auto 1rem; }
     .container h2 { text-align: center; margin-top: 1rem; }
     /* Tablas compactas lado a lado */
     .compact-table { margin-bottom: 0.5rem; }
+    .compact-table th, .compact-table td { padding: 4px; font-size: 0.9rem; }
     @media (min-width: 768px) {
-      table { margin-bottom: 1.5rem; }
+      .compact-table th, .compact-table td { padding: 6px; }
     }
   </style>
 </head>
@@ -261,8 +211,8 @@ permalink: /dataloggers/
         const response = await fetch('https://gustavolsj.github.io/datos.json');
         const data = await response.json();
 
-        // 🔹 2. Filtrar los últimos 700 registros (igual que antes)
-        const ultimos = data.slice(-700);
+        // 🔹 2. Filtrar los últimos 1500 registros (igual que antes)
+        const ultimos = data.slice(-1500);
 
         // 🔹 3. Extraer campos
         const labels = ultimos.map(d => d.fecha || d.Fecha || d.time || d.fecha_hora || ''); // Ajusta según tu JSON
