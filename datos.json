@@ -79453,5 +79453,10 @@
         "fecha_hora": "04\/05\/26\/ 12:34",
         "temperatura": "25.60",
         "humedad": "41.00"
+    },
+    {
+        "fecha_hora": "04\/05\/26\/ 12:44",
+        "temperatura": "25.60",
+        "humedad": "40.00"
     }
 ]
