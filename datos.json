@@ -80118,5 +80118,10 @@
         "fecha_hora": "05\/05\/26\/ 11:00",
         "temperatura": "25.80",
         "humedad": "40.00"
+    },
+    {
+        "fecha_hora": "05\/05\/26\/ 11:11",
+        "temperatura": "25.90",
+        "humedad": "39.00"
     }
 ]
