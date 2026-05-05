@@ -1,0 +1,14 @@
+el contenido de la carpeta build generada por el cuaderno de colab se debe descomprimir 
+y colocar en dos lugares diferentes:
+
+1. En la raiz del repositorio que hospedara la pagina van:
+
+-las imagenes 
+-assets_manifest.json 
+
+
+2. En el repositorio principal de la pagina de github.io van dos folders y un archivo:
+-datsets
+-static
+-manifest.json
+
