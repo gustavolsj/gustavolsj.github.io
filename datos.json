@@ -81633,5 +81633,10 @@
         "fecha_hora": "07\/05\/26\/ 14:09",
         "temperatura": "27.00",
         "humedad": "31.00"
+    },
+    {
+        "fecha_hora": "07\/05\/26\/ 14:19",
+        "temperatura": "27.10",
+        "humedad": "31.00"
     }
 ]
