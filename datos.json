@@ -82458,5 +82458,10 @@
         "fecha_hora": "08\/05\/26\/ 17:50",
         "temperatura": "26.20",
         "humedad": "40.00"
+    },
+    {
+        "fecha_hora": "08\/05\/26\/ 18:00",
+        "temperatura": "26.20",
+        "humedad": "39.00"
     }
 ]
