@@ -28,3 +28,9 @@ Este último aspecto me parece interesante desde el punto de vista de la interac
 Sin embargo en Pixplot todo el procesamiento se basa unicamente en el contenido visual de la imagen y no en sus metadatos, por ello me aprece acertado que para indicarlo se proponga un modo de acomodo e interacción que indique esa caracteristica de la aplicación y de los datos. Esto es muy diferente a la propuesta Distant Viewing de la que hablaré en otra ocasión.
 
 El acomodo que hace divide las imagenes en 5 conjunbtos en total, pero son dos los principales y efectivamente las imagenes que contiene cada uno de ellos guardan una coherencia visual entre sí y son muy diferentes a las del otro conjunto.
+
+## Links cruzados
+
+- [Ver todas las aplicaciones](/aplicaciones/)
+- [Visualización de semejanzas con PixPlot (VCS)]({% post_url 2023-8-4-Pixplot-vcs %})
+- [Collection Space Navigator (CSN)]({% post_url 2026-4-30-CSN %})
