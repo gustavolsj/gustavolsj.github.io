@@ -4,7 +4,7 @@ title: Mis aplicaciones web
 permalink: /aplicaciones/
 ---
 
-![buscador](./images/buscador_imgs.jpg){:width="900"}
+![buscador](./images/captura_buscador_similares.jpg)
 
 ## Aplicaciones web
 
@@ -18,3 +18,4 @@ Estas son algunas de las aplicaciones y experimentos que he creado, ya se encuen
 - [PixPlot de wikiart](https://gustavolsj.github.io/pixplot_wikiart/)
 - [PixPlot de fotografias de VCS](https://gustavolsj.github.io/pixplot_vcs/)
 - [Collection Space Navigatigator](https://gustavolsj.github.io/CSN/)
+- [Descripción de fotografías históricas con IA multimodal](https://gustavolsj.github.io/desc_foto_multimodal/)
