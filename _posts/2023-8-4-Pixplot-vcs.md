@@ -5,7 +5,7 @@ excerpt_separator: <!--more-->
 tags: inteligencia_artificial archivos_documentales fotografias pixplot
 ---
 
-![pixplot](../images/pixplot.JPG)
+![pixplot VCS](../images/captura_pixplot_VCS.jpg)
 
 ## PixPlot sobre fotografías de VCS
 

@@ -5,7 +5,7 @@ excerpt_separator: <!--more-->
 tags: inteligencia_artificial archivos_documentales fotografias
 ---
 
-![buscador](../images/buscador_imgs.jpg)
+![buscador](../images/captura_buscador_similares.jpg)
 
 ## Busqueda visual de fotografias
 
