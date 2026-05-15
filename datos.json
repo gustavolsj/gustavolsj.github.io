@@ -86428,5 +86428,10 @@
         "fecha_hora": "14\/05\/26\/ 22:10",
         "temperatura": "23.50",
         "humedad": "36.00"
+    },
+    {
+        "fecha_hora": "14\/05\/26\/ 22:20",
+        "temperatura": "23.60",
+        "humedad": "35.00"
     }
 ]
