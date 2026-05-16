@@ -87363,5 +87363,10 @@
         "fecha_hora": "16\/05\/26\/ 06:00",
         "temperatura": "23.60",
         "humedad": "43.00"
+    },
+    {
+        "fecha_hora": "16\/05\/26\/ 06:10",
+        "temperatura": "23.50",
+        "humedad": "43.00"
     }
 ]
