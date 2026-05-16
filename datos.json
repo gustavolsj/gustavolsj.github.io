@@ -87018,5 +87018,10 @@
         "fecha_hora": "15\/05\/26\/ 18:10",
         "temperatura": "25.10",
         "humedad": "24.00"
+    },
+    {
+        "fecha_hora": "15\/05\/26\/ 18:20",
+        "temperatura": "25.10",
+        "humedad": "25.00"
     }
 ]
