@@ -88343,5 +88343,10 @@
         "fecha_hora": "17\/05\/26\/ 15:04",
         "temperatura": "25.10",
         "humedad": "45.00"
+    },
+    {
+        "fecha_hora": "17\/05\/26\/ 15:15",
+        "temperatura": "25.10",
+        "humedad": "45.00"
     }
 ]
