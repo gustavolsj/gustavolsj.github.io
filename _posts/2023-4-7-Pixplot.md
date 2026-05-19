@@ -29,8 +29,6 @@ Sin embargo en Pixplot todo el procesamiento se basa unicamente en el contenido 
 
 El acomodo que hace divide las imagenes en 5 conjunbtos en total, pero son dos los principales y efectivamente las imagenes que contiene cada uno de ellos guardan una coherencia visual entre sí y son muy diferentes a las del otro conjunto.
 
-## Links cruzados
+
 
 - [Ver todas las aplicaciones](/aplicaciones/)
-- [Visualización de semejanzas con PixPlot (VCS)]({% post_url 2023-8-4-Pixplot-vcs %})
-- [Collection Space Navigator (CSN)]({% post_url 2026-4-30-CSN %})
