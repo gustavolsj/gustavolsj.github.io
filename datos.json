@@ -89773,5 +89773,10 @@
         "fecha_hora": "19\/05\/26\/ 15:32",
         "temperatura": "25.10",
         "humedad": "42.00"
+    },
+    {
+        "fecha_hora": "19\/05\/26\/ 15:42",
+        "temperatura": "25.00",
+        "humedad": "47.00"
     }
 ]
