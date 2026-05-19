@@ -89678,5 +89678,10 @@
         "fecha_hora": "19\/05\/26\/ 12:19",
         "temperatura": "25.00",
         "humedad": "42.00"
+    },
+    {
+        "fecha_hora": "19\/05\/26\/ 12:30",
+        "temperatura": "25.00",
+        "humedad": "41.00"
     }
 ]
