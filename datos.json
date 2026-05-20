@@ -90463,5 +90463,10 @@
         "fecha_hora": "20\/05\/26\/ 15:01",
         "temperatura": "24.80",
         "humedad": "41.00"
+    },
+    {
+        "fecha_hora": "20\/05\/26\/ 15:11",
+        "temperatura": "24.70",
+        "humedad": "40.00"
     }
 ]
