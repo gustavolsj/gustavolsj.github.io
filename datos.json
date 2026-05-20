@@ -90048,5 +90048,10 @@
         "fecha_hora": "20\/05\/26\/ 01:00",
         "temperatura": "24.00",
         "humedad": "52.00"
+    },
+    {
+        "fecha_hora": "20\/05\/26\/ 01:10",
+        "temperatura": "24.00",
+        "humedad": "52.00"
     }
 ]
