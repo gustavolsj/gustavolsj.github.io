@@ -90833,5 +90833,10 @@
         "fecha_hora": "21\/05\/26\/ 03:30",
         "temperatura": "23.60",
         "humedad": "52.00"
+    },
+    {
+        "fecha_hora": "21\/05\/26\/ 03:40",
+        "temperatura": "23.50",
+        "humedad": "52.00"
     }
 ]
