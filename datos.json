@@ -91708,5 +91708,10 @@
         "fecha_hora": "22\/05\/26\/ 09:03",
         "temperatura": "23.40",
         "humedad": "52.00"
+    },
+    {
+        "fecha_hora": "22\/05\/26\/ 09:13",
+        "temperatura": "23.50",
+        "humedad": "54.00"
     }
 ]
