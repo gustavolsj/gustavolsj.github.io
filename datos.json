@@ -92513,5 +92513,10 @@
         "fecha_hora": "23\/05\/26\/ 12:15",
         "temperatura": "23.60",
         "humedad": "45.00"
+    },
+    {
+        "fecha_hora": "23\/05\/26\/ 12:25",
+        "temperatura": "23.60",
+        "humedad": "44.00"
     }
 ]
