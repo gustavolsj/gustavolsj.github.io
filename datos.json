@@ -93128,5 +93128,10 @@
         "fecha_hora": "24\/05\/26\/ 09:01",
         "temperatura": "22.70",
         "humedad": "53.00"
+    },
+    {
+        "fecha_hora": "24\/05\/26\/ 09:11",
+        "temperatura": "22.80",
+        "humedad": "52.00"
     }
 ]
