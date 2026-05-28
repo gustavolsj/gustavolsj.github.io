@@ -94773,5 +94773,10 @@
         "fecha_hora": "26\/05\/26\/ 19:30",
         "temperatura": "22.60",
         "humedad": "52.00"
+    },
+    {
+        "fecha_hora": "26\/05\/26\/ 19:40",
+        "temperatura": "22.50",
+        "humedad": "52.00"
     }
 ]
