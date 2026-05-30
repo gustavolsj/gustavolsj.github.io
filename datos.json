@@ -94878,5 +94878,10 @@
         "fecha_hora": "30\/05\/26\/ 15:06",
         "temperatura": "25.00",
         "humedad": "28.00"
+    },
+    {
+        "fecha_hora": "30\/05\/26\/ 15:16",
+        "temperatura": "25.10",
+        "humedad": "28.00"
     }
 ]
