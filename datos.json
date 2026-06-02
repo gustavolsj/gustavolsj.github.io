@@ -95708,5 +95708,10 @@
         "fecha_hora": "02\/06\/26\/ 08:08",
         "temperatura": "24.10",
         "humedad": "51.00"
+    },
+    {
+        "fecha_hora": "02\/06\/26\/ 08:18",
+        "temperatura": "24.00",
+        "humedad": "51.00"
     }
 ]
