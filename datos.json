@@ -96323,5 +96323,10 @@
         "fecha_hora": "04\/06\/26\/ 08:00",
         "temperatura": "24.20",
         "humedad": "58.00"
+    },
+    {
+        "fecha_hora": "04\/06\/26\/ 08:10",
+        "temperatura": "24.10",
+        "humedad": "58.00"
     }
 ]
