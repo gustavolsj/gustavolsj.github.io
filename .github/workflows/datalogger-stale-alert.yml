@@ -1,0 +1,233 @@
+name: Datalogger stale-data alert
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: datalogger-stale-alert
+  cancel-in-progress: false
+
+env:
+  DATA_URL: https://gustavolsj.github.io/datos.json
+  THRESHOLD_MINUTES: "65"
+  DATA_TIMEZONE: ${{ vars.DATALOGGER_TIMEZONE || 'America/Mexico_City' }}
+  INCIDENT_TITLE: "[DATALOGGER ALERT] Data stale for more than 65 minutes"
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Evaluate staleness from datos.json
+        id: check
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const dataUrl = process.env.DATA_URL;
+            const threshold = Number(process.env.THRESHOLD_MINUTES || '65');
+            const timeZone = process.env.DATA_TIMEZONE || 'America/Mexico_City';
+
+            function parseDMY(raw) {
+              if (!raw) return null;
+              const cleaned = String(raw)
+                .trim()
+                .replace(/\s+/g, ' ')
+                .replace(/^(\d{1,2}[\/-]\d{1,2}[\/-]\d{2,4})\/\s/, '$1 ');
+
+              const m = cleaned.match(/^(\d{1,2})[\/-](\d{1,2})[\/-](\d{2,4})(?:[ T](\d{1,2}):(\d{2})(?::(\d{2}))?)?$/);
+              if (!m) return null;
+
+              let year = Number(m[3]);
+              if (year < 100) year += 2000;
+
+              return {
+                day: Number(m[1]),
+                month: Number(m[2]),
+                year,
+                hour: Number(m[4] || 0),
+                minute: Number(m[5] || 0),
+                second: Number(m[6] || 0),
+                raw: cleaned,
+              };
+            }
+
+            function nowPartsInTimeZone(tz) {
+              const parts = new Intl.DateTimeFormat('en-GB', {
+                timeZone: tz,
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hourCycle: 'h23',
+              }).formatToParts(new Date());
+
+              const out = {};
+              for (const p of parts) {
+                if (p.type !== 'literal') out[p.type] = Number(p.value);
+              }
+
+              return {
+                year: out.year,
+                month: out.month,
+                day: out.day,
+                hour: out.hour,
+                minute: out.minute,
+                second: out.second,
+              };
+            }
+
+            function toComparableMs(p) {
+              return Date.UTC(p.year, p.month - 1, p.day, p.hour, p.minute, p.second || 0);
+            }
+
+            const resp = await fetch(dataUrl, { headers: { 'Cache-Control': 'no-cache' } });
+            if (!resp.ok) {
+              core.setFailed(`Unable to fetch data: ${resp.status} ${resp.statusText}`);
+              return;
+            }
+
+            const json = await resp.json();
+            const rows = Array.isArray(json) ? json : (Array.isArray(json?.data) ? json.data : []);
+            if (!rows.length) {
+              core.setFailed('Data source is empty.');
+              return;
+            }
+
+            const rawTs = [...rows]
+              .reverse()
+              .map(r => r?.fecha_hora ?? r?.fecha ?? r?.date ?? r?.time ?? '')
+              .find(v => String(v).trim().length > 0);
+
+            const parsed = parseDMY(rawTs);
+            if (!parsed) {
+              core.setFailed(`Could not parse latest timestamp: ${rawTs}`);
+              return;
+            }
+
+            const nowParts = nowPartsInTimeZone(timeZone);
+            const diffMinutes = (toComparableMs(nowParts) - toComparableMs(parsed)) / (1000 * 60);
+            const stale = diffMinutes > threshold;
+
+            core.info(`Latest timestamp: ${parsed.raw}`);
+            core.info(`Difference in minutes: ${diffMinutes.toFixed(2)} (threshold ${threshold})`);
+            core.info(`Timezone used: ${timeZone}`);
+            core.info(`Stale: ${stale}`);
+
+            core.setOutput('stale', String(stale));
+            core.setOutput('diff_minutes', diffMinutes.toFixed(2));
+            core.setOutput('latest_raw', parsed.raw);
+            core.setOutput('timezone', timeZone);
+
+      - name: Find open incident issue
+        id: incident
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = process.env.INCIDENT_TITLE;
+            const { owner, repo } = context.repo;
+
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
+              owner,
+              repo,
+              state: 'open',
+              per_page: 100,
+            });
+
+            const incident = issues.find(i => i.title === title);
+            core.setOutput('is_open', String(Boolean(incident)));
+            core.setOutput('number', incident ? String(incident.number) : '');
+
+      - name: Send stale alert email
+        if: steps.check.outputs.stale == 'true' && steps.incident.outputs.is_open != 'true'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          secure: ${{ secrets.SMTP_SECURE || 'true' }}
+          subject: "Datalogger OFFLINE alert (> 65 min)"
+          to: ${{ secrets.ALERT_TO }}
+          from: ${{ secrets.ALERT_FROM }}
+          body: |
+            The datalogger appears to be offline.
+
+            Latest timestamp: ${{ steps.check.outputs.latest_raw }}
+            Difference (minutes): ${{ steps.check.outputs.diff_minutes }}
+            Threshold (minutes): ${{ env.THRESHOLD_MINUTES }}
+            Timezone used: ${{ steps.check.outputs.timezone }}
+            Data URL: ${{ env.DATA_URL }}
+            Workflow run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+      - name: Open incident issue (de-dup state)
+        if: steps.check.outputs.stale == 'true' && steps.incident.outputs.is_open != 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            await github.rest.issues.create({
+              owner,
+              repo,
+              title: process.env.INCIDENT_TITLE,
+              body: [
+                'Auto-created to avoid duplicate alert emails while the outage continues.',
+                '',
+                `Latest timestamp: ${process.env.LATEST}`,
+                `Difference (minutes): ${process.env.DIFF}`,
+                `Timezone used: ${process.env.TZ}`,
+                `Workflow run: ${process.env.RUN_URL}`,
+              ].join('\n')
+            });
+        env:
+          LATEST: ${{ steps.check.outputs.latest_raw }}
+          DIFF: ${{ steps.check.outputs.diff_minutes }}
+          TZ: ${{ steps.check.outputs.timezone }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+      - name: Send recovery email
+        if: steps.check.outputs.stale != 'true' && steps.incident.outputs.is_open == 'true'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          secure: ${{ secrets.SMTP_SECURE || 'true' }}
+          subject: "Datalogger RECOVERY notice"
+          to: ${{ secrets.ALERT_TO }}
+          from: ${{ secrets.ALERT_FROM }}
+          body: |
+            The datalogger appears to be back online.
+
+            Latest timestamp: ${{ steps.check.outputs.latest_raw }}
+            Difference (minutes): ${{ steps.check.outputs.diff_minutes }}
+            Threshold (minutes): ${{ env.THRESHOLD_MINUTES }}
+            Timezone used: ${{ steps.check.outputs.timezone }}
+            Data URL: ${{ env.DATA_URL }}
+            Workflow run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+      - name: Close incident issue
+        if: steps.check.outputs.stale != 'true' && steps.incident.outputs.is_open == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const number = Number(process.env.ISSUE_NUMBER);
+            if (!number) return;
+
+            const { owner, repo } = context.repo;
+            await github.rest.issues.update({
+              owner,
+              repo,
+              issue_number: number,
+              state: 'closed',
+            });
+        env:
+          ISSUE_NUMBER: ${{ steps.incident.outputs.number }}
