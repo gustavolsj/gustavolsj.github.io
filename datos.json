@@ -97093,5 +97093,10 @@
         "fecha_hora": "05\/06\/26\/ 10:00",
         "temperatura": "23.50",
         "humedad": "58.00"
+    },
+    {
+        "fecha_hora": "05\/06\/26\/ 10:10",
+        "temperatura": "23.50",
+        "humedad": "59.00"
     }
 ]
