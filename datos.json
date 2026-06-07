@@ -98218,5 +98218,10 @@
         "fecha_hora": "06\/06\/26\/ 23:49",
         "temperatura": "22.90",
         "humedad": "61.00"
+    },
+    {
+        "fecha_hora": "06\/06\/26\/ 23:59",
+        "temperatura": "22.90",
+        "humedad": "62.00"
     }
 ]
