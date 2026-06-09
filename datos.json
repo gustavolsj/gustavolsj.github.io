@@ -99838,5 +99838,10 @@
         "fecha_hora": "09\/06\/26\/ 03:35",
         "temperatura": "23.51",
         "humedad": "65.58"
+    },
+    {
+        "fecha_hora": "09\/06\/26\/ 03:45",
+        "temperatura": "23.50",
+        "humedad": "65.37"
     }
 ]
