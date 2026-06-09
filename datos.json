@@ -99483,5 +99483,15 @@
         "fecha_hora": "08\/06\/26\/ 18:27",
         "temperatura": "24.17",
         "humedad": "71.87"
+    },
+    {
+        "fecha_hora": "08\/06\/26\/ 18:32",
+        "temperatura": "22.70",
+        "humedad": "67.00"
+    },
+    {
+        "fecha_hora": "08\/06\/26\/ 18:38",
+        "temperatura": "24.69",
+        "humedad": "70.82"
     }
 ]
