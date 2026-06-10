@@ -100713,5 +100713,10 @@
         "fecha_hora": "10\/06\/26\/ 08:46",
         "temperatura": "22.99",
         "humedad": "67.83"
+    },
+    {
+        "fecha_hora": "10\/06\/26\/ 08:56",
+        "temperatura": "23.06",
+        "humedad": "67.60"
     }
 ]
