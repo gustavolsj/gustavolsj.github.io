@@ -102873,5 +102873,15 @@
         "fecha_hora": "15\/06\/26\/ 18:18",
         "temperatura": "23.50",
         "humedad": "69.90"
+    },
+    {
+        "fecha_hora": "15\/06\/26\/ 18:23",
+        "temperatura": "23.50",
+        "humedad": "69.50"
+    },
+    {
+        "fecha_hora": "15\/06\/26\/ 18:28",
+        "temperatura": "23.40",
+        "humedad": "69.10"
     }
 ]
