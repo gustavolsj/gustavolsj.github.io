@@ -106543,5 +106543,15 @@
         "fecha_hora": "18\/06\/26\/ 07:28",
         "temperatura": "22.40",
         "humedad": "65.40"
+    },
+    {
+        "fecha_hora": "18\/06\/26\/ 07:33",
+        "temperatura": "22.40",
+        "humedad": "65.20"
+    },
+    {
+        "fecha_hora": "18\/06\/26\/ 07:38",
+        "temperatura": "22.30",
+        "humedad": "64.80"
     }
 ]
