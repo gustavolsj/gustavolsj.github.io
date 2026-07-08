@@ -419,6 +419,22 @@ permalink: /dataloggers/
           return `${pad2(d.getDate())}/${pad2(d.getMonth()+1)}/${d.getFullYear()} ${pad2(d.getHours())}:${pad2(d.getMinutes())}:${pad2(d.getSeconds())}`;
         }
 
+        function formatFechaLargaEspana(fecha) {
+          if (!fecha || isNaN(fecha)) return '—';
+          const fechaTexto = new Intl.DateTimeFormat('es-ES', {
+            weekday: 'long',
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+          }).format(fecha);
+          const horaTexto = new Intl.DateTimeFormat('es-ES', {
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false
+          }).format(fecha);
+          return `${fechaTexto} a las ${horaTexto}`;
+        }
+
         // 🔹 Calculate time difference and determine online/offline status (using DMY for both dates)
         let statusImage = '';
         if (ultimaFecha !== '—') {
@@ -513,7 +529,7 @@ permalink: /dataloggers/
         // Actualiza DOM (sin necesidad de usar lastDate directamente)
         document.getElementById("estatus").innerHTML = statusImage;
         document.getElementById("totalLineas").textContent = totalLineas;
-        document.getElementById("ultimaFecha").textContent = ultimaFecha;
+        document.getElementById("ultimaFecha").textContent = ultimaFecha !== '—' ? formatFechaLargaEspana(parseDMY(ultimaFecha)) : '—';
 
         document.getElementById("tempMin").textContent = tempMin !== null ? tempMin.toFixed(0) : '—';
         document.getElementById("tempMax").textContent = tempMax !== null ? tempMax.toFixed(0) : '—';
