@@ -113718,5 +113718,15 @@
         "fecha_hora": "09\/07\/26\/ 05:08",
         "temperatura": "22.64",
         "humedad": "64.53"
+    },
+    {
+        "fecha_hora": "09\/07\/26\/ 05:13",
+        "temperatura": "22.64",
+        "humedad": "64.60"
+    },
+    {
+        "fecha_hora": "09\/07\/26\/ 05:18",
+        "temperatura": "22.64",
+        "humedad": "64.63"
     }
 ]
