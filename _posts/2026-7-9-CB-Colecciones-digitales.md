@@ -7,7 +7,7 @@ tags: colecciones_digitales archivos_documentales fotografias
 
 ![CollectionBuilder](../images/collection-builder.jpg)
 
-## Navegación de colecciones con Collection Space Navigator (CSN)
+## Creacion de colecciones digitales con CB
 
 [CollectionBuilder](https://collectionbuilder.github.io/cb-docs/) (CB) es un conjunto de herramientas de código abierto para crear sitios web de colecciones digitales y exhibiciones, permite mostrar objetos digitales como imagenes, videos, audios y pdfs, hacer búsquedas y filtrarlos por diferentes criterios, visualizarlos en un mapa, en una linea del tiempo y exportar sus metadatos en diferentes formatos de texto plano.
 
