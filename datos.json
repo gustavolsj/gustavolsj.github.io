@@ -120013,5 +120013,15 @@
         "fecha_hora": "13\/07\/26\/ 15:17",
         "temperatura": "23.83",
         "humedad": "58.33"
+    },
+    {
+        "fecha_hora": "13\/07\/26\/ 15:22",
+        "temperatura": "23.76",
+        "humedad": "58.31"
+    },
+    {
+        "fecha_hora": "13\/07\/26\/ 15:27",
+        "temperatura": "23.71",
+        "humedad": "58.56"
     }
 ]
