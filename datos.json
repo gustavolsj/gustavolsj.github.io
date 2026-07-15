@@ -122013,5 +122013,15 @@
         "fecha_hora": "15\/07\/26\/ 01:05",
         "temperatura": "23.89",
         "humedad": "58.71"
+    },
+    {
+        "fecha_hora": "15\/07\/26\/ 01:10",
+        "temperatura": "23.90",
+        "humedad": "58.79"
+    },
+    {
+        "fecha_hora": "15\/07\/26\/ 01:15",
+        "temperatura": "23.89",
+        "humedad": "58.88"
     }
 ]
