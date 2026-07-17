@@ -176,7 +176,7 @@ permalink: /dataloggers/
         </table>
       </div>
       
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-md-4">
         <!-- Tabla compacta con métricas -->
         <table class="table table-sm compact-table">
           <thead>
@@ -218,17 +218,20 @@ permalink: /dataloggers/
       </div>
 
     </div>
+        <!-- Status 1 -->
 
+<div class="col-12 col-md-2"> 
       <div class="row align-items-center chart-status-row">
         <div class="status-card">
         <div class="status-label">Estado</div>
         <div id="estatus">—</div>
       </div>
-
+</div>
   </div>
 
   <div class="row align-items-center chart-status-row">
     <div class="col-12 col-md-4 text-center">
+    <!-- Status 2 -->
       <div class="status-card">
         <div class="status-label">Estado</div>
         <div id="estatus">—</div>
