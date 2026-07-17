@@ -125733,5 +125733,15 @@
         "fecha_hora": "17\/07\/26\/ 17:38",
         "temperatura": "24.28",
         "humedad": "57.95"
+    },
+    {
+        "fecha_hora": "17\/07\/26\/ 17:43",
+        "temperatura": "24.24",
+        "humedad": "58.12"
+    },
+    {
+        "fecha_hora": "17\/07\/26\/ 17:48",
+        "temperatura": "24.26",
+        "humedad": "58.25"
     }
 ]
