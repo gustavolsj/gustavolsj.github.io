@@ -128,7 +128,7 @@ permalink: /dataloggers/
 <body>
   <div class="container">
     <div class="row">
-    <div class="col-12 col-md-6">
+      <div class="col-12 col-md-6">
         <!-- Tabla compacta con datos generales -->
         <table class="table table-sm compact-table">
           <thead>
@@ -176,12 +176,12 @@ permalink: /dataloggers/
         </table>
       </div>
       
-      <div class="col-12 col-md-4">
+      <div class="col-12 col-md-3">
         <!-- Tabla compacta con métricas -->
         <table class="table table-sm compact-table">
           <thead>
             <tr>
-              <th>Métricas Estadísticas</th>
+              <th>Estadísticas</th>
               <th>T °C</th>
               <th>HR %</th>
             </tr>
@@ -214,19 +214,18 @@ permalink: /dataloggers/
             </tr>
           </tbody>
         </table>
-
       </div>
 
-    </div>
         <!-- Status 1 -->
-
-<div class="col-12 col-md-2"> 
+    <div class="col-12 col-md-2">
       <div class="row align-items-center chart-status-row">
         <div class="status-card">
-        <div class="status-label">Estado</div>
-        <div id="estatus">—</div>
+          <div class="status-label">Estado</div>
+          <div id="estatus">—</div>
+        </div>
       </div>
-</div>
+    </div>
+
   </div>
 
   <div class="row align-items-center chart-status-row">
