@@ -129,7 +129,7 @@ permalink: /dataloggers/
   <div class="container">
     <div class="row">
     <div class="col-12 col-md-6">
-        <!-- Tabla compacta con métricas generales arriba de rangos -->
+        <!-- Tabla compacta con datos generales -->
         <table class="table table-sm compact-table">
           <thead>
             <tr>
@@ -146,7 +146,8 @@ permalink: /dataloggers/
             </tr>
           </tbody>
         </table>
-
+        
+        <!-- Tabla compacta con rangos -->
         <table class="table table-sm compact-table">
           <thead>
             <tr>
@@ -174,7 +175,9 @@ permalink: /dataloggers/
           </tbody>
         </table>
       </div>
+      
       <div class="col-12 col-md-6">
+        <!-- Tabla compacta con métricas -->
         <table class="table table-sm compact-table">
           <thead>
             <tr>
@@ -211,9 +214,16 @@ permalink: /dataloggers/
             </tr>
           </tbody>
         </table>
+
       </div>
 
     </div>
+
+      <div class="row align-items-center chart-status-row">
+        <div class="status-card">
+        <div class="status-label">Estado</div>
+        <div id="estatus">—</div>
+      </div>
 
   </div>
 
@@ -224,11 +234,13 @@ permalink: /dataloggers/
         <div id="estatus">—</div>
       </div>
     </div>
+
     <div class="col-12 col-md-8">
       <div class="chart-container">
         <canvas id="myChart"></canvas>
       </div>
     </div>
+
   </div>
 
 <div id="nuevo" class="row">
