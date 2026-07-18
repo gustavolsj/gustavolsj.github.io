@@ -229,24 +229,15 @@ permalink: /dataloggers/
   </div>
 
   <div class="row align-items-center chart-status-row">
-    <div class="col-12 col-md-4 text-center">
-    <!-- Status 2 -->
-      <div class="status-card">
-        <div class="status-label">Estado</div>
-        <div id="estatus">—</div>
-      </div>
-    </div>
-
-    <div class="col-12 col-md-8">
+    <div class="col-12 col-md-12">
       <div class="chart-container">
         <canvas id="myChart"></canvas>
       </div>
     </div>
-
   </div>
 
 <div id="nuevo" class="row">
-  <div class="col-12 col-md-6">
+  <div class="col-12 col-md-8">
     <p>
       La grafica que ves arriba muestra en tiempo real los datos de temperatura y humedad relativa que mi datalogger está midiendo en este mismo momento, en la tabla superior se muestra tambien el estado del datalogger -si está en linea o no- así como un resumen de las estadísticas más relevantes, incluyendo el cálculo del <a href="https://www.padfield.org/tim/cfys/twpi/twpi_02.html">TWPI</a> un parametro que se expresa en años y que resume el desempeño de un espacio que es utilizado para la conservación de fotografías.
       <br><br>
@@ -258,7 +249,7 @@ permalink: /dataloggers/
     </p>
   </div>
 
-  <div class="col-12 col-md-6 text-center">
+  <div class="col-12 col-md-4 text-center">
     <img
       src="/images/datalogger_wifi.jpg"
       alt="Datalogger de conservación basado en SHT31"
