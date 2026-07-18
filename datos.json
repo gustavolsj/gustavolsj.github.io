@@ -127008,5 +127008,15 @@
         "fecha_hora": "18\/07\/26\/ 14:58",
         "temperatura": "25.93",
         "humedad": "49.77"
+    },
+    {
+        "fecha_hora": "18\/07\/26\/ 15:03",
+        "temperatura": "25.83",
+        "humedad": "49.71"
+    },
+    {
+        "fecha_hora": "18\/07\/26\/ 15:08",
+        "temperatura": "25.73",
+        "humedad": "50.07"
     }
 ]
