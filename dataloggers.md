@@ -22,6 +22,27 @@ permalink: /dataloggers/
       -ms-user-select: none;
     }
 
+    @keyframes pulse {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.8;
+      }
+    }
+
+    .status-pulse {
+      animation: pulse 1s ease-in-out infinite;
+      display: inline-block;
+      width: auto;
+    }
+
+    .status-pulse img {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+    }
+
     .chart-container {
       position: relative;
       width: 100%;
@@ -136,14 +157,14 @@ permalink: /dataloggers/
             <tr>
               <th># de mediciones</th>
               <th>Última medición</th>
-              <th>TWPI</th>
+              <th>Estado</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td id="totalLineas">—</td>
               <td id="ultimaFecha">—</td>
-              <td id="twpiResumen">—</td>
+              <td id="estatus">—</td>
             </tr>
           </tbody>
         </table>
@@ -213,19 +234,13 @@ permalink: /dataloggers/
               <td id="tempDesv">—</td>
               <td id="humDesv">—</td>
             </tr>
+            <tr>
+              <td>TWPI</td>
+              <td id="twpiResumen" colspan="2">—</td>
+            </tr>
           </tbody>
         </table>
       </div>
-
-        <!-- Status 1 -->
-    <div class="col-12 col-md-2">
-      <div class="row align-items-center chart-status-row">
-        <div class="status-card">
-          <div class="status-label">Estado</div>
-          <div id="estatus">—</div>
-        </div>
-      </div>
-    </div>
 
   </div>
 
@@ -478,10 +493,10 @@ permalink: /dataloggers/
 
             if (diffInMinutes > 65) {
               console.log('Result: OFFLINE (difference > 65 minutes)');
-              statusImage = '<img src="/images/cloud-offline.png" alt="Offline" style="width: 150px; height: 150px; max-width: 100%; object-fit: contain;">';
+              statusImage = '<img src="/images/cloud-offline.png" alt="Offline">';
             } else {
               console.log('Result: ONLINE (difference ≤ 65 minutes)');
-              statusImage = '<img src="/images/cloud-online.png" alt="Online" style="width: 150px; height: 150px; max-width: 100%; object-fit: contain;">';
+              statusImage = '<img src="/images/cloud-online.png" alt="Online">';
             }
             console.log('=============================================');
           } catch (dateError) {
@@ -535,9 +550,9 @@ permalink: /dataloggers/
         const humDesv = safeDesviacion(humedades);
 
         // Actualiza DOM (sin necesidad de usar lastDate directamente)
-        document.getElementById("estatus").innerHTML = statusImage;
+        document.getElementById("estatus").innerHTML = statusImage ? `<div class="status-pulse">${statusImage}</div>` : '—';
         document.getElementById("totalLineas").textContent = totalLineas;
-        document.getElementById("ultimaFecha").textContent = ultimaFecha !== '—' ? formatFechaLargaEspana(parseDMY(ultimaFecha)) : '—';
+        document.getElementById("ultimaFecha").textContent = ultimaFecha !== '—' ? ultimaFecha : '—';
 
         document.getElementById("tempMin").textContent = tempMin !== null ? tempMin.toFixed(0) : '—';
         document.getElementById("tempMax").textContent = tempMax !== null ? tempMax.toFixed(0) : '—';
@@ -617,8 +632,7 @@ async function calcularTWPI() {
 		const twpiIPI = total && acumuladoIPI ? Math.round(total / acumuladoIPI) : '—';
 		const twpiTP = total && acumuladoTP ? Math.round(total / acumuladoTP) : '—';
 
-		// document.getElementById("twpiResumen").textContent = `${twpiIPI} / ${twpiTP} años`;
-		document.getElementById("twpiResumen").textContent = `${twpiIPI} años`;
+        document.getElementById("twpiResumen").textContent = `${twpiIPI} años`;
 	  } catch (err) {
 		console.error("Error al calcular TWPI:", err);
 		document.getElementById("twpiResumen").textContent = 'Error';
