@@ -25,7 +25,8 @@ permalink: /dataloggers/
     .chart-container {
       position: relative;
       width: 100%;
-      max-width: 900px;
+      max-width: 1200;
+      max-height: 600px;
       margin: 20px auto;
     }
 
