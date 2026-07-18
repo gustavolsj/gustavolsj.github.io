@@ -210,6 +210,10 @@ permalink: /dataloggers/
           </thead>
           <tbody>
             <tr>
+              <td>TWPI</td>
+              <td id="twpiResumen" colspan="2">—</td>
+            </tr>
+            <tr>
               <td>mín</td>
               <td id="tempMin">—</td>
               <td id="humMin">—</td>
@@ -233,10 +237,6 @@ permalink: /dataloggers/
               <td>desv. est.</td>
               <td id="tempDesv">—</td>
               <td id="humDesv">—</td>
-            </tr>
-            <tr>
-              <td>TWPI</td>
-              <td id="twpiResumen" colspan="2">—</td>
             </tr>
           </tbody>
         </table>
