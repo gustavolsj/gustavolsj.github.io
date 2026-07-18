@@ -319,6 +319,7 @@ permalink: /dataloggers/
             },
             scales: {
               x: {
+                display: false,
                 title: {
                   display: false,
                   text: 'Fecha'
