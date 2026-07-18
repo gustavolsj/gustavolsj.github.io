@@ -27,12 +27,12 @@ permalink: /dataloggers/
         opacity: 1;
       }
       50% {
-        opacity: 0.8;
+        opacity: 0.2;
       }
     }
 
     .status-pulse {
-      animation: pulse 1s ease-in-out infinite;
+      animation: pulse 2s ease-in-out infinite;
       display: inline-block;
       width: auto;
     }
