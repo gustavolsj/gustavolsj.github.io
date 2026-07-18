@@ -43,6 +43,12 @@ permalink: /dataloggers/
       object-fit: contain;
     }
 
+    td#estatus {
+      padding: 0px 12px !important;
+      vertical-align: middle;
+      line-height: 1;
+    }
+
     .chart-container {
       position: relative;
       width: 100%;
