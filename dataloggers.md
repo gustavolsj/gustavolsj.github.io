@@ -37,12 +37,12 @@ permalink: /dataloggers/
     .status-card {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: top;
       gap: 0.5rem;
     }
 
     .status-card .status-label {
-      font-weight: 600;
+      font-weight: 300;
       text-transform: uppercase;
       letter-spacing: 0.02em;
     }
@@ -314,13 +314,13 @@ permalink: /dataloggers/
                 text: 'Datalogger SHT31: Temperatura y Humedad Relativa'
               },
               legend: {
-                position: 'top'
+                position: 'chartArea'
               }
             },
             scales: {
               x: {
                 title: {
-                  display: true,
+                  display: false,
                   text: 'Fecha'
                 }
               },
@@ -475,10 +475,10 @@ permalink: /dataloggers/
 
             if (diffInMinutes > 65) {
               console.log('Result: OFFLINE (difference > 65 minutes)');
-              statusImage = '<img src="/images/cloud-offline.png" alt="Offline" style="width: 200px; height: 200px; max-width: 100%; object-fit: contain;">';
+              statusImage = '<img src="/images/cloud-offline.png" alt="Offline" style="width: 150px; height: 150px; max-width: 100%; object-fit: contain;">';
             } else {
               console.log('Result: ONLINE (difference ≤ 65 minutes)');
-              statusImage = '<img src="/images/cloud-online.png" alt="Online" style="width: 200px; height: 200px; max-width: 100%; object-fit: contain;">';
+              statusImage = '<img src="/images/cloud-online.png" alt="Online" style="width: 150px; height: 150px; max-width: 100%; object-fit: contain;">';
             }
             console.log('=============================================');
           } catch (dateError) {
