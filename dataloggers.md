@@ -26,7 +26,7 @@ permalink: /dataloggers/
       position: relative;
       width: 100%;
       max-width: 1200;
-      max-height: 600px;
+      max-height: 300px;
       margin: 20px auto;
     }
 
