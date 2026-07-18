@@ -39,7 +39,7 @@ permalink: /dataloggers/
 
     .status-pulse img {
       width: 64px;
-      height: 64px;
+      height: 34px;
       object-fit: contain;
     }
 
