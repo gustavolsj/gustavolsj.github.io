@@ -209,9 +209,7 @@ permalink: /dataloggers/
         <table class="table table-sm compact-table">
           <thead>
             <tr>
-              <th>Estadísticas</th>
-              <th>T °C</th>
-              <th>HR %</th>
+              <th colspan="3">Métricas Estadísticas</th>
             </tr>
           </thead>
           <tbody>
@@ -560,17 +558,17 @@ permalink: /dataloggers/
         document.getElementById("totalLineas").textContent = totalLineas;
         document.getElementById("ultimaFecha").textContent = ultimaFecha !== '—' ? ultimaFecha : '—';
 
-        document.getElementById("tempMin").textContent = tempMin !== null ? tempMin.toFixed(0) : '—';
-        document.getElementById("tempMax").textContent = tempMax !== null ? tempMax.toFixed(0) : '—';
-        document.getElementById("tempProm").textContent = tempProm !== null ? tempProm.toFixed(0) : '—';
-        document.getElementById("tempMediana").textContent = tempMediana !== null ? tempMediana.toFixed(0) : '—';
-        document.getElementById("tempDesv").textContent = tempDesv !== null ? tempDesv.toFixed(2) : '—';
+        document.getElementById("tempMin").textContent = tempMin !== null ? tempMin.toFixed(0) + ' °C' : '—';
+        document.getElementById("tempMax").textContent = tempMax !== null ? tempMax.toFixed(0) + ' °C' : '—';
+        document.getElementById("tempProm").textContent = tempProm !== null ? tempProm.toFixed(0) + ' °C' : '—';
+        document.getElementById("tempMediana").textContent = tempMediana !== null ? tempMediana.toFixed(0) + ' °C' : '—';
+        document.getElementById("tempDesv").textContent = tempDesv !== null ? tempDesv.toFixed(2) + ' °C' : '—';
 
-        document.getElementById("humMin").textContent = humMin !== null ? humMin.toFixed(0) : '—';
-        document.getElementById("humMax").textContent = humMax !== null ? humMax.toFixed(0) : '—';
-        document.getElementById("humProm").textContent = humProm !== null ? humProm.toFixed(0) : '—';
-        document.getElementById("humMediana").textContent = humMediana !== null ? humMediana.toFixed(0) : '—';
-        document.getElementById("humDesv").textContent = humDesv !== null ? humDesv.toFixed(2) : '—';
+        document.getElementById("humMin").textContent = humMin !== null ? humMin.toFixed(0) + ' %' : '—';
+        document.getElementById("humMax").textContent = humMax !== null ? humMax.toFixed(0) + ' %' : '—';
+        document.getElementById("humProm").textContent = humProm !== null ? humProm.toFixed(0) + ' %' : '—';
+        document.getElementById("humMediana").textContent = humMediana !== null ? humMediana.toFixed(0) + ' %' : '—';
+        document.getElementById("humDesv").textContent = humDesv !== null ? humDesv.toFixed(2) + ' %' : '—';
 
         // Calcular porcentajes por rangos
         const tempRanges = calcularPorcentajes(temperaturas, 21, 24);
