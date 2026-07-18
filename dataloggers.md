@@ -25,8 +25,8 @@ permalink: /dataloggers/
     .chart-container {
       position: relative;
       width: 100%;
-      max-width: 1200;
-      max-height: 300px;
+      max-width: 1200px;
+      height: 300px;
       margin: 20px auto;
     }
 
@@ -304,6 +304,7 @@ permalink: /dataloggers/
           },
           options: {
             responsive: true,
+            maintainAspectRatio: false,
             interaction: {
               mode: 'index',
               intersect: false
