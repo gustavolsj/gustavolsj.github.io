@@ -307,7 +307,7 @@ permalink: /dataloggers/
                 borderColor: 'rgb(255, 99, 132)',
                 backgroundColor: 'rgba(255, 99, 132, 0.7)',
                 yAxisID: 'y1',
-                tension: 0.6,
+                tension: 0.8,
                 fill: true
               },
               {
@@ -316,7 +316,7 @@ permalink: /dataloggers/
                 borderColor: 'rgb(54, 162, 235)',
                 backgroundColor: 'rgba(54, 162, 235, 0.7)',
                 yAxisID: 'y2',
-                tension: 0.6,
+                tension: 0.8,
                 fill: true
               }
             ]
@@ -340,7 +340,7 @@ permalink: /dataloggers/
             },
             scales: {
               x: {
-                display: false,
+                display: true,
                 title: {
                   display: false,
                   text: 'Fecha'
