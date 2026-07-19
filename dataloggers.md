@@ -305,19 +305,19 @@ permalink: /dataloggers/
                 label: 'Temperatura (°C)',
                 data: temperaturas,
                 borderColor: 'rgb(255, 99, 132)',
-                backgroundColor: 'rgba(255, 99, 132, 0.1)',
+                backgroundColor: 'rgba(255, 99, 132, 0.7)',
                 yAxisID: 'y1',
-                tension: 0.2,
-                fill: false
+                tension: 0.6,
+                fill: true
               },
               {
                 label: 'Humedad (%)',
                 data: humedades,
                 borderColor: 'rgb(54, 162, 235)',
-                backgroundColor: 'rgba(54, 162, 235, 0.1)',
+                backgroundColor: 'rgba(54, 162, 235, 0.7)',
                 yAxisID: 'y2',
-                tension: 0.2,
-                fill: false
+                tension: 0.6,
+                fill: true
               }
             ]
           },
