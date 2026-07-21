@@ -94,7 +94,7 @@ permalink: /dataloggers/
     }
 
     .gauge-stack .gauge-wrap + .gauge-wrap {
-      margin-top: -8px;
+      margin-top: 20px;
     }
 
     .gauge-value {
@@ -355,7 +355,7 @@ permalink: /dataloggers/
           const y = arc.y + textOffsetY;
 
           ctx.save();
-          ctx.font = '600 14px system-ui, -apple-system, Segoe UI, sans-serif';
+          ctx.font = '700 20px system-ui, -apple-system, Segoe UI, sans-serif';
           ctx.fillStyle = '#333';
           ctx.textAlign = 'center';
           ctx.textBaseline = 'middle';
@@ -385,7 +385,7 @@ permalink: /dataloggers/
             maintainAspectRatio: false,
             circumference: 180,
             rotation: rotationDeg,
-            cutout: '72%',
+            cutout: '58%',
             animation: {
               duration: 500
             },
@@ -502,7 +502,7 @@ permalink: /dataloggers/
           'rgb(255, 99, 132)',
           '°C',
           270,
-          -8
+          -18
         );
 
         humGaugeChart = crearOActualizarGauge(
@@ -513,7 +513,7 @@ permalink: /dataloggers/
           'rgb(54, 162, 235)',
           '%',
           270,
-          -8
+          -18
         );
 
       } catch (error) {
