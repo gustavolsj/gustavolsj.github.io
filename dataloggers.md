@@ -361,8 +361,8 @@ permalink: /dataloggers/
           ctx.textBaseline = 'middle';
           ctx.fillText(`${valor.toFixed(1)} ${unidad}`, x, y);
 
-          ctx.font = '400 8px system-ui, -apple-system, Segoe UI, sans-serif';
-          ctx.fillStyle = '#bdbdbd';
+          ctx.font = '400 10px system-ui, -apple-system, Segoe UI, sans-serif';
+          ctx.fillStyle = '#949393';
           ctx.fillText(subtitulo, x, y + 14);
           ctx.restore();
         }
