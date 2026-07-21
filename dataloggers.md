@@ -81,7 +81,7 @@ permalink: /dataloggers/
     .gauge-wrap {
       position: relative;
       width: 100%;
-      max-width: 240px;
+      max-width: 210px;
       height: 120px;
     }
 
@@ -290,12 +290,7 @@ permalink: /dataloggers/
   </div>
 
   <div class="row align-items-center chart-status-row">
-    <div class="col-12 col-md-8">
-      <div class="chart-container">
-        <canvas id="myChart"></canvas>
-      </div>
-    </div>
-    <div class="col-12 col-md-4">
+    <div class="col-12 col-md-3">
       <div class="gauge-card gauge-stack">
         <div class="gauge-wrap">
           <canvas id="tempGauge"></canvas>
@@ -303,6 +298,11 @@ permalink: /dataloggers/
         <div class="gauge-wrap">
           <canvas id="humGauge"></canvas>
         </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-9">
+      <div class="chart-container">
+        <canvas id="myChart"></canvas>
       </div>
     </div>
   </div>
