@@ -285,20 +285,18 @@ permalink: /dataloggers/
     </div>
     <div class="col-6 col-md-2">
       <div class="gauge-card">
-        <h5>Temperatura Actual</h5>
+        <h5></h5>
         <div class="gauge-wrap">
           <canvas id="tempGauge"></canvas>
         </div>
-        <div id="tempGaugeValue" class="gauge-value">—</div>
       </div>
     </div>
     <div class="col-6 col-md-2">
       <div class="gauge-card">
-        <h5>Humedad Actual</h5>
+        <h5></h5>
         <div class="gauge-wrap">
           <canvas id="humGauge"></canvas>
         </div>
-        <div id="humGaugeValue" class="gauge-value">—</div>
       </div>
     </div>
   </div>
@@ -330,11 +328,9 @@ permalink: /dataloggers/
     let tempGaugeChart = null;
     let humGaugeChart = null;
 
-    function crearOActualizarGauge(chartRef, canvasId, valor, maximo, color, valueElId, unidad) {
+    function crearOActualizarGauge(chartRef, canvasId, valor, maximo, color, unidad) {
       const canvas = document.getElementById(canvasId);
-      const valueEl = document.getElementById(valueElId);
       if (!canvas || Number.isNaN(valor)) {
-        if (valueEl) valueEl.textContent = '—';
         return chartRef;
       }
 
@@ -350,7 +346,7 @@ permalink: /dataloggers/
 
           const arc = meta.data[0];
           const x = arc.x;
-          const y = arc.y + 18;
+          const y = arc.y - 8;
 
           ctx.save();
           ctx.font = '600 14px system-ui, -apple-system, Segoe UI, sans-serif';
@@ -396,7 +392,6 @@ permalink: /dataloggers/
         });
       }
 
-      if (valueEl) valueEl.textContent = `${valor.toFixed(1)} ${unidad}`;
       return chartRef;
     }
 
@@ -499,7 +494,6 @@ permalink: /dataloggers/
           ultimaTemp,
           50,
           'rgb(255, 99, 132)',
-          'tempGaugeValue',
           '°C'
         );
 
@@ -509,7 +503,6 @@ permalink: /dataloggers/
           ultimaHum,
           100,
           'rgb(54, 162, 235)',
-          'humGaugeValue',
           '%'
         );
 
@@ -519,10 +512,6 @@ permalink: /dataloggers/
         if (canvas) {
           canvas.outerHTML = `<p style="color:red;text-align:center;">Error al cargar los datos del JSON.</p>`;
         }
-        const tempValue = document.getElementById('tempGaugeValue');
-        const humValue = document.getElementById('humGaugeValue');
-        if (tempValue) tempValue.textContent = 'Error';
-        if (humValue) humValue.textContent = 'Error';
       }
     }
 
