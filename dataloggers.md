@@ -85,6 +85,18 @@ permalink: /dataloggers/
       height: 120px;
     }
 
+    .gauge-stack {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+    }
+
+    .gauge-stack .gauge-wrap + .gauge-wrap {
+      margin-top: -8px;
+    }
+
     .gauge-value {
       margin-top: 0.5rem;
       font-size: 1rem;
@@ -283,17 +295,11 @@ permalink: /dataloggers/
         <canvas id="myChart"></canvas>
       </div>
     </div>
-    <div class="col-6 col-md-2">
-      <div class="gauge-card">
-        <h5></h5>
+    <div class="col-12 col-md-4">
+      <div class="gauge-card gauge-stack">
         <div class="gauge-wrap">
           <canvas id="tempGauge"></canvas>
         </div>
-      </div>
-    </div>
-    <div class="col-6 col-md-2">
-      <div class="gauge-card">
-        <h5></h5>
         <div class="gauge-wrap">
           <canvas id="humGauge"></canvas>
         </div>
@@ -328,7 +334,7 @@ permalink: /dataloggers/
     let tempGaugeChart = null;
     let humGaugeChart = null;
 
-    function crearOActualizarGauge(chartRef, canvasId, valor, maximo, color, unidad) {
+    function crearOActualizarGauge(chartRef, canvasId, valor, maximo, color, unidad, rotationDeg, textOffsetY) {
       const canvas = document.getElementById(canvasId);
       if (!canvas || Number.isNaN(valor)) {
         return chartRef;
@@ -346,7 +352,7 @@ permalink: /dataloggers/
 
           const arc = meta.data[0];
           const x = arc.x;
-          const y = arc.y - 8;
+          const y = arc.y + textOffsetY;
 
           ctx.save();
           ctx.font = '600 14px system-ui, -apple-system, Segoe UI, sans-serif';
@@ -378,7 +384,7 @@ permalink: /dataloggers/
             responsive: true,
             maintainAspectRatio: false,
             circumference: 180,
-            rotation: 270,
+            rotation: rotationDeg,
             cutout: '72%',
             animation: {
               duration: 500
@@ -494,7 +500,9 @@ permalink: /dataloggers/
           ultimaTemp,
           50,
           'rgb(255, 99, 132)',
-          '°C'
+          '°C',
+          270,
+          -8
         );
 
         humGaugeChart = crearOActualizarGauge(
@@ -503,7 +511,9 @@ permalink: /dataloggers/
           ultimaHum,
           100,
           'rgb(54, 162, 235)',
-          '%'
+          '%',
+          90,
+          8
         );
 
       } catch (error) {
