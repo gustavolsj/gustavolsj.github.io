@@ -334,7 +334,7 @@ permalink: /dataloggers/
     let tempGaugeChart = null;
     let humGaugeChart = null;
 
-    function crearOActualizarGauge(chartRef, canvasId, valor, maximo, color, unidad, rotationDeg, textOffsetY) {
+    function crearOActualizarGauge(chartRef, canvasId, valor, maximo, color, unidad, rotationDeg, textOffsetY, subtitulo) {
       const canvas = document.getElementById(canvasId);
       if (!canvas || Number.isNaN(valor)) {
         return chartRef;
@@ -360,6 +360,10 @@ permalink: /dataloggers/
           ctx.textAlign = 'center';
           ctx.textBaseline = 'middle';
           ctx.fillText(`${valor.toFixed(1)} ${unidad}`, x, y);
+
+          ctx.font = '400 8px system-ui, -apple-system, Segoe UI, sans-serif';
+          ctx.fillStyle = '#bdbdbd';
+          ctx.fillText(subtitulo, x, y + 14);
           ctx.restore();
         }
       };
@@ -502,7 +506,8 @@ permalink: /dataloggers/
           'rgb(255, 99, 132)',
           '°C',
           270,
-          -18
+          -18,
+          'Temperatura'
         );
 
         humGaugeChart = crearOActualizarGauge(
@@ -513,7 +518,8 @@ permalink: /dataloggers/
           'rgb(54, 162, 235)',
           '%',
           270,
-          -18
+          -18,
+          'Humedad'
         );
 
       } catch (error) {
