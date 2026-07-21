@@ -576,12 +576,8 @@ permalink: /dataloggers/
         function parseDMY(s) {
           if (!s) return null;
           const cleaned = String(s).trim().replace(/\s+/g, ' ');
-          // accept an optional stray slash after the year: dd/mm/yyyy/ HH:mm
-          const m = cleaned.match(/^(\d{1,2})[\/-](\d{1,2})[\/-](\d{2,4})\/?(?:[ T](\d{1,2}):(\d{2})(?::(\d{2}))?)?$/);
-          if (!m) {
-            const d = new Date(cleaned);
-            return isNaN(d) ? null : d;
-          }
+          const m = cleaned.match(/^(\d{1,2})[\/-](\d{1,2})[\/-](\d{2,4})(?:[ T](\d{1,2}):(\d{2})(?::(\d{2}))?)?$/);
+          if (!m) return null;
           const day = parseInt(m[1], 10);
           const month = parseInt(m[2], 10) - 1;
           let year = parseInt(m[3], 10);
@@ -617,12 +613,7 @@ permalink: /dataloggers/
         let statusImage = '';
         if (ultimaFecha !== '—') {
           try {
-            // normalize the last date string to remove a stray slash after the year
-            const lastDateStrClean = String(ultimaFecha).trim()
-              .replace(/\s+/g, ' ')
-              .replace(/^(\d{1,2}[\/-]\d{1,2}[\/-]\d{2,4})\/\s/, '$1 ');
-
-            const lastDate = parseDMY(lastDateStrClean);          // keep last date as DMY
+            const lastDate = parseDMY(ultimaFecha);
             const currentDateStr = nowDMYString();                // adjust current date to DMY string
             const currentDate = parseDMY(currentDateStr);         // parse with same DMY rules
 
