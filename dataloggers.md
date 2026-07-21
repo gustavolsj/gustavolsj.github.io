@@ -407,8 +407,8 @@ permalink: /dataloggers/
         const response = await fetch('https://gustavolsj.github.io/datos.json');
         const data = await response.json();
 
-        // 🔹 2. Filtrar los últimos 700 registros (igual que antes)
-        const ultimos = data.slice(-700);
+        // 🔹 2. Usar todos los registros disponibles del JSON
+        const ultimos = data;
 
         // 🔹 3. Extraer campos
         const labels = ultimos.map(d => d.fecha || d.Fecha || d.time || d.fecha_hora || ''); // Ajusta según tu JSON
@@ -512,8 +512,8 @@ permalink: /dataloggers/
           100,
           'rgb(54, 162, 235)',
           '%',
-          90,
-          8
+          270,
+          -8
         );
 
       } catch (error) {
