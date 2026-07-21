@@ -356,7 +356,7 @@ permalink: /dataloggers/
 
           ctx.save();
           ctx.font = '700 20px system-ui, -apple-system, Segoe UI, sans-serif';
-          ctx.fillStyle = '#333';
+          ctx.fillStyle = color;
           ctx.textAlign = 'center';
           ctx.textBaseline = 'middle';
           ctx.fillText(`${valor.toFixed(1)} ${unidad}`, x, y);
