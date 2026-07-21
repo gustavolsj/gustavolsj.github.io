@@ -62,6 +62,35 @@ permalink: /dataloggers/
       margin-bottom: 1rem;
     }
 
+    .gauge-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      padding: 0.5rem;
+    }
+
+    .gauge-card h5 {
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .gauge-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 240px;
+      height: 120px;
+    }
+
+    .gauge-value {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
     .status-card {
       display: flex;
       flex-direction: column;
@@ -249,9 +278,27 @@ permalink: /dataloggers/
   </div>
 
   <div class="row align-items-center chart-status-row">
-    <div class="col-12 col-md-12">
+    <div class="col-12 col-md-8">
       <div class="chart-container">
         <canvas id="myChart"></canvas>
+      </div>
+    </div>
+    <div class="col-6 col-md-2">
+      <div class="gauge-card">
+        <h5>Temperatura Actual</h5>
+        <div class="gauge-wrap">
+          <canvas id="tempGauge"></canvas>
+        </div>
+        <div id="tempGaugeValue" class="gauge-value">—</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-2">
+      <div class="gauge-card">
+        <h5>Humedad Actual</h5>
+        <div class="gauge-wrap">
+          <canvas id="humGauge"></canvas>
+        </div>
+        <div id="humGaugeValue" class="gauge-value">—</div>
       </div>
     </div>
   </div>
@@ -280,6 +327,79 @@ permalink: /dataloggers/
 </div>
 
   <script>
+    let tempGaugeChart = null;
+    let humGaugeChart = null;
+
+    function crearOActualizarGauge(chartRef, canvasId, valor, maximo, color, valueElId, unidad) {
+      const canvas = document.getElementById(canvasId);
+      const valueEl = document.getElementById(valueElId);
+      if (!canvas || Number.isNaN(valor)) {
+        if (valueEl) valueEl.textContent = '—';
+        return chartRef;
+      }
+
+      const valorClamped = Math.max(0, Math.min(valor, maximo));
+      const restante = Math.max(0, maximo - valorClamped);
+
+      const centerTextPlugin = {
+        id: `${canvasId}-center-text`,
+        afterDatasetsDraw(chart) {
+          const { ctx } = chart;
+          const meta = chart.getDatasetMeta(0);
+          if (!meta || !meta.data || !meta.data.length) return;
+
+          const arc = meta.data[0];
+          const x = arc.x;
+          const y = arc.y + 18;
+
+          ctx.save();
+          ctx.font = '600 14px system-ui, -apple-system, Segoe UI, sans-serif';
+          ctx.fillStyle = '#333';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillText(`${valor.toFixed(1)} ${unidad}`, x, y);
+          ctx.restore();
+        }
+      };
+
+      if (chartRef) {
+        chartRef.data.datasets[0].data = [valorClamped, restante];
+        chartRef.options.plugins = chartRef.options.plugins || {};
+        chartRef.options.plugins[centerTextPlugin.id] = {};
+        chartRef.update();
+      } else {
+        chartRef = new Chart(canvas, {
+          type: 'doughnut',
+          data: {
+            datasets: [{
+              data: [valorClamped, restante],
+              backgroundColor: [color, 'rgba(220, 220, 220, 0.5)'],
+              borderWidth: 0,
+              hoverOffset: 0
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            circumference: 180,
+            rotation: 270,
+            cutout: '72%',
+            animation: {
+              duration: 500
+            },
+            plugins: {
+              legend: { display: false },
+              tooltip: { enabled: false }
+            }
+          },
+          plugins: [centerTextPlugin]
+        });
+      }
+
+      if (valueEl) valueEl.textContent = `${valor.toFixed(1)} ${unidad}`;
+      return chartRef;
+    }
+
     async function cargarDatos() {
       try {
         // 🔹 1. Cargar el JSON remoto (usar ruta absoluta para evitar problemas de ruta)
@@ -293,6 +413,8 @@ permalink: /dataloggers/
         const labels = ultimos.map(d => d.fecha || d.Fecha || d.time || d.fecha_hora || ''); // Ajusta según tu JSON
         const temperaturas = ultimos.map(d => parseFloat(d.temperatura || d.temp || d.Temperatura || 0));
         const humedades = ultimos.map(d => parseFloat(d.humedad || d.Humedad || d.hum || 0));
+        const ultimaTemp = temperaturas.length ? temperaturas[temperaturas.length - 1] : NaN;
+        const ultimaHum = humedades.length ? humedades[humedades.length - 1] : NaN;
 
         // 🔹 4. Crear el gráfico
         const ctx = document.getElementById('myChart').getContext('2d');
@@ -371,12 +493,36 @@ permalink: /dataloggers/
           }
         });
 
+        tempGaugeChart = crearOActualizarGauge(
+          tempGaugeChart,
+          'tempGauge',
+          ultimaTemp,
+          50,
+          'rgb(255, 99, 132)',
+          'tempGaugeValue',
+          '°C'
+        );
+
+        humGaugeChart = crearOActualizarGauge(
+          humGaugeChart,
+          'humGauge',
+          ultimaHum,
+          100,
+          'rgb(54, 162, 235)',
+          'humGaugeValue',
+          '%'
+        );
+
       } catch (error) {
         console.error('Error al cargar o procesar los datos:', error);
         const canvas = document.getElementById('myChart');
         if (canvas) {
           canvas.outerHTML = `<p style="color:red;text-align:center;">Error al cargar los datos del JSON.</p>`;
         }
+        const tempValue = document.getElementById('tempGaugeValue');
+        const humValue = document.getElementById('humGaugeValue');
+        if (tempValue) tempValue.textContent = 'Error';
+        if (humValue) humValue.textContent = 'Error';
       }
     }
 
