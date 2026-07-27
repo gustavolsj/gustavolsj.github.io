@@ -3,6 +3,7 @@ layout: post
 title: Colecciones digitales con CollectionBuilder
 excerpt_separator: <!--more-->
 tags: colecciones_digitales archivos_documentales fotografias
+splash: ../images/collection-builder.jpg
 ---
 
 ![CollectionBuilder](../images/collection-builder.jpg)
