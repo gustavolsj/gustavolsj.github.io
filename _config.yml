@@ -85,3 +85,5 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  
+remote_theme: bdshrk/grid-portfolio-theme
