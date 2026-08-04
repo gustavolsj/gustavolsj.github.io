@@ -1,15 +1,5 @@
 [
     {
-        "fecha_hora": "27\/07\/26 17:25",
-        "temperatura": "25.75",
-        "humedad": "52.07"
-    },
-    {
-        "fecha_hora": "27\/07\/26 17:30",
-        "temperatura": "25.74",
-        "humedad": "52.60"
-    },
-    {
         "fecha_hora": "27\/07\/26 17:35",
         "temperatura": "25.74",
         "humedad": "53.18"
@@ -9123,5 +9113,15 @@
         "fecha_hora": "04\/08\/26 00:15",
         "temperatura": "25.60",
         "humedad": "55.29"
+    },
+    {
+        "fecha_hora": "04\/08\/26 00:20",
+        "temperatura": "25.53",
+        "humedad": "55.25"
+    },
+    {
+        "fecha_hora": "04\/08\/26 00:25",
+        "temperatura": "25.54",
+        "humedad": "55.26"
     }
 ]
