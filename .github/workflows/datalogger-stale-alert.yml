@@ -2,6 +2,7 @@ name: Datalogger stale-data alert
 
 on:
   schedule:
+    # GitHub Actions interpreta este horario en UTC.
     - cron: "*/15 * * * *"
   workflow_dispatch:
 
@@ -16,6 +17,7 @@ concurrency:
 env:
   DATA_URL: https://gustavolsj.github.io/datos.json
   THRESHOLD_MINUTES: "65"
+  ALERT_INTERVAL_HOURS: "24"
   DATA_TIMEZONE: ${{ vars.DATALOGGER_TIMEZONE || 'America/Mexico_City' }}
   INCIDENT_TITLE: "[DATALOGGER ALERT] Data stale for more than 65 minutes"
 
@@ -142,11 +144,17 @@ jobs:
             });
 
             const incident = issues.find(i => i.title === title);
+            const reminderIntervalMs = Number(process.env.ALERT_INTERVAL_HOURS || '24') * 60 * 60 * 1000;
+            const reminderDue = incident
+              ? (Date.now() - new Date(incident.updated_at).getTime()) >= reminderIntervalMs
+              : true;
+
             core.setOutput('is_open', String(Boolean(incident)));
             core.setOutput('number', incident ? String(incident.number) : '');
+            core.setOutput('send_alert', String(reminderDue));
 
       - name: Send stale alert email
-        if: steps.check.outputs.stale == 'true' && steps.incident.outputs.is_open != 'true'
+        if: steps.check.outputs.stale == 'true' && steps.incident.outputs.send_alert == 'true'
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: ${{ secrets.SMTP_SERVER }}
@@ -166,6 +174,21 @@ jobs:
             Timezone used: ${{ steps.check.outputs.timezone }}
             Data URL: ${{ env.DATA_URL }}
             Workflow run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+      - name: Record alert email time
+        if: steps.check.outputs.stale == 'true' && steps.incident.outputs.send_alert == 'true' && steps.incident.outputs.is_open == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            await github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number: Number(process.env.ISSUE_NUMBER),
+              body: `Alert email sent at ${new Date().toISOString()}.`
+            });
+        env:
+          ISSUE_NUMBER: ${{ steps.incident.outputs.number }}
 
       - name: Open incident issue (de-dup state)
         if: steps.check.outputs.stale == 'true' && steps.incident.outputs.is_open != 'true'

@@ -202,6 +202,34 @@
           options.source,
           options,
         );
+
+        var syncEraColors = function () {
+          var eras = window.timeline.config && window.timeline.config.eras;
+          if (!Array.isArray(eras) || !Array.isArray(window.timeline._eras)) {
+            return false;
+          }
+
+          for (
+            var i = 0;
+            i < eras.length && i < window.timeline._eras.length;
+            i++
+          ) {
+            var color = eras[i].background && eras[i].background.color;
+            if (color && window.timeline._eras[i]._el.background) {
+              window.timeline._eras[i]._el.background.style.backgroundColor =
+                color;
+            }
+          }
+          return true;
+        };
+
+        var eraColorAttempts = 0;
+        var eraColorTimer = window.setInterval(function () {
+          eraColorAttempts++;
+          if (syncEraColors() || eraColorAttempts >= 100) {
+            window.clearInterval(eraColorTimer);
+          }
+        }, 50);
       });
     </script>
   </body>
