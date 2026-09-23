@@ -1,15 +1,5 @@
 [
     {
-        "fecha_hora": "16\/09\/26 19:42",
-        "temperatura": "24.72",
-        "humedad": "47.76"
-    },
-    {
-        "fecha_hora": "16\/09\/26 19:47",
-        "temperatura": "24.68",
-        "humedad": "47.15"
-    },
-    {
         "fecha_hora": "16\/09\/26 19:52",
         "temperatura": "24.65",
         "humedad": "47.23"
@@ -9123,5 +9113,15 @@
         "fecha_hora": "23\/09\/26 03:49",
         "temperatura": "24.54",
         "humedad": "54.86"
+    },
+    {
+        "fecha_hora": "23\/09\/26 03:54",
+        "temperatura": "24.51",
+        "humedad": "54.91"
+    },
+    {
+        "fecha_hora": "23\/09\/26 03:59",
+        "temperatura": "24.51",
+        "humedad": "54.96"
     }
 ]
