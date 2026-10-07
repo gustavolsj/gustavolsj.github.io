@@ -9138,5 +9138,75 @@
         "fecha_hora": "07\/10\/26 09:59",
         "temperatura": "22.55",
         "humedad": "60.28"
+    },
+    {
+        "fecha_hora": "07\/10\/26 10:20",
+        "temperatura": "22.52",
+        "humedad": "59.72"
+    },
+    {
+        "fecha_hora": "07\/10\/26 10:23",
+        "temperatura": "22.51",
+        "humedad": "59.68"
+    },
+    {
+        "fecha_hora": "07\/10\/26 10:26",
+        "temperatura": "22.48",
+        "humedad": "59.44"
+    },
+    {
+        "fecha_hora": "07\/10\/26 10:29",
+        "temperatura": "22.51",
+        "humedad": "59.49"
+    },
+    {
+        "fecha_hora": "07\/10\/26 10:32",
+        "temperatura": "22.51",
+        "humedad": "59.32"
+    },
+    {
+        "fecha_hora": "07\/10\/26 10:35",
+        "temperatura": "22.48",
+        "humedad": "59.51"
+    },
+    {
+        "fecha_hora": "07\/10\/26 10:38",
+        "temperatura": "22.48",
+        "humedad": "59.26"
+    },
+    {
+        "fecha_hora": "07\/10\/26 10:41",
+        "temperatura": "22.49",
+        "humedad": "59.32"
+    },
+    {
+        "fecha_hora": "07\/10\/26 10:44",
+        "temperatura": "22.48",
+        "humedad": "59.38"
+    },
+    {
+        "fecha_hora": "07\/10\/26 10:47",
+        "temperatura": "22.45",
+        "humedad": "59.43"
+    },
+    {
+        "fecha_hora": "07\/10\/26 10:50",
+        "temperatura": "22.46",
+        "humedad": "59.40"
+    },
+    {
+        "fecha_hora": "07\/10\/26 10:53",
+        "temperatura": "22.46",
+        "humedad": "59.45"
+    },
+    {
+        "fecha_hora": "07\/10\/26 10:56",
+        "temperatura": "22.45",
+        "humedad": "59.46"
+    },
+    {
+        "fecha_hora": "07\/10\/26 10:59",
+        "temperatura": "22.46",
+        "humedad": "59.35"
     }
 ]
