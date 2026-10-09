@@ -9718,5 +9718,15 @@
         "fecha_hora": "09\/10\/26 12:58",
         "temperatura": "22.06",
         "humedad": "66.47"
+    },
+    {
+        "fecha_hora": "09\/10\/26 13:28",
+        "temperatura": "22.16",
+        "humedad": "65.28"
+    },
+    {
+        "fecha_hora": "09\/10\/26 13:58",
+        "temperatura": "22.21",
+        "humedad": "64.46"
     }
 ]
