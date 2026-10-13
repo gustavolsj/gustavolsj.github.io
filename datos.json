@@ -10473,5 +10473,15 @@
         "fecha_hora": "12\/10\/26 16:58",
         "temperatura": "23.14",
         "humedad": "59.52"
+    },
+    {
+        "fecha_hora": "12\/10\/26 17:28",
+        "temperatura": "23.11",
+        "humedad": "59.92"
+    },
+    {
+        "fecha_hora": "12\/10\/26 17:58",
+        "temperatura": "23.06",
+        "humedad": "59.97"
     }
 ]
