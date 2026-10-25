@@ -13338,5 +13338,15 @@
         "fecha_hora": "25\/10\/26 04:43",
         "temperatura": "21.33",
         "humedad": "55.29"
+    },
+    {
+        "fecha_hora": "25\/10\/26 05:13",
+        "temperatura": "21.30",
+        "humedad": "55.37"
+    },
+    {
+        "fecha_hora": "25\/10\/26 05:43",
+        "temperatura": "21.32",
+        "humedad": "55.88"
     }
 ]
