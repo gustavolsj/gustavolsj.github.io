@@ -17218,5 +17218,10 @@
         "fecha_hora": "10\/11\/26 09:29",
         "temperatura": "23.98",
         "humedad": "51.94"
+    },
+    {
+        "fecha_hora": "10\/11\/26 09:59",
+        "temperatura": "24.17",
+        "humedad": "51.18"
     }
 ]
