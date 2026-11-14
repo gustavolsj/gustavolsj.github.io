@@ -18228,5 +18228,10 @@
         "fecha_hora": "14\/11\/26 14:29",
         "temperatura": "23.42",
         "humedad": "40.66"
+    },
+    {
+        "fecha_hora": "14\/11\/26 14:59",
+        "temperatura": "23.59",
+        "humedad": "40.08"
     }
 ]
