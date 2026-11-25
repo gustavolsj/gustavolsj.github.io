@@ -19303,5 +19303,10 @@
         "fecha_hora": "25\/11\/26 11:59",
         "temperatura": "21.30",
         "humedad": "55.11"
+    },
+    {
+        "fecha_hora": "25\/11\/26 12:29",
+        "temperatura": "21.33",
+        "humedad": "54.34"
     }
 ]
